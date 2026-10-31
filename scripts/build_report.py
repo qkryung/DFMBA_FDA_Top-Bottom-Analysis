@@ -104,7 +104,8 @@ def main():
                 portfolio_calendar.append({'model':model,'periods':len(observed),
                     'holding_start':(first+1).start_time.date().isoformat(),
                     'holding_end':(last+3).end_time.date().isoformat(),
-                    'missing_selected_periods':int(g.status.eq('missing_selected_returns').sum())})
+                    'missing_selected_periods':int((g.status.eq('missing_selected_returns') & (g.formation_date<=result['meta']['last_evaluated_formation'])).sum()),
+                    'unobserved_later_periods':int((g.status.eq('missing_selected_returns') & (g.formation_date>result['meta']['last_evaluated_formation'])).sum())})
     queries['portfolio_calendar']=query(portfolio_calendar,'투자성과가 완결된 포트폴리오 평가 기간',['reports/portfolios.csv'],caveats=['선택 종목의 수익률이 누락된 분기는 재가중하거나 0으로 채우지 않고 포트폴리오 전체를 미산출 처리. 예측 오차와 평가 기간이 다를 수 있음.'])
     curve=[]
     if not portfolio.empty:

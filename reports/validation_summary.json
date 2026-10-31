@@ -1,6 +1,6 @@
 {
   "status": "passed_with_visual_check_limitation",
-  "checked_at": "2026-10-31T17:22:06.011192+00:00",
+  "checked_at": "2026-10-31T17:25:04.467416+00:00",
   "checks": [
     "Corporate document count matches analysis",
     "FOMC document count matches analysis",
@@ -78,7 +78,7 @@
     "Portable artifact fingerprint: snapshot_sha256",
     "Portable artifact fingerprint: results_sha256"
   ],
-  "html_sha256": "ac3be15cff2d97dc0d1f6de5d90fe999eef131e2ef2cf8e926358c5ac8671d21",
+  "html_sha256": "3c6a918055a3a7cfb0bbf0fa4871df41504657755c4060233433259b5bd0a901",
   "results_sha256": "e9ffe889c1275fbf467362a849fe214a7d365be7a5b7089d614453b2a1674006",
   "private_data_cross_checks_executed": true,
   "browser_visual_verification": "Not performed: browser access host unavailable on retry. Earlier native browser access stopped because its URL could not be verified. Build, data consistency, and portable export verified separately.",

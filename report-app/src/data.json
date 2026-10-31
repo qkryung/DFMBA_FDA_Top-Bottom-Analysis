@@ -4,7 +4,7 @@
   "title": "연준의 말, 기업의 말",
   "status": "observed-research",
   "buildStatus": "complete",
-  "generatedAt": "2026-10-31T17:16:59.559481+00:00",
+  "generatedAt": "2026-10-31T17:24:58.391273+00:00",
   "exportPreferences": {
     "selected": null,
     "destinations": []
@@ -98933,28 +98933,32 @@
           "periods": 24,
           "holding_start": "2020-01-01",
           "holding_end": "2025-12-31",
-          "missing_selected_periods": 3
+          "missing_selected_periods": 2,
+          "unobserved_later_periods": 1
         },
         {
           "model": "bottom_up",
           "periods": 24,
           "holding_start": "2020-01-01",
           "holding_end": "2025-12-31",
-          "missing_selected_periods": 3
+          "missing_selected_periods": 2,
+          "unobserved_later_periods": 1
         },
         {
           "model": "combined",
           "periods": 24,
           "holding_start": "2020-01-01",
           "holding_end": "2025-12-31",
-          "missing_selected_periods": 3
+          "missing_selected_periods": 2,
+          "unobserved_later_periods": 1
         },
         {
           "model": "top_down",
           "periods": 24,
           "holding_start": "2020-01-01",
           "holding_end": "2025-12-31",
-          "missing_selected_periods": 3
+          "missing_selected_periods": 2,
+          "unobserved_later_periods": 1
         }
       ],
       "source": {
