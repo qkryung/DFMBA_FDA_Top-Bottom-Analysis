@@ -1,0 +1,14 @@
+{
+  "input_policy": "UTF-8 text after universal newline normalization to LF, before sentence-level boilerplate exclusion",
+  "changed_inputs": 1,
+  "documents_with_numeric_changes": 0,
+  "records": [
+    {
+      "doc_id": "sec_1687229_0001687229-18-000007",
+      "ticker": "INVH",
+      "old_text_sha256": "d473224a0c5b9110500413d0f556c3532f3ef8f6832543537d01cb7d8c13bd1c",
+      "new_text_sha256": "ca46f872233fc704294f5c0d6b1f3fa13b1236fb937fc43fd9e6e0952a5a8ef7",
+      "numeric_fields_changed": []
+    }
+  ]
+}

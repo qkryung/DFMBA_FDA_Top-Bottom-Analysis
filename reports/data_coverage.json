@@ -1,76 +1,85 @@
 {
-  "status": "executed_pilot",
+  "status": "executed_full_universe",
   "start_year": 2016,
   "end_year": 2025,
-  "target_companies": 33,
-  "covered_companies": 33,
-  "missing_companies": [],
-  "firm_documents": 1334,
-  "fomc_documents": 80,
-  "failed_acquisitions": 27,
-  "universe_basis": "Current S&P 500 constituent snapshot, not historical membership; selected 33-company pilot",
+  "updated_at": "2026-10-31T17:10:41.475700+00:00",
+  "attempted_companies": 500,
+  "pending_companies": 0,
+  "target_companies": 500,
+  "covered_companies": 497,
+  "missing_companies": [
+    "FDXF",
+    "HONA",
+    "VYLR"
+  ],
+  "firm_documents": 19613,
+  "fomc_documents": 81,
+  "failed_acquisitions": 1503,
+  "universe_basis": "Fixed current S&P 500 constituent snapshot and current GICS labels; all 500 distinct current issuers attempted, not historical membership",
   "sectors": {
     "Communication Services": {
-      "companies": 3,
-      "documents": 120
+      "companies": 19,
+      "documents": 610
     },
     "Consumer Discretionary": {
-      "companies": 3,
-      "documents": 122
+      "companies": 47,
+      "documents": 1920
     },
     "Consumer Staples": {
-      "companies": 3,
-      "documents": 120
+      "companies": 33,
+      "documents": 1309
     },
     "Energy": {
-      "companies": 3,
-      "documents": 121
+      "companies": 21,
+      "documents": 853
     },
     "Financials": {
-      "companies": 3,
-      "documents": 120
+      "companies": 76,
+      "documents": 3056
     },
     "Health Care": {
-      "companies": 3,
-      "documents": 122
+      "companies": 60,
+      "documents": 2404
     },
     "Industrials": {
-      "companies": 3,
-      "documents": 122
+      "companies": 81,
+      "documents": 3152
     },
     "Information Technology": {
-      "companies": 3,
-      "documents": 121
+      "companies": 75,
+      "documents": 2953
     },
     "Materials": {
-      "companies": 3,
-      "documents": 126
+      "companies": 24,
+      "documents": 901
     },
     "Real Estate": {
-      "companies": 3,
-      "documents": 120
+      "companies": 30,
+      "documents": 1190
     },
     "Utilities": {
-      "companies": 3,
-      "documents": 120
+      "companies": 31,
+      "documents": 1265
     }
   },
   "limitations": [
     "Current constituent snapshot and current GICS labels create survivorship and classification bias.",
-    "Pilot companies selected deliberately; not a random or complete S&P500 sample.",
-    "SEC Item 2.02 exhibits are issuer earnings releases, not earnings-call transcripts.",
+    "All distinct issuers in the fixed current snapshot are attempted; historical S&P500 membership is not reconstructed.",
+    "Corpus includes SEC Item2.02/6-K earnings releases, substantive shareholder letters and guidance updates; bounded EchoStar and T.Rowe Price exceptions use standalone EX99 releases attached to 10-K/Q. Verified official issuer IR releases/letters restore missing SEC text. Whole reports, standalone slides and independent financial tables are excluded.",
+    "IPO, spin-off, foreign-filer and successor-entity histories can leave fewer than 40 publication quarters; full-universe attempt does not imply a balanced panel.",
     "Some Item2.02 filings are preliminary updates; more than four filings per year is possible.",
     "Acceptance timestamp is conservative relative to the original issuer press-release time.",
     "LM tone measures positive/negative language, not macroeconomic direction or causal impact.",
     "Keyword topics overlap and require human-label validation before investment use.",
     "Forward-looking text identification and boilerplate removal are rule-based heuristics."
   ],
-  "firm_date_min": "2016-01-14",
-  "firm_date_max": "2025-11-20",
+  "firm_date_min": "2016-01-04",
+  "firm_date_max": "2025-12-19",
   "duplicate_doc_ids": 0,
-  "fomc_date_min": "2016-02-17",
+  "fomc_date_min": "2016-01-06",
   "fomc_date_max": "2025-12-30",
   "fomc_by_meeting_year": {
+    "2015": 1,
     "2016": 8,
     "2017": 8,
     "2018": 8,
@@ -82,25 +91,81 @@
     "2024": 8,
     "2025": 8
   },
-  "excluded_nonrelease_exhibits": 72,
+  "fomc_by_publication_year": {
+    "2016": 8,
+    "2017": 8,
+    "2018": 8,
+    "2019": 8,
+    "2020": 8,
+    "2021": 8,
+    "2022": 8,
+    "2023": 8,
+    "2024": 8,
+    "2025": 9
+  },
+  "issuer_status_counts": {
+    "completed": 407,
+    "completed_with_gaps": 90,
+    "not_yet_listed_in_study_period": 3
+  },
+  "issuer_regime_counts": {
+    "8-K": 495,
+    "mixed_8K_6K": 2,
+    "other_forms_only": 2,
+    "no_study_period_filings": 1
+  },
+  "excluded_nonrelease_exhibits": 505,
   "missing_timestamps": 0,
   "timestamp_timezone": "UTC",
   "corpus_audit_passed": true,
-  "sec_timestamp_crosschecks": 1334,
+  "sec_timestamp_crosschecks": 19613,
   "sec_timestamp_mismatches": 0,
   "topic_absence_policy": "NaN tone when zero matching sentences; never imputed neutral",
-  "excluded_entire_filings": 23,
-  "filings_with_replacement_exhibit": 49,
+  "excluded_entire_filings": 309,
+  "filings_with_replacement_exhibit": 196,
+  "company_calendar_quarters_covered": 18979,
+  "company_calendar_quarters_expected": 20000,
+  "company_calendar_quarters_maximum": 20000,
+  "quarter_coverage_denominator_note": "The Cartesian maximum assumes every current issuer existed throughout the study. Pre-IPO, pre-spin-off and successor-history quarters are not automatically missing observations.",
+  "each_company_covers_40_publication_quarters": false,
+  "each_company_covers_all_publication_quarters": false,
+  "all_target_issuers_attempted": true,
+  "acquisition_log_note": "Unsupported or non-earnings candidate exhibits; not necessarily network errors. Some entries overlap entire-filing exclusions.",
+  "acquisition_failure_attempts": 1503,
+  "resolved_acquisition_candidates": 29,
+  "unresolved_acquisition_candidates": 1474,
+  "document_type_counts": {
+    "SEC_8K_Item2.02_EX99_earnings_release": 19348,
+    "SEC_8K_EX99_earnings_release_reviewed_Item2.01_tag": 64,
+    "SEC_8K_embedded_earnings_release": 36,
+    "SEC_earnings_release_or_update_PDF": 35,
+    "SEC_10KQ_EX99_reviewed_consolidated_parent_earnings_release": 24,
+    "SEC_10Q_EX99_reviewed_earnings_release": 21,
+    "official_IR_earnings_release_matched_to_SEC_filing": 20,
+    "SEC_6K_embedded_earnings_release": 18,
+    "SEC_6K_reviewed_exhibit_earnings_release": 12,
+    "SEC_6K_EX99_earnings_release": 11,
+    "official_IR_earnings_release_PDF_matched_to_SEC_filing": 10,
+    "SEC_earnings_shareholder_letter": 6,
+    "SEC_8K_Item2.02_reviewed_exhibit_earnings_release": 4,
+    "official_IR_earnings_investor_letter_PDF_matched_to_SEC_filing": 4
+  },
+  "official_IR_date_only_availability_documents": 34,
+  "official_IR_availability_rule": "For actual IR text replacements: max(original SEC acceptance, midnight America/New_York following the official IR release date). SEC acceptance retained separately; PDF metadata is only a version check.",
+  "source_audit_scope": "Whole-corpus automated source/hash/timestamp/topic checks plus risk-targeted manual inspections and bounded source repairs. Not every document was manually read in full.",
+  "source_repair_status_counts": {
+    "excluded_entire_filing": 266,
+    "replaced_exhibit": 157,
+    "extraction_scope_repaired": 33
+  },
+  "unresolved_source_repairs": 0,
   "firm_topic_coverage": {
-    "inflation": 0.970015,
-    "employment": 0.338831,
-    "growth": 0.998501,
-    "investment": 0.930285,
-    "rates": 0.85907
+    "inflation": 0.985367,
+    "employment": 0.441034,
+    "growth": 0.996431,
+    "investment": 0.954418,
+    "rates": 0.894968
   },
   "fomc_text_scope": "Staff Review of the Economic Situation through before Committee Policy Action",
-  "company_calendar_quarters_covered": 1320,
-  "company_calendar_quarters_expected": 1320,
-  "each_company_covers_40_publication_quarters": true,
-  "acquisition_log_note": "Unsupported or non-earnings candidate exhibits; not necessarily network errors. Some entries overlap entire-filing exclusions."
+  "exclusion_count_basis": "Distinct filing/doc IDs with a rejected source: entire-filing exclusions plus filings with retained replacement sources. Not a count of every alternate exhibit URL."
 }

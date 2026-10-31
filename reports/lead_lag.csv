@@ -1,140 +1,145 @@
 scope,topic,direction,n_oos,rmse_own_lag,rmse_with_other,improvement_pct,status
-All,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0450276528628408,-0.5896394030255436,exploratory
-All,employment,top_down_to_bottom_up,27,0.8558587063277728,0.916133640465974,-7.0426267434752665,exploratory
-All,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0749994864735333,-3.5808005686799094,exploratory
-All,growth,top_down_to_bottom_up,27,0.16342002879586556,0.1499178662739932,8.262244610627533,exploratory
-All,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.679489081993731,-1.065528342768629,exploratory
-All,inflation,top_down_to_bottom_up,27,0.16455858337398335,0.16897687971677075,-2.684938246427526,exploratory
-All,investment,bottom_up_to_top_down,27,1.874550295736095,1.8297969433661243,2.3874180635093167,exploratory
-All,investment,top_down_to_bottom_up,27,0.1703880282247244,0.17522483767258518,-2.838702635540513,exploratory
-All,overall,bottom_up_to_top_down,27,0.6025126592545649,0.611824411773008,-1.5454866176527693,exploratory
-All,overall,top_down_to_bottom_up,27,0.10480924009249026,0.10237876203690441,2.318953990546113,exploratory
-All,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8406013317447385,-2.2554087452384186,exploratory
-All,rates,top_down_to_bottom_up,27,0.12375286117972824,0.12897374781484064,-4.218800749608542,exploratory
-Communication Services,employment,bottom_up_to_top_down,26,1.0616124373493032,1.0751945338887063,-1.2793837055371737,exploratory
-Communication Services,employment,top_down_to_bottom_up,25,1.3118961208705875,1.3787790973345893,-5.098191495498705,exploratory
-Communication Services,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0689087351895707,-2.9939306194419535,exploratory
-Communication Services,growth,top_down_to_bottom_up,27,0.1602262886152008,0.16002086873828644,0.12820610069032012,exploratory
-Communication Services,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6935895761176185,-3.1628010235060344,exploratory
-Communication Services,inflation,top_down_to_bottom_up,27,0.32266810199430923,0.33212367959956074,-2.9304345693948575,exploratory
-Communication Services,investment,bottom_up_to_top_down,27,1.874550295736095,1.90792284047003,-1.780296042727958,exploratory
-Communication Services,investment,top_down_to_bottom_up,27,0.3333969304798373,0.3401484073036773,-2.0250566836722106,exploratory
-Communication Services,overall,bottom_up_to_top_down,27,0.6025126592545649,0.603604945174454,-0.18128845977118946,exploratory
-Communication Services,overall,top_down_to_bottom_up,27,0.14304168035265796,0.1466476936059918,-2.520952805114929,exploratory
-Communication Services,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8419409208803353,-2.4183637982917006,exploratory
-Communication Services,rates,top_down_to_bottom_up,27,0.22609119533488797,0.23387480799832075,-3.4426872094261096,exploratory
-Consumer Discretionary,employment,bottom_up_to_top_down,17,0.9311509095364585,1.0019454471178135,-7.602906989222369,exploratory
-Consumer Discretionary,employment,top_down_to_bottom_up,16,2.630419735888758,2.670847502585828,-1.5369321536591096,exploratory
-Consumer Discretionary,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0538436816061607,-1.5423482415762413,exploratory
-Consumer Discretionary,growth,top_down_to_bottom_up,27,0.3297277642817758,0.34807130482949544,-5.563238081474919,exploratory
-Consumer Discretionary,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.681931043722749,-1.4287397009436376,exploratory
-Consumer Discretionary,inflation,top_down_to_bottom_up,27,0.39773959522285,0.4411082353118162,-10.903777398543157,exploratory
-Consumer Discretionary,investment,bottom_up_to_top_down,27,1.874550295736095,1.897727099642397,-1.2363927475843361,exploratory
-Consumer Discretionary,investment,top_down_to_bottom_up,27,0.5089357058677642,0.5236347075683748,-2.888184407409189,exploratory
-Consumer Discretionary,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6118746346833741,-1.5538221952700493,exploratory
-Consumer Discretionary,overall,top_down_to_bottom_up,27,0.2811228869682883,0.2874754224045511,-2.2597005547184024,exploratory
-Consumer Discretionary,rates,bottom_up_to_top_down,27,0.8220605071747675,0.854153063388415,-3.9039165528024444,exploratory
-Consumer Discretionary,rates,top_down_to_bottom_up,27,0.3780049517158991,0.3653359817409029,3.351535454095822,exploratory
-Consumer Staples,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0459191415066034,-0.6754500712526479,exploratory
-Consumer Staples,employment,top_down_to_bottom_up,27,1.3793605948374885,1.4227815264768424,-3.147902861794427,exploratory
-Consumer Staples,growth,bottom_up_to_top_down,27,1.0378366266446724,1.1161589231539364,-7.546688418819847,exploratory
-Consumer Staples,growth,top_down_to_bottom_up,27,0.33887239114034445,0.3653548761667538,-7.814884221548035,exploratory
-Consumer Staples,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6840622463978334,-1.7457295247255367,exploratory
-Consumer Staples,inflation,top_down_to_bottom_up,27,0.666104451316253,0.6766025457298874,-1.57604327562888,exploratory
-Consumer Staples,investment,bottom_up_to_top_down,27,1.874550295736095,1.8987928851815428,-1.2932482793654776,exploratory
-Consumer Staples,investment,top_down_to_bottom_up,27,0.27847766480538466,0.29057784063676256,-4.34511537571034,exploratory
-Consumer Staples,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6146062866102083,-2.007198881199579,exploratory
-Consumer Staples,overall,top_down_to_bottom_up,27,0.22443420131436354,0.24043547264931583,-7.129604686470858,exploratory
-Consumer Staples,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8656523310666464,-5.30275125874784,exploratory
-Consumer Staples,rates,top_down_to_bottom_up,27,0.3491645100016092,0.3774066008751793,-8.088476939835587,exploratory
-Energy,employment,bottom_up_to_top_down,7,1.0236389906115466,1.0354622845733883,-1.1550257532470631,insufficient
-Energy,employment,top_down_to_bottom_up,6,1.8565368520992116,2.2732177512965173,-22.443987509655884,insufficient
-Energy,growth,bottom_up_to_top_down,27,1.0378366266446724,1.065114832264607,-2.628371838072918,exploratory
-Energy,growth,top_down_to_bottom_up,27,0.6840114427986321,0.6915162167571144,-1.0971708203851849,exploratory
-Energy,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6943175982655876,-3.271085240249949,exploratory
-Energy,inflation,top_down_to_bottom_up,27,0.579126182408064,0.5814243528201539,-0.39683414114242144,exploratory
-Energy,investment,bottom_up_to_top_down,27,1.874550295736095,1.9164819865200138,-2.236893343395363,exploratory
-Energy,investment,top_down_to_bottom_up,27,0.6548420877760394,0.7757581917343979,-18.46492554701411,exploratory
-Energy,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6150025263210283,-2.072963426513885,exploratory
-Energy,overall,top_down_to_bottom_up,27,0.25040522191258746,0.22330989480585736,10.820591878945985,exploratory
-Energy,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8430208850494277,-2.549736630299426,exploratory
-Energy,rates,top_down_to_bottom_up,27,0.7986263598095008,0.8343747800379971,-4.4762384548668654,exploratory
-Financials,employment,bottom_up_to_top_down,17,0.9001063086536149,0.9571150176152879,-6.333552871876558,exploratory
-Financials,employment,top_down_to_bottom_up,12,2.1026170592345865,2.165843891280345,-3.0070540790140265,exploratory
-Financials,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0603793859984578,-2.172091326807979,exploratory
-Financials,growth,top_down_to_bottom_up,27,0.4551891751664081,0.4299512779172177,5.544485375770181,exploratory
-Financials,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6783981544641912,-0.903266475612341,exploratory
-Financials,inflation,top_down_to_bottom_up,27,0.43145323601717855,0.43861403382540826,-1.6596926875163343,exploratory
-Financials,investment,bottom_up_to_top_down,27,1.874550295736095,1.6763832818540683,10.571442885943528,exploratory
-Financials,investment,top_down_to_bottom_up,27,0.2918966477949463,0.29056004792163825,0.45790175509209385,exploratory
-Financials,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6086285988435994,-1.0150723798237227,exploratory
-Financials,overall,top_down_to_bottom_up,27,0.201059448218526,0.20397188517332815,-1.4485451843261332,exploratory
-Financials,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8417093897208382,-2.3901990637646975,exploratory
-Financials,rates,top_down_to_bottom_up,27,0.2654951862557459,0.2529617363452995,4.720782356623676,exploratory
-Health Care,employment,bottom_up_to_top_down,3,0.8073886553477385,0.7494416424238824,7.177090307133261,insufficient
-Health Care,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0891799479857986,-4.947148715219218,exploratory
-Health Care,growth,top_down_to_bottom_up,27,0.35173742843590855,0.37549177718226184,-6.753432198553089,exploratory
-Health Care,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6638671476126624,1.2580396052640164,exploratory
-Health Care,inflation,top_down_to_bottom_up,27,0.5341791096675683,0.5777248175899253,-8.151892714310094,exploratory
-Health Care,investment,bottom_up_to_top_down,27,1.874550295736095,1.7974108844487036,4.1150889076091985,exploratory
-Health Care,investment,top_down_to_bottom_up,27,1.3938956571148922,1.4143375707571697,-1.4665311236128353,exploratory
-Health Care,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6011229880407133,0.23064597772449735,exploratory
-Health Care,overall,top_down_to_bottom_up,27,0.23713962393625865,0.24771392055929814,-4.459101540062238,exploratory
-Health Care,rates,bottom_up_to_top_down,17,0.7311180239973163,0.7965785798579391,-8.953486812255518,exploratory
-Health Care,rates,top_down_to_bottom_up,15,0.7130785174922372,0.7504734664611614,-5.244155875069034,exploratory
-Industrials,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0683391236089337,-2.833496232918864,exploratory
-Industrials,employment,top_down_to_bottom_up,27,1.6369513794431017,1.6529436393701564,-0.9769538746163153,exploratory
-Industrials,growth,bottom_up_to_top_down,27,1.0378366266446724,1.053471313510133,-1.5064689821178812,exploratory
-Industrials,growth,top_down_to_bottom_up,27,0.31581897796174063,0.327571938441259,-3.721423125161949,exploratory
-Industrials,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6981281285425728,-3.8378541051442117,exploratory
-Industrials,inflation,top_down_to_bottom_up,27,0.3241975293011133,0.3386271770381457,-4.450881463575329,exploratory
-Industrials,investment,bottom_up_to_top_down,27,1.874550295736095,1.9351784921951485,-3.234279528106554,exploratory
-Industrials,investment,top_down_to_bottom_up,27,0.3553496180987633,0.37111642113098914,-4.436983249506055,exploratory
-Industrials,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6110365017842448,-1.4147159231850504,exploratory
-Industrials,overall,top_down_to_bottom_up,27,0.20983391460392556,0.21572705712031395,-2.8084795193913603,exploratory
-Industrials,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8515262220004147,-3.584372995476226,exploratory
-Industrials,rates,top_down_to_bottom_up,27,0.45074210043991964,0.424088664138484,5.913234258664135,exploratory
-Information Technology,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0612833232394012,-2.2591895480247315,exploratory
-Information Technology,growth,top_down_to_bottom_up,27,0.21096850362265707,0.2281840830769033,-8.160260493214855,exploratory
-Information Technology,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6725479579879321,-0.03312269633735099,exploratory
-Information Technology,inflation,top_down_to_bottom_up,27,0.5570514584891283,0.5743480946172793,-3.105033810532354,exploratory
-Information Technology,investment,bottom_up_to_top_down,27,1.874550295736095,1.968039181085555,-4.987270043493219,exploratory
-Information Technology,investment,top_down_to_bottom_up,27,0.4490989624585953,0.4516224367633279,-0.5618971575703124,exploratory
-Information Technology,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6268582526549688,-4.040677490581612,exploratory
-Information Technology,overall,top_down_to_bottom_up,27,0.29155650321345716,0.3027404314518834,-3.8359385282646707,exploratory
-Information Technology,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8291604583459343,-0.8636774433511851,exploratory
-Information Technology,rates,top_down_to_bottom_up,27,0.1892615934675813,0.17697381937060064,6.492481581629217,exploratory
-Materials,employment,bottom_up_to_top_down,24,1.0680870708549655,1.099455936134976,-2.9369202320650656,exploratory
-Materials,employment,top_down_to_bottom_up,21,1.5403424008345488,1.8605474727887996,-20.78791519215244,exploratory
-Materials,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0604787563202764,-2.1816660825322964,exploratory
-Materials,growth,top_down_to_bottom_up,27,0.3205201201134949,0.38670081346454105,-20.64790607454279,exploratory
-Materials,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.678210078587155,-0.8752925340363982,exploratory
-Materials,inflation,top_down_to_bottom_up,27,0.23598813531094273,0.27828751418324915,-17.92436675537603,exploratory
-Materials,investment,bottom_up_to_top_down,27,1.874550295736095,1.9683642764902969,-5.004612624563531,exploratory
-Materials,investment,top_down_to_bottom_up,27,0.42499161926916296,0.43393734448003213,-2.1049180278549295,exploratory
-Materials,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6053560196496994,-0.471917120986709,exploratory
-Materials,overall,top_down_to_bottom_up,27,0.1264369472815277,0.18191883704713208,-43.88107349829238,exploratory
-Materials,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8127040084310411,1.1381764069755107,exploratory
-Materials,rates,top_down_to_bottom_up,27,0.6027996035140597,0.6012448673338218,0.2579192440032352,exploratory
-Real Estate,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0184687512393873,1.8661776726748847,exploratory
-Real Estate,growth,top_down_to_bottom_up,27,0.429542441293373,0.43023964775997875,-0.1623137551917786,exploratory
-Real Estate,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6983439601053347,-3.869956358884008,exploratory
-Real Estate,inflation,top_down_to_bottom_up,27,0.38042707712832574,0.3836221732319143,-0.8398708440279457,exploratory
-Real Estate,investment,bottom_up_to_top_down,27,1.874550295736095,1.952642192949473,-4.165900343725526,exploratory
-Real Estate,investment,top_down_to_bottom_up,27,0.3777615568785567,0.41515250488199845,-9.898028881605402,exploratory
-Real Estate,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6217549209816909,-3.1936692833861358,exploratory
-Real Estate,overall,top_down_to_bottom_up,27,0.13709650784218372,0.14429996668969225,-5.25429783798772,exploratory
-Real Estate,rates,bottom_up_to_top_down,27,0.8220605071747675,0.7928854511039651,3.549015652274834,exploratory
-Real Estate,rates,top_down_to_bottom_up,27,0.4178039070461835,0.4346375334084182,-4.029073466843847,exploratory
-Utilities,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0476867975449986,-0.8455966535020787,exploratory
-Utilities,employment,top_down_to_bottom_up,27,0.7501834488291522,0.7639149760425941,-1.8304225766208715,exploratory
-Utilities,growth,bottom_up_to_top_down,27,1.0378366266446724,1.089291485079524,-4.957895791479738,exploratory
-Utilities,growth,top_down_to_bottom_up,27,0.7229303610902842,0.696571672800119,3.646089541793829,exploratory
-Utilities,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.7111233990722372,-5.770738557362476,exploratory
-Utilities,inflation,top_down_to_bottom_up,27,0.6569191179743464,0.6765356137259301,-2.986135616218988,exploratory
-Utilities,investment,bottom_up_to_top_down,27,1.874550295736095,1.9295323788390388,-2.933081242365576,exploratory
-Utilities,investment,top_down_to_bottom_up,27,0.6849000447299466,0.7153908612931049,-4.45186371321975,exploratory
-Utilities,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6084866387200716,-0.9915110286475626,exploratory
-Utilities,overall,top_down_to_bottom_up,27,0.37745315788983297,0.3637723525551909,3.6245041400965183,exploratory
-Utilities,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8339598668933268,-1.4475041210110673,exploratory
-Utilities,rates,top_down_to_bottom_up,27,0.3422848146528144,0.3515375640471896,-2.703231051532451,exploratory
+All,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0496549904256727,-1.035046005966822,exploratory
+All,employment,top_down_to_bottom_up,27,0.14545830675690682,0.1517135795705017,-4.300388855790005,exploratory
+All,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0538356914914766,-1.5415783598358157,exploratory
+All,growth,top_down_to_bottom_up,27,0.10933252955784546,0.10873698523097776,0.544709181499925,exploratory
+All,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.7019531412063693,-4.406777044494614,exploratory
+All,inflation,top_down_to_bottom_up,27,0.08469227390426153,0.08760905611282103,-3.443976733765264,exploratory
+All,investment,bottom_up_to_top_down,27,1.874550295736095,2.0930342700119846,-11.655274055481968,exploratory
+All,investment,top_down_to_bottom_up,27,0.09008292138172493,0.09117768101600143,-1.2152798971044376,exploratory
+All,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6235594657380933,-3.493172493598351,exploratory
+All,overall,top_down_to_bottom_up,27,0.07584291575446021,0.07662210119162541,-1.0273674599850402,exploratory
+All,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8639892971512311,-5.100450588553773,exploratory
+All,rates,top_down_to_bottom_up,27,0.07477011150387354,0.07665662883376463,-2.523090165237152,exploratory
+Communication Services,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0784071038808973,-3.802594516872615,exploratory
+Communication Services,employment,top_down_to_bottom_up,27,1.041025339264287,1.0406149377202634,0.03942281984352647,exploratory
+Communication Services,growth,bottom_up_to_top_down,27,1.0378366266446724,1.177393391127931,-13.446891437474706,exploratory
+Communication Services,growth,top_down_to_bottom_up,27,0.21146559568107356,0.21529233320767802,-1.8096265325239225,exploratory
+Communication Services,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6973679489379847,-3.7247868677021234,exploratory
+Communication Services,inflation,top_down_to_bottom_up,27,0.24095543148290782,0.2576540253730522,-6.930158738226622,exploratory
+Communication Services,investment,bottom_up_to_top_down,27,1.874550295736095,1.9821000755631366,-5.737364319947957,exploratory
+Communication Services,investment,top_down_to_bottom_up,27,0.3696692055184844,0.37630003060715017,-1.7937185434111491,exploratory
+Communication Services,overall,bottom_up_to_top_down,27,0.6025126592545649,0.7222195963231665,-19.867953847924834,exploratory
+Communication Services,overall,top_down_to_bottom_up,27,0.17269533274860507,0.1895794034577168,-9.776796188053382,exploratory
+Communication Services,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8060134831901062,1.952049009118706,exploratory
+Communication Services,rates,top_down_to_bottom_up,27,0.20061829484146798,0.21350026775892286,-6.42113568338043,exploratory
+Consumer Discretionary,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0458009665947368,-0.6640750882667135,exploratory
+Consumer Discretionary,employment,top_down_to_bottom_up,27,0.38623873038327977,0.4078012519771072,-5.582692748712725,exploratory
+Consumer Discretionary,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0440230229453764,-0.5960857558770849,exploratory
+Consumer Discretionary,growth,top_down_to_bottom_up,27,0.17380551091245802,0.17189067512404052,1.1017117802334608,exploratory
+Consumer Discretionary,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6981615623052649,-3.8428269604563914,exploratory
+Consumer Discretionary,inflation,top_down_to_bottom_up,27,0.1616878313957304,0.17006919702370218,-5.183671248245281,exploratory
+Consumer Discretionary,investment,bottom_up_to_top_down,27,1.874550295736095,1.8980462742463429,-1.253419476857598,exploratory
+Consumer Discretionary,investment,top_down_to_bottom_up,27,0.2260378953002971,0.23327517822276955,-3.2018007037525775,exploratory
+Consumer Discretionary,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6065229364621003,-0.6655921906266737,exploratory
+Consumer Discretionary,overall,top_down_to_bottom_up,27,0.14263573146239342,0.14478865867125562,-1.5093884167655558,exploratory
+Consumer Discretionary,rates,bottom_up_to_top_down,27,0.8220605071747675,0.839568746115504,-2.1297993016242023,exploratory
+Consumer Discretionary,rates,top_down_to_bottom_up,27,0.1932198405958105,0.2059167568859637,-6.571228012092933,exploratory
+Consumer Staples,employment,bottom_up_to_top_down,27,1.0389018780311965,1.057049236900704,-1.7467827571838068,exploratory
+Consumer Staples,employment,top_down_to_bottom_up,27,0.6139786044229992,0.6949499762852841,-13.187979398464478,exploratory
+Consumer Staples,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0868587293684522,-4.7234893686753265,exploratory
+Consumer Staples,growth,top_down_to_bottom_up,27,0.18500049357532566,0.19317566960399982,-4.41900227976717,exploratory
+Consumer Staples,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.7057532952341806,-4.972002571706535,exploratory
+Consumer Staples,inflation,top_down_to_bottom_up,27,0.1961822804393025,0.200568863615824,-2.235973181012474,exploratory
+Consumer Staples,investment,bottom_up_to_top_down,27,1.874550295736095,1.976091183513468,-5.4168131955883325,exploratory
+Consumer Staples,investment,top_down_to_bottom_up,27,0.25394601115722065,0.2669559877309034,-5.123126964820934,exploratory
+Consumer Staples,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6234849835129441,-3.48081055829208,exploratory
+Consumer Staples,overall,top_down_to_bottom_up,27,0.10825824652392824,0.11350035782986365,-4.842228166679896,exploratory
+Consumer Staples,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8351361278668988,-1.590591030466748,exploratory
+Consumer Staples,rates,top_down_to_bottom_up,27,0.18004673004573535,0.17987113575288563,0.09752706578182169,exploratory
+Energy,employment,bottom_up_to_top_down,27,1.0389018780311965,1.1485634902355193,-10.555531231894633,exploratory
+Energy,employment,top_down_to_bottom_up,27,1.6497924492764249,1.8063504804439787,-9.489559200990282,exploratory
+Energy,growth,bottom_up_to_top_down,27,1.0378366266446724,1.016152186930542,2.08938855667834,exploratory
+Energy,growth,top_down_to_bottom_up,27,0.28700251862611914,0.32656662756805493,-13.785282837004065,exploratory
+Energy,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.688643409923226,-2.4271204762326803,exploratory
+Energy,inflation,top_down_to_bottom_up,27,0.21652972527673503,0.2403704873505651,-11.01038762385187,exploratory
+Energy,investment,bottom_up_to_top_down,27,1.874550295736095,1.8004779500976058,3.9514728309491765,exploratory
+Energy,investment,top_down_to_bottom_up,27,0.2502129340889025,0.2634948996172887,-5.308264969095111,exploratory
+Energy,overall,bottom_up_to_top_down,27,0.6025126592545649,0.5914466716993401,1.8366398423753871,exploratory
+Energy,overall,top_down_to_bottom_up,27,0.1726758008112306,0.18500742063350986,-7.1414869740550335,exploratory
+Energy,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8499661688431158,-3.3945994759258857,exploratory
+Energy,rates,top_down_to_bottom_up,27,0.27702027436702603,0.2808213547328375,-1.3721307490928814,exploratory
+Financials,employment,bottom_up_to_top_down,27,1.0389018780311965,1.139025828067162,-9.63747897209586,exploratory
+Financials,employment,top_down_to_bottom_up,27,0.3467844499873692,0.3731804496787092,-7.611644551046459,exploratory
+Financials,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0313207025291444,0.6278371709229291,exploratory
+Financials,growth,top_down_to_bottom_up,27,0.16988195433901665,0.16094664383048984,5.259717280327192,exploratory
+Financials,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6898831579084508,-2.611517530517915,exploratory
+Financials,inflation,top_down_to_bottom_up,27,0.17022194924925171,0.17543403189890047,-3.0619333597319054,exploratory
+Financials,investment,bottom_up_to_top_down,27,1.874550295736095,1.9594090154661798,-4.526884123787278,exploratory
+Financials,investment,top_down_to_bottom_up,27,0.17795758867848266,0.18322990793904137,-2.96268301886482,exploratory
+Financials,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6218865566164901,-3.2155170624787788,exploratory
+Financials,overall,top_down_to_bottom_up,27,0.09902972602711974,0.09873249726002485,0.3001409566794955,exploratory
+Financials,rates,bottom_up_to_top_down,27,0.8220605071747675,0.7913356332451251,3.7375440933462123,exploratory
+Financials,rates,top_down_to_bottom_up,27,0.15212724901610394,0.15853261789191334,-4.210533561368313,exploratory
+Health Care,employment,bottom_up_to_top_down,27,1.0389018780311965,1.069514927691902,-2.9466738205074616,exploratory
+Health Care,employment,top_down_to_bottom_up,27,0.5304157010690608,0.536040078989844,-1.060371687611661,exploratory
+Health Care,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0795207245651415,-4.016441205706323,exploratory
+Health Care,growth,top_down_to_bottom_up,27,0.14315632057414,0.1304499734480474,8.87585478247328,exploratory
+Health Care,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.7039324690477433,-4.7011773805015755,exploratory
+Health Care,inflation,top_down_to_bottom_up,27,0.12334825409371988,0.11263240848922512,8.687472460171886,exploratory
+Health Care,investment,bottom_up_to_top_down,27,1.874550295736095,2.0020496398495657,-6.80159632971622,exploratory
+Health Care,investment,top_down_to_bottom_up,27,0.25911826676729344,0.2682001733477901,-3.5049271878052846,exploratory
+Health Care,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6244982060342172,-3.648976737991383,exploratory
+Health Care,overall,top_down_to_bottom_up,27,0.0951300522926501,0.08680148753233016,8.754925031154869,exploratory
+Health Care,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8173230692479031,0.5762882276325265,exploratory
+Health Care,rates,top_down_to_bottom_up,27,0.13956985440442332,0.13452204948285393,3.6166871013153523,exploratory
+Industrials,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0590222538193133,-1.936696449740416,exploratory
+Industrials,employment,top_down_to_bottom_up,27,0.3944090001033948,0.42738661903557285,-8.361274444430244,exploratory
+Industrials,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0978549851579187,-5.783025668238917,exploratory
+Industrials,growth,top_down_to_bottom_up,27,0.1635416046592901,0.16678578231351948,-1.9837017381528321,exploratory
+Industrials,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.7119414411841176,-5.89241212127205,exploratory
+Industrials,inflation,top_down_to_bottom_up,27,0.15010292417990342,0.15154427372096033,-0.9602408140493068,exploratory
+Industrials,investment,bottom_up_to_top_down,27,1.874550295736095,2.018105590222145,-7.658119113292661,exploratory
+Industrials,investment,top_down_to_bottom_up,27,0.1531508903579336,0.15086557096801814,1.4922011779196165,exploratory
+Industrials,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6306282469078935,-4.666389530821413,exploratory
+Industrials,overall,top_down_to_bottom_up,27,0.11803470581226234,0.1147385768018105,2.7925083455491717,exploratory
+Industrials,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8986457146395678,-9.316249448353386,exploratory
+Industrials,rates,top_down_to_bottom_up,27,0.11878858794950406,0.12562219252899845,-5.752745021600303,exploratory
+Information Technology,employment,bottom_up_to_top_down,27,1.0389018780311965,1.071825060197398,-3.169036736038411,exploratory
+Information Technology,employment,top_down_to_bottom_up,27,0.419874529504991,0.4542274701520886,-8.181715782473841,exploratory
+Information Technology,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0371397795090285,0.06714420340866445,exploratory
+Information Technology,growth,top_down_to_bottom_up,27,0.10969726405855455,0.11823688601864714,-7.784717361350313,exploratory
+Information Technology,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6835329065386251,-1.6669968210494046,exploratory
+Information Technology,inflation,top_down_to_bottom_up,27,0.09887775427349452,0.10426087595657282,-5.44421920039635,exploratory
+Information Technology,investment,bottom_up_to_top_down,27,1.874550295736095,1.7303507910279687,7.6924852342520005,exploratory
+Information Technology,investment,top_down_to_bottom_up,27,0.16043273627266685,0.15763163548540768,1.745965849824127,exploratory
+Information Technology,overall,bottom_up_to_top_down,27,0.6025126592545649,0.5918649031032844,1.7672253002043115,exploratory
+Information Technology,overall,top_down_to_bottom_up,27,0.051758487214549995,0.059016179951138344,-14.022227323808089,exploratory
+Information Technology,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8376963269031901,-1.9020278424710213,exploratory
+Information Technology,rates,top_down_to_bottom_up,27,0.1286124411294441,0.10965088224990112,14.74317625342233,exploratory
+Materials,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0482957961594659,-0.9042161080766942,exploratory
+Materials,employment,top_down_to_bottom_up,27,0.9690763887698907,1.0473504180038702,-8.077178449609912,exploratory
+Materials,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0494944229709993,-1.1232785610984397,exploratory
+Materials,growth,top_down_to_bottom_up,27,0.17883571220639027,0.17285240275610012,3.345701692615488,exploratory
+Materials,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6935896667515905,-3.1628145041792566,exploratory
+Materials,inflation,top_down_to_bottom_up,27,0.16557662366305084,0.16539756733816177,0.10814106540392165,exploratory
+Materials,investment,bottom_up_to_top_down,27,1.874550295736095,1.799236829084039,4.017681831389974,exploratory
+Materials,investment,top_down_to_bottom_up,27,0.2717333720284413,0.2588539382102406,4.739732084453962,exploratory
+Materials,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6124177756803523,-1.6439681845095366,exploratory
+Materials,overall,top_down_to_bottom_up,27,0.11132573079104324,0.11052957413466155,0.7151596048141529,exploratory
+Materials,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8308985256405166,-1.0751055899915762,exploratory
+Materials,rates,top_down_to_bottom_up,27,0.23934171707553237,0.24258112131516293,-1.3534641094800293,exploratory
+Real Estate,employment,bottom_up_to_top_down,27,1.0389018780311965,1.0521691693534694,-1.2770495080262512,exploratory
+Real Estate,employment,top_down_to_bottom_up,27,0.6506438058667635,0.6737197050856816,-3.5466255131987534,exploratory
+Real Estate,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0224517334226817,1.4824002956737026,exploratory
+Real Estate,growth,top_down_to_bottom_up,27,0.20006614349061708,0.20379308459365952,-1.8628544730344254,exploratory
+Real Estate,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.6757782833816562,-0.5135933194676756,exploratory
+Real Estate,inflation,top_down_to_bottom_up,27,0.1567872793201425,0.16577652194848752,-5.7334004820569495,exploratory
+Real Estate,investment,bottom_up_to_top_down,27,1.874550295736095,2.0034682723989974,-6.877274883268947,exploratory
+Real Estate,investment,top_down_to_bottom_up,27,0.18876983900424638,0.19149962151587532,-1.446090395599442,exploratory
+Real Estate,overall,bottom_up_to_top_down,27,0.6025126592545649,0.656591732264572,-8.975591164659402,exploratory
+Real Estate,overall,top_down_to_bottom_up,27,0.09055980116379965,0.09797557490003023,-8.18881406642813,exploratory
+Real Estate,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8581139668758799,-4.385742823848804,exploratory
+Real Estate,rates,top_down_to_bottom_up,27,0.16830382901348984,0.16937216365367166,-0.6347654990643159,exploratory
+Utilities,employment,bottom_up_to_top_down,27,1.0389018780311965,1.028875642089755,0.9650801633395933,exploratory
+Utilities,employment,top_down_to_bottom_up,27,0.7693299131107844,0.8264432777101646,-7.4237805687864755,exploratory
+Utilities,growth,bottom_up_to_top_down,27,1.0378366266446724,1.0895395074051737,-4.98179380387227,exploratory
+Utilities,growth,top_down_to_bottom_up,27,0.1795770478976969,0.20580283895168888,-14.604199902502302,exploratory
+Utilities,inflation,bottom_up_to_top_down,27,0.6723252657317645,0.7058082850267028,-4.980181617672064,exploratory
+Utilities,inflation,top_down_to_bottom_up,27,0.3319979771041581,0.341440498653245,-2.8441503262908396,exploratory
+Utilities,investment,bottom_up_to_top_down,27,1.874550295736095,1.8984726180138467,-1.2761632660465816,exploratory
+Utilities,investment,top_down_to_bottom_up,27,0.18514647703597942,0.19064179171414777,-2.9680903283406446,exploratory
+Utilities,overall,bottom_up_to_top_down,27,0.6025126592545649,0.6467049712964541,-7.334669465130306,exploratory
+Utilities,overall,top_down_to_bottom_up,27,0.11608018923321058,0.11911493221182731,-2.6143504750149926,exploratory
+Utilities,rates,bottom_up_to_top_down,27,0.8220605071747675,0.8292882595731789,-0.8792238935369179,exploratory
+Utilities,rates,top_down_to_bottom_up,27,0.314795845097821,0.3222536751556084,-2.3691005373561724,exploratory

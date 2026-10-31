@@ -1,0 +1,11 @@
+{
+  "session_started_at": "2026-10-31T16:44:47.719164+00:00",
+  "updated_at": "2026-10-31T16:52:31.747026+00:00",
+  "http_requests": 1500,
+  "status_counts": {
+    "200": 1500
+  },
+  "mean_response_seconds_excluding_limiter": 0.5507406666667666,
+  "requests_last_60_seconds": 43,
+  "current_global_sec_requests_per_second": 6.0
+}

@@ -50,6 +50,16 @@ def synthetic_panel(periods=18, firms=12):
 
 
 class PointInTimeTests(unittest.TestCase):
+    def test_sec_and_official_ir_iso_timestamps_keep_exact_availability(self):
+        rows = pd.DataFrame([
+            document("sec", "2024-03-27T20:01:02.000Z", ticker="AAA"),
+            document("ir", "2024-03-28T04:00:00+00:00", ticker="AAA"),
+        ])
+        parsed = normalize_scores(rows).set_index("doc_id")
+        self.assertEqual(parsed.loc["sec", "published_at"], pd.Timestamp("2024-03-27T20:01:02Z"))
+        self.assertEqual(parsed.loc["ir", "published_at"], pd.Timestamp("2024-03-28T04:00:00Z"))
+        self.assertGreater(parsed.loc["ir", "published_at"], parsed.loc["sec", "published_at"])
+
     def test_permno_history_recovers_old_ticker_and_deduplicates_identical_rows(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)

@@ -1,0 +1,38 @@
+{
+  "purpose": "Freeze the analysis comparison settings before observing full-universe model outputs. This is a project execution record, not an external preregistration.",
+  "frozen_at": "2026-10-31T14:59:32.069711+00:00",
+  "reference_pilot_commit": "78fc0cff0c1644daa9855109bbdc590f26ddca50",
+  "universe_snapshot_sha256": "2ff1a60c1f6335492eb3422c124908c5a1dd73cc27325ebd1f00393798675bd2",
+  "target_securities": 503,
+  "target_distinct_issuers": 500,
+  "publication_years": [
+    2016,
+    2025
+  ],
+  "basis": "Fixed current constituents and current sectors; historical membership not reconstructed",
+  "comparison_models": [
+    "baseline",
+    "bottom_up",
+    "top_down",
+    "combined"
+  ],
+  "fixed_settings": {
+    "ridge_alpha": 10,
+    "ridge_objective": "Unnormalized residual sum of squares plus alpha times coefficient norm; effective shrinkage depends on training sample size",
+    "min_train_quarters": 12,
+    "min_train_rows": 100,
+    "horizon_months": 3,
+    "max_corporate_document_age_days": 120,
+    "transaction_cost_bps_per_traded_dollar": 10,
+    "portfolio": "Long top tercile 100 percent, short bottom tercile 100 percent",
+    "topics": [
+      "inflation",
+      "employment",
+      "growth",
+      "investment",
+      "rates"
+    ]
+  },
+  "permitted_repairs": "Correct source identity, filing extraction, dates, missingness and documented implementation bugs. Record material changes; do not choose hyperparameters from full-universe returns.",
+  "evaluation_note": "The full sample overlaps the pilot and expands its cross section. It is not an independent holdout replication."
+}

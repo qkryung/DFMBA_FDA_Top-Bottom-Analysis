@@ -1,0 +1,675 @@
+{
+  "exhibit_overrides": {
+    "0000874761-18-000040": {
+      "source_url": "https://www.sec.gov/Archives/edgar/data/874761/000087476118000040/q12018earningsreleaseexhib.htm",
+      "reason": "AES regular quarterly earnings release is labeled EX-1 rather than EX-99 in the official SEC filing index."
+    },
+    "0000874761-18-000056": {
+      "source_url": "https://www.sec.gov/Archives/edgar/data/874761/000087476118000056/q22018earningsreleaseexhib.htm",
+      "reason": "AES regular quarterly earnings release is labeled EX-1 rather than EX-99 in the official SEC filing index."
+    },
+    "0001558370-22-012028": {
+      "source_url": "https://www.sec.gov/Archives/edgar/data/842023/000155837022012028/tmb-20220804xex1.htm",
+      "reason": "Bio-Techne substantive quarterly earnings exhibit mislabeled EX-1 rather than EX-99.1 in SEC filing index; source content still verified before selection."
+    },
+    "0001558370-23-007739": {
+      "source_url": "https://www.sec.gov/Archives/edgar/data/842023/000155837023007739/tmb-20230503xex1.htm",
+      "reason": "Bio-Techne substantive quarterly earnings exhibit mislabeled EX-1 rather than EX-99.1 in SEC filing index; source content still verified before selection."
+    }
+  },
+  "document_allowlist": {
+    "https://www.sec.gov/Archives/edgar/data/874761/000087476123000040/q12023earningsreleaseexs.htm": "AES 2023Q1 earnings release titled Reports Positive Momentum in First Quarter; incidental Investor Day announcement does not change its earnings-release scope.",
+    "https://www.sec.gov/Archives/edgar/data/37996/000003799618000008/exhibit991pressreleaseforjan.pdf": "Ford2018-01-24 primary earnings release text layer has full Reports headline and CEO/results narrative under PyMuPDF, omitted by pypdf; actual archived bytes pinned. NoOCR."
+  },
+  "parser_fallback_sha256": [],
+  "issuer_repair_queue": [
+    "ABBV",
+    "ADI",
+    "AIG",
+    "ALGN",
+    "ALL",
+    "AMAT",
+    "AMD",
+    "AMP",
+    "APA",
+    "APP",
+    "APTV",
+    "ARE",
+    "BAX",
+    "BDX",
+    "BE",
+    "BG",
+    "BIIB",
+    "BKNG",
+    "BLK",
+    "BMY",
+    "BR",
+    "BRO",
+    "BXP",
+    "CAH",
+    "CASY",
+    "CB",
+    "CBOE",
+    "CF",
+    "CI",
+    "CMCSA",
+    "CMS",
+    "CNP",
+    "COHR",
+    "CRH",
+    "DHR",
+    "DLR",
+    "DLTR",
+    "DOV",
+    "DTE",
+    "DXCM",
+    "ECHO",
+    "ECL",
+    "EOG",
+    "EVRG",
+    "EXE",
+    "F",
+    "FERG",
+    "FIS",
+    "FISV",
+    "FOXA",
+    "FRT",
+    "FTV",
+    "GE",
+    "GEN",
+    "GM",
+    "GPN",
+    "HAL",
+    "HIG",
+    "HLT",
+    "HOOD",
+    "HPE",
+    "HST",
+    "HWM",
+    "ILMN",
+    "J",
+    "JBHT",
+    "LH",
+    "LHX",
+    "LIN",
+    "LITE",
+    "LNT",
+    "LULU",
+    "LUV",
+    "MAA",
+    "MCK",
+    "MET",
+    "MGM",
+    "MMM",
+    "MO",
+    "MOS",
+    "MPC",
+    "MRK",
+    "MRVL",
+    "MSCI",
+    "MTD",
+    "NCLH",
+    "NFLX",
+    "NOW",
+    "NRG",
+    "NSC",
+    "NWSA",
+    "NXPI",
+    "ORLY",
+    "PEG",
+    "PNC",
+    "PPG",
+    "PRU",
+    "REGN",
+    "RF",
+    "RJF",
+    "SNPS",
+    "SO",
+    "SPGI",
+    "SRE",
+    "STE",
+    "STT",
+    "SW",
+    "SYY",
+    "T",
+    "TDG",
+    "TECH",
+    "TEL",
+    "TKO",
+    "TPL",
+    "TRGP",
+    "TRMB",
+    "TROW",
+    "UBER",
+    "UNP",
+    "VEEV",
+    "VICI",
+    "VTR",
+    "VTRS",
+    "WAB",
+    "WELL",
+    "WFC",
+    "WST",
+    "WTW",
+    "WY",
+    "YUM",
+    "ZBH"
+  ],
+  "reparse_tickers": [
+    "ARE",
+    "BE"
+  ],
+  "known_scope_limitations": {
+    "IRM_2016": {
+      "reason": "Official 2016 releases are Earnings Commentary and Supplemental Information slide booklets; no separate press-release narrative identified. Excluded under the consistent corpus genre; later 2017 release cannot replace earlier availability.",
+      "documents": 4,
+      "source_url": "https://investors.ironmountain.com/news/news-details/2016/Iron-Mountain-Schedules-Third-Quarter-2016-Earnings-Release-and-Conference-Call/default.aspx"
+    }
+  },
+  "periodic_release_exhibits": {
+    "TROW": {
+      "forms": [
+        "10-Q"
+      ],
+      "valid_through_date": "2022-12-31",
+      "required_issuer_heading": "T\\.?\\s*Rowe\\s+Price\\s+(?:Group\\s+)?(?:Reports|Announces)|T\\.?\\s*Rowe\\s+Price.{0,100}NEWS RELEASE",
+      "reason": "Before2023 T.Rowe Price filed regular quarterly earnings releases as standalone10-Q EX99; annual earnings used8-K. Whole10-Q never scored.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1113169/000111316920000034/0001113169-20-000034-index.htm",
+        "https://investors.troweprice.com/node/16916/html"
+      ]
+    }
+  },
+  "pdf_pymupdf_overrides": {
+    "7e8f0b8412bd4791f39894cabeeb092aff438efb66c9c006096fc2b65b1c750b": {
+      "source_url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000008/exhibit991pressreleaseforjan.pdf",
+      "reason": "Ford2018-01-24 primary earnings release text layer has full Reports headline and CEO/results narrative under PyMuPDF, omitted by pypdf; actual archived bytes pinned. NoOCR."
+    }
+  },
+  "reparse_doc_ids": [
+    "sec_37996_0000037996-18-000008"
+  ],
+  "closed_unverified_filings": {
+    "0001193125-16-446781": {
+      "ticker": "AIG",
+      "cik": 5272,
+      "publication_date": "2016-02-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/5272/000119312516446781/d124219dex993.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is a legal/tax memorandum titled Utilization of AIG Tax Attributes, not an earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001521332-16-000077": {
+      "ticker": "APTV",
+      "cik": 1521332,
+      "publication_date": "2016-01-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1521332/000152133216000077/exhibit992pressreleasejanu.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is only quarterly cash dividend announcement; no earnings/guidance narrative.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-16-097770": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2016-02-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465916097770/a16-4753_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-16-117776": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2016-05-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465916117776/a16-10594_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-16-136656": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2016-08-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465916136656/a16-16126_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-16-154261": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2016-11-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465916154261/a16-20978_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-17-009688": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2017-02-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465917009688/a17-4556_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-17-029481": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2017-05-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465917029481/a17-12380_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-17-048949": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2017-08-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465917048949/a17-18831_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-17-065253": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2017-11-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465917065253/a17-24974_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-18-009851": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2018-02-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465918009851/a18-6196_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-18-029887": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2018-05-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465918029887/a18-12654_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-18-048811": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2018-08-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465918048811/a18-18113_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-18-065148": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2018-10-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465918065148/a18-39308_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-19-007986": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2019-02-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465919007986/a19-4709_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-19-026136": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2019-05-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465919026136/a19-9273_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-19-043009": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2019-07-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465919043009/a19-16337_1ex99d1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-19-057897": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2019-10-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465919057897/tm1921488d1_ex99-1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-20-019476": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2020-02-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465920019476/tm207769d1_ex99-1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-20-057641": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2020-05-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465920057641/tm2018815d1_ex99-1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-20-090923": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2020-08-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465920090923/tm2026749d1_ex99-1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-20-121424": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2020-11-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465920121424/tm2034735d1_ex99-1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-21-024963": {
+      "ticker": "CF",
+      "cik": 1324404,
+      "publication_date": "2021-02-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465921024963/tm217060d1_ex99-1.htm",
+      "reason": "Terminal bounded review: Separate CF Industries quarterly Financial Results slide deck,2016?2021: numbered slide layout and repeated Safe Harbor/Non-GAAP slides; same-quarter standalone earnings release is retained. Header/source manually verified; not a shareholder earnings letter.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-23-213587": {
+      "ticker": "COHR",
+      "cik": 820318,
+      "publication_date": "2023-08-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820318/000119312523213587/d515308dex993.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is Investor Presentation slide deck; recover actual written release/shareholder letter instead.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-23-271381": {
+      "ticker": "COHR",
+      "cik": 820318,
+      "publication_date": "2023-11-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820318/000119312523271381/d479671dex993.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is Investor Presentation slide deck; recover actual written release/shareholder letter instead.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-24-024186": {
+      "ticker": "COHR",
+      "cik": 820318,
+      "publication_date": "2024-02-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820318/000119312524024186/d726431dex993.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is Investor Presentation slide deck; recover actual written release/shareholder letter instead.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-24-131935": {
+      "ticker": "COHR",
+      "cik": 820318,
+      "publication_date": "2024-05-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820318/000119312524131935/d819783dex993.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is Investor Presentation slide deck; recover actual written release/shareholder letter instead.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001297996-16-000265": {
+      "ticker": "DLR",
+      "cik": 1297996,
+      "publication_date": "2016-10-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1297996/000129799616000265/a3q16earningsdecka01.htm",
+      "reason": "Terminal bounded review: Replacement EX99.1 is 3Q16 earnings conference slide deck (macro forecast table and presentation pages), not narrative release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001558370-19-003331": {
+      "ticker": "ECL",
+      "cik": 31462,
+      "publication_date": "2019-04-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31462/000155837019003331/ex-99d3.htm",
+      "reason": "Terminal bounded review: Replacement is another standalone historical revised segment/non-GAAP supplemental table, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001558370-20-008370": {
+      "ticker": "ECL",
+      "cik": 31462,
+      "publication_date": "2020-07-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31462/000155837020008370/ecl-20200724xex99d4.htm",
+      "reason": "Terminal bounded review: Replacement is another standalone historical revised segment/non-GAAP supplemental table, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001558370-21-003685": {
+      "ticker": "ECL",
+      "cik": 31462,
+      "publication_date": "2021-03-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31462/000155837021003685/ecl-20210330xex99d2.htm",
+      "reason": "Terminal bounded review: Replacement is another standalone historical revised segment/non-GAAP supplemental table, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001558370-22-004741": {
+      "ticker": "ECL",
+      "cik": 31462,
+      "publication_date": "2022-03-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31462/000155837022004741/ecl-20220330xex99d2.htm",
+      "reason": "Terminal bounded review: Replacement is another standalone historical revised segment/non-GAAP supplemental table, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001558370-23-005492": {
+      "ticker": "ECL",
+      "cik": 31462,
+      "publication_date": "2023-04-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31462/000155837023005492/ecl-20230405xex99d2.htm",
+      "reason": "Terminal bounded review: Replacement is another standalone historical revised segment/non-GAAP supplemental table, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001558370-24-003421": {
+      "ticker": "ECL",
+      "cik": 31462,
+      "publication_date": "2024-03-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31462/000155837024003421/ecl-20240315xex99d2.htm",
+      "reason": "Terminal bounded review: Replacement is another standalone historical revised segment/non-GAAP supplemental table, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0000037996-17-000090": {
+      "ticker": "F",
+      "cik": 37996,
+      "publication_date": "2017-10-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/37996/000003799617000090/q32017earningsrelease.pdf",
+      "reason": "Terminal bounded review: Replacement PDF extraction still has only web links/bullets followed by financial tables; no release narrative (no CEO/guidance/body). Both pypdf and PyMuPDF page1 have missing glyphs. Recover verified original text/IR version or mark narrative unavailable.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-21-177800": {
+      "ticker": "FERG",
+      "cik": 1832433,
+      "publication_date": "2021-06-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1832433/000119312521177800/d140036dex991.htm",
+      "reason": "Terminal bounded review: Ferguson Annual General Meeting voting/remuneration update statement, not financial earnings results.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001832433-21-000053": {
+      "ticker": "FERG",
+      "cik": 1832433,
+      "publication_date": "2021-11-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1832433/000183243321000053/exhibit991-noticeofresults.htm",
+      "reason": "Terminal bounded review: Ferguson Notice of results: future release date and contact information only, no financial results or guidance.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-16-101503": {
+      "ticker": "HPE",
+      "cik": 1645590,
+      "publication_date": "2016-03-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1645590/000110465916101503/a16-5570_1ex99d2.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 releases adjusted historical fiscal2015 figures as if standalone after HP separation, not current earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-16-703457": {
+      "ticker": "HPE",
+      "cik": 1645590,
+      "publication_date": "2016-09-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1645590/000119312516703457/d251902dex994.htm",
+      "reason": "Terminal bounded review: Replacement EX99.4 is lengthy Micro Focus merger/return-of-value transaction announcement, not HPE quarterly earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-16-430046": {
+      "ticker": "HWM",
+      "cik": 4281,
+      "publication_date": "2016-01-14",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4281/000119312516430046/d115264dex992.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is earnings conference presentation slides, not narrative release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-16-541774": {
+      "ticker": "HWM",
+      "cik": 4281,
+      "publication_date": "2016-04-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4281/000119312516541774/d180649dex992.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is earnings conference presentation slides, not narrative release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001110803-16-000165": {
+      "ticker": "ILMN",
+      "cik": 1110803,
+      "publication_date": "2016-01-14",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110803/000111080316000165/fy16guidancenon-gaaprecon.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2/99.3 is standalone preliminary-results or guidance reconciliation financial table with safe-harbor boilerplate; seek written release rather than scoring table text.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001110803-17-000003": {
+      "ticker": "ILMN",
+      "cik": 1110803,
+      "publication_date": "2017-01-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110803/000111080317000003/fy17guidance.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2/99.3 is standalone preliminary-results or guidance reconciliation financial table with safe-harbor boilerplate; seek written release rather than scoring table text.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001110803-18-000003": {
+      "ticker": "ILMN",
+      "cik": 1110803,
+      "publication_date": "2018-01-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110803/000111080318000003/fy18guidance.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2/99.3 is standalone preliminary-results or guidance reconciliation financial table with safe-harbor boilerplate; seek written release rather than scoring table text.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001110803-19-000002": {
+      "ticker": "ILMN",
+      "cik": 1110803,
+      "publication_date": "2019-01-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110803/000111080319000002/fy19guidance.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2/99.3 is standalone preliminary-results or guidance reconciliation financial table with safe-harbor boilerplate; seek written release rather than scoring table text.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001110803-20-000009": {
+      "ticker": "ILMN",
+      "cik": 1110803,
+      "publication_date": "2020-01-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110803/000111080320000009/fy20guidance.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2/99.3 is standalone preliminary-results or guidance reconciliation financial table with safe-harbor boilerplate; seek written release rather than scoring table text.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001110803-21-000003": {
+      "ticker": "ILMN",
+      "cik": 1110803,
+      "publication_date": "2021-01-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110803/000111080321000003/preliminarynon-gaap4q20.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2/99.3 is standalone preliminary-results or guidance reconciliation financial table with safe-harbor boilerplate; seek written release rather than scoring table text.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001110803-22-000003": {
+      "ticker": "ILMN",
+      "cik": 1110803,
+      "publication_date": "2022-01-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110803/000111080322000003/ex993reconofnon-gaapguidan.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2/99.3 is standalone preliminary-results or guidance reconciliation financial table with safe-harbor boilerplate; seek written release rather than scoring table text.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001110803-23-000003": {
+      "ticker": "ILMN",
+      "cik": 1110803,
+      "publication_date": "2023-01-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110803/000111080323000003/ex993reconofnon-gaapguidan.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2/99.3 is standalone preliminary-results or guidance reconciliation financial table with safe-harbor boilerplate; seek written release rather than scoring table text.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-23-281242": {
+      "ticker": "J",
+      "cik": 52988,
+      "publication_date": "2023-11-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/52988/000119312523281242/d855464dex992.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is Amentum transaction slide presentation; no current earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-16-671089": {
+      "ticker": "MET",
+      "cik": 1099219,
+      "publication_date": "2016-08-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1099219/000119312516671089/d235576dex992.htm",
+      "reason": "Terminal bounded review: Replacement is standalone historical financial statements/non-GAAP explanation supplement, not narrative earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-17-028367": {
+      "ticker": "MET",
+      "cik": 1099219,
+      "publication_date": "2017-02-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1099219/000119312517028367/d308320dex992.htm",
+      "reason": "Terminal bounded review: Replacement is standalone historical financial statements/non-GAAP explanation supplement, not narrative earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0000764180-20-000009": {
+      "ticker": "MO",
+      "cik": 764180,
+      "publication_date": "2020-01-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/764180/000076418020000009/exhibit993auditopinion.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is independent auditor report, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001243786-18-000084": {
+      "ticker": "MOS",
+      "cik": 1285785,
+      "publication_date": "2018-05-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1285785/000124378618000084/investorinformationmay20.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is investor presentation slide deck, not narrative earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001243786-18-000129": {
+      "ticker": "MOS",
+      "cik": 1285785,
+      "publication_date": "2018-08-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1285785/000124378618000129/exhibit993investorinform.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is investor presentation slide deck, not narrative earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001510295-21-000014": {
+      "ticker": "MPC",
+      "cik": 1510295,
+      "publication_date": "2021-01-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1510295/000151029521000014/ex993speedway-mda.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is historical Speedway MD&A after sale, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0000713676-22-000068": {
+      "ticker": "PNC",
+      "cik": 713676,
+      "publication_date": "2022-07-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/713676/000071367622000068/a2q22earningsslides_8-k.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 earnings slides, only tables/bullets and non-GAAP footnotes extracted; not narrative earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0000079879-16-000109": {
+      "ticker": "PPG",
+      "cik": 79879,
+      "publication_date": "2016-09-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/79879/000007987916000109/exhibit992segmentreporting.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 describes historical segment reclassification, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-18-001100": {
+      "ticker": "REGN",
+      "cik": 872589,
+      "publication_date": "2018-01-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/872589/000110465918001100/a18-2403_1ex99d2.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is another 2018 Financial Overview conference slide deck.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0000093751-20-000682": {
+      "ticker": "STT",
+      "cik": 93751,
+      "publication_date": "2020-02-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/93751/000009375120000682/stt4q19earningspresentat.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is updated 4Q2019 Financial Highlights presentation, not narrative earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0000732717-19-000048": {
+      "ticker": "T",
+      "cik": 732717,
+      "publication_date": "2019-10-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/732717/000073271719000048/ex99_1.htm",
+      "reason": "Terminal bounded review: Replacement remains standalone selected financial statements and operating tables, not narrative earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001104659-18-064864": {
+      "ticker": "TEL",
+      "cik": 1385157,
+      "publication_date": "2018-10-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1385157/000110465918064864/a18-37220_2ex99d3.htm",
+      "reason": "Terminal bounded review: Replacement EX99.3 is another standalone historical reconciliation table; normal same-date earnings release exists in separate filing.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001437749-16-040460": {
+      "ticker": "TPL",
+      "cik": 97517,
+      "publication_date": "2016-10-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/97517/000143774916040460/ex99-1.htm",
+      "reason": "Terminal bounded review: Legacy source Report of Operations is standalone numeric financial table plus one deferral footnote and safe-harbor. No substantive release narrative to score; source exists but text scope is unavailable. This is a genre finding, not a short-word-count cutoff.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001552781-20-000412": {
+      "ticker": "UBER",
+      "cik": 1543151,
+      "publication_date": "2020-07-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278120000412/e20423_ex99-2.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is Postmates acquisition press release and conference-call scheduling only; unlike transcript, no current-quarter financial update appears in this release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-22-107429": {
+      "ticker": "VICI",
+      "cik": 1705696,
+      "publication_date": "2022-04-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1705696/000119312522107429/d271785dex994.htm",
+      "reason": "Terminal bounded review: Replacement EX99.4 is historical management discussion and financial statements supplement, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001193125-20-155866": {
+      "ticker": "VTRS",
+      "cik": 1792044,
+      "publication_date": "2020-05-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1792044/000119312520155866/d886292dex992.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is historical Upjohn MD&A, not current Viatris earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001140361-25-001006": {
+      "ticker": "WAB",
+      "cik": 943452,
+      "publication_date": "2025-01-14",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/943452/000114036125001006/ef20041523_ex99-2.htm",
+      "reason": "Terminal bounded review: Replacement EX99.2 is acquisition presentation slide deck, not current earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    },
+    "0001140536-16-000045": {
+      "ticker": "WTW",
+      "cik": 1140536,
+      "publication_date": "2016-03-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1140536/000114053616000045/exhibit994-8k.htm",
+      "reason": "Terminal bounded review: Replacement EX99.4 is independent auditor report and historical Towers Watson financial statements, not earnings release.; no verified in-scope alternative retained. This is a source-availability limit, not proof that no other source exists."
+    }
+  },
+  "official_ir_reviewed_accessions": {
+    "GE": [
+      "0000040545-17-000020"
+    ]
+  }
+}

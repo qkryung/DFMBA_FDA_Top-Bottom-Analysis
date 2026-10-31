@@ -3,23 +3,61 @@
   "model": "ProsusAI/finbert",
   "model_revision": "0bc2ac10dda6929bcb1f77ccc43c7ec5c424f031",
   "model_url": "https://huggingface.co/ProsusAI/finbert",
-  "created_at": "2026-10-31T14:25:19.293872+00:00",
-  "documents": 49,
-  "companies": 33,
-  "sentences": 1173,
+  "created_at": "2026-10-31T17:11:46.980354+00:00",
+  "documents": 513,
+  "companies": 497,
+  "sentences": 12264,
   "truncated_sentences": 0,
-  "lm_finbert_matched_spearman": 0.4431235492143226,
+  "lm_finbert_matched_spearman": 0.5075111130822555,
   "by_source": {
     "FOMC_minutes": {
       "documents": 16,
       "matched_spearman": 0.34705882352941164
     },
+    "SEC_10KQ_EX99_reviewed_consolidated_parent_earnings_release": {
+      "documents": 1,
+      "matched_spearman": null
+    },
     "SEC_8K_Item2.02_EX99_earnings_release": {
-      "documents": 33,
-      "matched_spearman": 0.27239304812834236
+      "documents": 494,
+      "matched_spearman": 0.49787320660474244
+    },
+    "SEC_earnings_release_or_update_PDF": {
+      "documents": 1,
+      "matched_spearman": null
+    },
+    "official_IR_earnings_release_matched_to_SEC_filing": {
+      "documents": 1,
+      "matched_spearman": null
     }
   },
-  "sampling": "Latest collected release per company, FOMC meetings 2024\u20132025; up to24 evenly spaced eligible sentences per document",
+  "by_corpus": {
+    "FOMC": {
+      "documents": 16,
+      "matched_spearman": 0.34705882352941164
+    },
+    "corporate": {
+      "documents": 497,
+      "matched_spearman": 0.49450571237758606
+    }
+  },
+  "sampling": "Latest collected release per company, FOMC meetings 2024-2025; up to 24 evenly spaced eligible sentences per document",
   "limitation": "Agreement between methods only. No human gold labels; not classification accuracy or return predictability. FinBERT neutral is not uncertainty.",
-  "full_corpus_finbert_executed": false
+  "full_corpus_finbert_executed": false,
+  "sampling_settings": {
+    "version": "complete_sentences_v3_settingshashed",
+    "max_sentences": 24,
+    "min_sentence_words": 5,
+    "max_sentence_words": 120,
+    "max_wordpieces": 256,
+    "add_special_tokens": true,
+    "sentence_pattern": "(?<=[.!?])\\s+(?=[A-Z(\\\"'])|\\n+",
+    "boilerplate_pattern": "forward[- ]looking statements?|safe harbor|actual results.{0,80}differ|risks and uncertainties|no obligation to update|undue reliance",
+    "word_pattern": "\\b[A-Za-z]+(?:'[A-Za-z]+)?\\b",
+    "sentence_selection": "unique numpy linspace integer indices across all eligible sentences",
+    "transformers_version": "4.57.6",
+    "tokenizers_version": "0.22.2",
+    "lm_lexicon_sha256": "5da798b2416dc3aafbc90e6fbdffc1366b821b26586b02c6595e3e76570595a8"
+  },
+  "sampling_settings_sha256": "7cbaa344c9fe4f48e8c8ec6e2abe20f6e79facdef9ca1199ac3350507e3018dd"
 }

@@ -1,0 +1,1195 @@
+{
+  "comparison": "Direct lxml versus preserved extraction input on all existing documents; exact text for most, every LM scoring field checked for all string differences. Current BeautifulSoup-lxml comparator also checked for every legacy difference.",
+  "documents_tested": 2341,
+  "exact_string_matches": 2197,
+  "issuers_tested": 70,
+  "sectors_tested": [
+    "Communication Services",
+    "Consumer Discretionary",
+    "Consumer Staples",
+    "Energy",
+    "Financials",
+    "Health Care",
+    "Industrials",
+    "Information Technology",
+    "Materials",
+    "Real Estate",
+    "Utilities"
+  ],
+  "publication_years_tested": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "fomc_parser_unchanged": true,
+  "elapsed_seconds": 105.18700000003446,
+  "nonidentical_string_documents": [
+    {
+      "doc_id": "sec_320193_0001193125-16-438421",
+      "ticker": "AAPL",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000119312516438421/d22806dex991.htm",
+      "content_sha256": "de8aecc73bf96bf0318ff2bf5b3876f8f7875566c5379399a30c88d0b520f0dd",
+      "original_length": 10806,
+      "candidate_length": 10806
+    },
+    {
+      "doc_id": "sec_320193_0001193125-16-556520",
+      "ticker": "AAPL",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000119312516556520/d325078dex991.htm",
+      "content_sha256": "6fbcf168d10c853b3dbf0f459129fb1cb383c18df3b1046c2d399b073ccd051a",
+      "original_length": 11935,
+      "candidate_length": 11935
+    },
+    {
+      "doc_id": "sec_2969_0001193125-16-442800",
+      "ticker": "APD",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000119312516442800/d57997dex991.htm",
+      "content_sha256": "0a3cadfac53b2c5d3eae005ff992c611a72f3d32ca58cbc54018d93e48feaf25",
+      "original_length": 31123,
+      "candidate_length": 31123
+    },
+    {
+      "doc_id": "sec_2969_0001193125-16-561104",
+      "ticker": "APD",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000119312516561104/d166181dex991.htm",
+      "content_sha256": "6644ec65b05913f892fe6dc9c9bf4e809c1972fd20c68602700c81f549502f56",
+      "original_length": 37839,
+      "candidate_length": 37839
+    },
+    {
+      "doc_id": "sec_2969_0001193125-16-661098",
+      "ticker": "APD",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000119312516661098/d193874dex991.htm",
+      "content_sha256": "25dbdcd619af280580bc9d0c3044b8132882b95217612e17ac942584ee6771a9",
+      "original_length": 39356,
+      "candidate_length": 39356
+    },
+    {
+      "doc_id": "sec_2969_0001193125-16-748785",
+      "ticker": "APD",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000119312516748785/d261517dex991.htm",
+      "content_sha256": "44a64b5bc28c7ac889dc6af31db5eaa794e7f4da55090174b4dc639ca9b2c8e1",
+      "original_length": 48105,
+      "candidate_length": 48105
+    },
+    {
+      "doc_id": "sec_2969_0001193125-25-006210",
+      "ticker": "APD",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000119312525006210/d899427dex991.htm",
+      "content_sha256": "e56720ca8cd2ac56f9706874b76fb1f0185b905e3e78252b650df122e0e3ec89",
+      "original_length": 15879,
+      "candidate_length": 15879
+    },
+    {
+      "doc_id": "sec_70858_0000070858-16-000191",
+      "ticker": "BAC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085816000191/bac6302016exibit991.htm",
+      "content_sha256": "535cbccbd083b4d572de9658b9ecee9626f3f0691078237c101c418b6a5832aa",
+      "original_length": 64151,
+      "candidate_length": 64151
+    },
+    {
+      "doc_id": "sec_70858_0000070858-16-000216",
+      "ticker": "BAC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085816000216/bac9302016ex991.htm",
+      "content_sha256": "89246a4ed0722ee383889af318729d636af198d22e48e425db6b3ab53db366cb",
+      "original_length": 63454,
+      "candidate_length": 63454
+    },
+    {
+      "doc_id": "sec_70858_0000070858-17-000004",
+      "ticker": "BAC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085817000004/bac12312016ex991.htm",
+      "content_sha256": "9e097e0115c214a2639168e8c3d55bd919b41f8cf883f6b812f9eedd5efc82f4",
+      "original_length": 62822,
+      "candidate_length": 62822
+    },
+    {
+      "doc_id": "sec_70858_0000070858-17-000020",
+      "ticker": "BAC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085817000020/bac3312017ex991.htm",
+      "content_sha256": "44a64b200062821b4428c76ac1422bc3a578d863029883c40b4ace2d9b6c091c",
+      "original_length": 57581,
+      "candidate_length": 57581
+    },
+    {
+      "doc_id": "sec_70858_0000070858-17-000033",
+      "ticker": "BAC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085817000033/bac6302017ex991.htm",
+      "content_sha256": "1e5a9f41a5a32d02c47aaa71d35b1ecc8a51894782679c657a63679976abb0b0",
+      "original_length": 62571,
+      "candidate_length": 62571
+    },
+    {
+      "doc_id": "sec_70858_0000070858-17-000042",
+      "ticker": "BAC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085817000042/bac9302017ex991.htm",
+      "content_sha256": "0527fa1c8258e1eace8f7ccd651a173500d9924b3e213917409be65b3551c82c",
+      "original_length": 62744,
+      "candidate_length": 62744
+    },
+    {
+      "doc_id": "sec_70858_0000070858-18-000002",
+      "ticker": "BAC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085818000002/bac12312017ex991.htm",
+      "content_sha256": "598dfedb8c7be1296aad9d11d3118dee8200e5667da742704029a1938b37fc5f",
+      "original_length": 64454,
+      "candidate_length": 64454
+    },
+    {
+      "doc_id": "sec_70858_0000070858-18-000013",
+      "ticker": "BAC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085818000013/bac3312018ex991.htm",
+      "content_sha256": "bc9a73e50188a3df29c28f562955efa009f961d56d6ca6c5c7da988986d97518",
+      "original_length": 56845,
+      "candidate_length": 56845
+    },
+    {
+      "doc_id": "sec_1326160_0001193125-16-467698",
+      "ticker": "DUK",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326160/000119312516467698/d143218dex991.htm",
+      "content_sha256": "caf608e7a8f0200bc6e63ebc4b8593e650f13c8116487c16719cfb6bf1a7b31c",
+      "original_length": 84428,
+      "candidate_length": 84428
+    },
+    {
+      "doc_id": "sec_1326160_0001193125-16-573694",
+      "ticker": "DUK",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326160/000119312516573694/d155624dex991.htm",
+      "content_sha256": "da03bd4e98ae1a5d4df9d1f1f8ae5d34f766478c0249a37476bed1b9e433a123",
+      "original_length": 53586,
+      "candidate_length": 53586
+    },
+    {
+      "doc_id": "sec_886982_0001193125-16-433035",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312516433035/d84817dex991.htm",
+      "content_sha256": "1e3acc2d39e9cd997b76196dd8a08cc2bfe32b65a3143277daea4257eccf4623",
+      "original_length": 34261,
+      "candidate_length": 34261
+    },
+    {
+      "doc_id": "sec_886982_0001193125-16-545608",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312516545608/d169705dex991.htm",
+      "content_sha256": "398c00f264380df6bf946174f3312ff1cc3631040c4f8e0ee149bb50a000740f",
+      "original_length": 23623,
+      "candidate_length": 23623
+    },
+    {
+      "doc_id": "sec_886982_0001193125-16-650708",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312516650708/d215410dex991.htm",
+      "content_sha256": "6afbbaf64cf1793f01e4ad12c239b794cbcf41593a9012e8e587ecfb78158d0a",
+      "original_length": 25033,
+      "candidate_length": 25033
+    },
+    {
+      "doc_id": "sec_886982_0001193125-16-740207",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312516740207/d436979dex991.htm",
+      "content_sha256": "5344a55280a2167a78e538e54ed84caba9cb08d532a16b2f77bdea7be3bf65ab",
+      "original_length": 26357,
+      "candidate_length": 26357
+    },
+    {
+      "doc_id": "sec_886982_0001193125-17-011736",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312517011736/d323472dex991.htm",
+      "content_sha256": "458f3ba33c13e343d99e1fbac69d9b2349a6e360ba3c1c4231387674149ea0b4",
+      "original_length": 30935,
+      "candidate_length": 30935
+    },
+    {
+      "doc_id": "sec_886982_0001193125-17-126730",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312517126730/d369551dex991.htm",
+      "content_sha256": "d928f85025cd9de78b949606694c719ec03b0e2737a867835d5d8929cb221f99",
+      "original_length": 23339,
+      "candidate_length": 23339
+    },
+    {
+      "doc_id": "sec_886982_0001193125-17-229806",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312517229806/d326982dex991.htm",
+      "content_sha256": "f3f7c458a0d961c3459c8bb6e3109983ef2b2066bc82c65750f2b1d62ca02c6d",
+      "original_length": 25236,
+      "candidate_length": 25236
+    },
+    {
+      "doc_id": "sec_886982_0001193125-17-311348",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312517311348/d475899dex991.htm",
+      "content_sha256": "dfd6c33e3cf39626f138edc4ff31b1c6f42046787a40a725e5eab64ca292b555",
+      "original_length": 25777,
+      "candidate_length": 25777
+    },
+    {
+      "doc_id": "sec_886982_0001193125-18-011730",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312518011730/d480179dex991.htm",
+      "content_sha256": "5e71c72bbbfa4c7bcc3b1b9197b8ca37027a0f1fa4c9ae44ebdf033a06fe6b80",
+      "original_length": 37652,
+      "candidate_length": 37652
+    },
+    {
+      "doc_id": "sec_886982_0001193125-18-119196",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312518119196/d551947dex991.htm",
+      "content_sha256": "25887c7b80b287968c7dba3337f9b7c9d15a5b759cc65524fcd08e912fdffc93",
+      "original_length": 28456,
+      "candidate_length": 28456
+    },
+    {
+      "doc_id": "sec_886982_0001193125-18-219187",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312518219187/d353036dex991.htm",
+      "content_sha256": "c61a545ec63ffa0ffdc2ec9f92dba06391ff38142b1f0b8c1a82de2d19565c63",
+      "original_length": 29168,
+      "candidate_length": 29168
+    },
+    {
+      "doc_id": "sec_886982_0001193125-18-299741",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312518299741/d612461dex991.htm",
+      "content_sha256": "8788f04d76d71fb8a6ecfe39fbfe94a57cb457de273a8b6bdf671a0444ddd5ce",
+      "original_length": 29983,
+      "candidate_length": 29983
+    },
+    {
+      "doc_id": "sec_886982_0001193125-19-010282",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312519010282/d683103dex991.htm",
+      "content_sha256": "7581643268cbd2c6c2000c094bf92dd21a2abdf6bacbacdf362eddbc57f77b79",
+      "original_length": 41124,
+      "candidate_length": 41124
+    },
+    {
+      "doc_id": "sec_886982_0001193125-19-105761",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312519105761/d730614dex991.htm",
+      "content_sha256": "a891c988747a1d4577d495d2f338f78c0498922f44650ab1ddd919593e4be289",
+      "original_length": 24170,
+      "candidate_length": 24170
+    },
+    {
+      "doc_id": "sec_886982_0001193125-19-194371",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312519194371/d75318dex991.htm",
+      "content_sha256": "65be0f51fa2fd74a5050c237577681517d88ca3cfbcaf0027c897fa0dc6fad11",
+      "original_length": 27134,
+      "candidate_length": 27134
+    },
+    {
+      "doc_id": "sec_886982_0001193125-19-267273",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312519267273/d801918dex991.htm",
+      "content_sha256": "1eee664ce267f005a2123f723f5158802e01b9f7b16078a5cd2c20fcae867aca",
+      "original_length": 27164,
+      "candidate_length": 27164
+    },
+    {
+      "doc_id": "sec_886982_0001193125-20-007648",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312520007648/d826637dex991.htm",
+      "content_sha256": "ae7b36bf658248d030f2d8d295335d39783626fcf22bb84440e04d3f53136afd",
+      "original_length": 35826,
+      "candidate_length": 35826
+    },
+    {
+      "doc_id": "sec_886982_0001193125-20-107629",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312520107629/d910376dex991.htm",
+      "content_sha256": "3bc7ce568efdde4caa9358839be57dbe70c16ba1255c72e751918074a9724bf0",
+      "original_length": 28050,
+      "candidate_length": 28050
+    },
+    {
+      "doc_id": "sec_886982_0001193125-20-192968",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312520192968/d53148dex991.htm",
+      "content_sha256": "4073a9262dc955c3ff16a67613ea5c65606dc5dbca1b822b71be96cbaec63030",
+      "original_length": 31937,
+      "candidate_length": 31937
+    },
+    {
+      "doc_id": "sec_886982_0001193125-20-268983",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312520268983/d38229dex991.htm",
+      "content_sha256": "f81f5a6f1498599ff6e5318ef92231cfc4e21ae37b8aafed059a80aed5bb09fc",
+      "original_length": 29791,
+      "candidate_length": 29791
+    },
+    {
+      "doc_id": "sec_886982_0001193125-21-010808",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312521010808/d40648dex991.htm",
+      "content_sha256": "39c55ea6678b2dcbaf7bccb982ea3eb789928ab9091a7518cca6882273fe0be5",
+      "original_length": 38530,
+      "candidate_length": 38530
+    },
+    {
+      "doc_id": "sec_886982_0001193125-21-115509",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312521115509/d150080dex991.htm",
+      "content_sha256": "5107206614b134a7fca3816284cae861d0bc8271623cf63ece2d23583d922ef2",
+      "original_length": 25620,
+      "candidate_length": 25620
+    },
+    {
+      "doc_id": "sec_886982_0001193125-21-213604",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312521213604/d188544dex991.htm",
+      "content_sha256": "8cc22ca778cf24ae193a30ab2bb5d895efca6b1e96506e59d1b1fffe1a4472fc",
+      "original_length": 29534,
+      "candidate_length": 29534
+    },
+    {
+      "doc_id": "sec_886982_0001193125-21-299511",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312521299511/d219346dex991.htm",
+      "content_sha256": "14185c1b473e97efd4ddc60a9f52e446462fbb838efff30a07fd9f6248390f5d",
+      "original_length": 30522,
+      "candidate_length": 30522
+    },
+    {
+      "doc_id": "sec_886982_0001193125-22-010560",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312522010560/d284129dex991.htm",
+      "content_sha256": "10ecac88effda0cf1812bfce5acdb9868bed1557aa918e535e98f6fd84825b48",
+      "original_length": 36188,
+      "candidate_length": 36188
+    },
+    {
+      "doc_id": "sec_886982_0001193125-22-104958",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312522104958/d340081dex991.htm",
+      "content_sha256": "9300aa4d2a613b7e5286264e191ba03e198148b3fccb42a1e88c2ea36caccadd",
+      "original_length": 25553,
+      "candidate_length": 25553
+    },
+    {
+      "doc_id": "sec_886982_0001193125-22-195706",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312522195706/d322190dex991.htm",
+      "content_sha256": "9b5cb8ca9f999b85db9f1e2e533b06371686524e3cdf3fbdc97bbbc5afc8bff3",
+      "original_length": 29041,
+      "candidate_length": 29041
+    },
+    {
+      "doc_id": "sec_886982_0001193125-22-264131",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312522264131/d377385dex991.htm",
+      "content_sha256": "2e49793ea8ea14a267c2ad7489b164537f01eab09227f918850efae6ff3ef1e5",
+      "original_length": 28614,
+      "candidate_length": 28614
+    },
+    {
+      "doc_id": "sec_886982_0001193125-23-008906",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312523008906/d387409dex991.htm",
+      "content_sha256": "7299fe6752349531786b5968477162209de00c30053d8cc123bc1adfdb37a101",
+      "original_length": 33348,
+      "candidate_length": 33348
+    },
+    {
+      "doc_id": "sec_886982_0001193125-23-104264",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312523104264/d825833dex991.htm",
+      "content_sha256": "122b7e9bd0c3da865e25153eefbdba20ceaa2bb98dbd67a0c29e1cf1800e3c2e",
+      "original_length": 24453,
+      "candidate_length": 24453
+    },
+    {
+      "doc_id": "sec_886982_0001193125-23-189212",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312523189212/d523443dex991.htm",
+      "content_sha256": "9610c59c920e934babda7570551accadce05d891a6fe3183f77e967661cabaee",
+      "original_length": 26938,
+      "candidate_length": 26938
+    },
+    {
+      "doc_id": "sec_886982_0001193125-23-257291",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312523257291/d493068dex991.htm",
+      "content_sha256": "133e327bf98471572f684bcb085261430dc64177a19caac24ec493e4a9fff38e",
+      "original_length": 27475,
+      "candidate_length": 27475
+    },
+    {
+      "doc_id": "sec_886982_0001193125-24-008077",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312524008077/d615098dex991.htm",
+      "content_sha256": "d5029b4f36c71e164a49f4997efff04f0ab9f8275e0f69e6822c71b0b0ab99d4",
+      "original_length": 34328,
+      "candidate_length": 34328
+    },
+    {
+      "doc_id": "sec_886982_0001193125-24-095511",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312524095511/d817877dex991.htm",
+      "content_sha256": "b9a772c3dd0183bc92f18814c26602061b55640265c3b6dc6ed1d300a9b4dade",
+      "original_length": 23378,
+      "candidate_length": 23378
+    },
+    {
+      "doc_id": "sec_886982_0001193125-24-178830",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312524178830/d839513dex991.htm",
+      "content_sha256": "174f06631573883b42e299b164cb436652561ac5bfcbbca50489e5ea480d7621",
+      "original_length": 26432,
+      "candidate_length": 26432
+    },
+    {
+      "doc_id": "sec_886982_0001193125-24-237206",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312524237206/d824176dex991.htm",
+      "content_sha256": "a25b94954726023f3b2cf0a19f848565fa88f0c5d2efc6129b13e59bd80cf1ff",
+      "original_length": 26676,
+      "candidate_length": 26676
+    },
+    {
+      "doc_id": "sec_886982_0001193125-25-006554",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312525006554/d903229dex991.htm",
+      "content_sha256": "f07610129c2aaac5c8d9cd61168290d807782e8d894d700697bbaa9ef2dfc9ae",
+      "original_length": 35143,
+      "candidate_length": 35143
+    },
+    {
+      "doc_id": "sec_886982_0001193125-25-079625",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312525079625/d750054dex991.htm",
+      "content_sha256": "2306516aae1ab99423b5393e3b6e514521c080949865278cd26f14aaf8af7831",
+      "original_length": 23612,
+      "candidate_length": 23612
+    },
+    {
+      "doc_id": "sec_886982_0001193125-25-159560",
+      "ticker": "GS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312525159560/d41877dex991.htm",
+      "content_sha256": "2f413d2a25f77ca250e8a032d8b571a1ee3d12465b5af52b526c9c0735fc5d95",
+      "original_length": 23761,
+      "candidate_length": 23761
+    },
+    {
+      "doc_id": "sec_51143_0001104659-16-133009",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465916133009/a16-14976_1ex99d1.htm",
+      "content_sha256": "7f8ca54ae5ed2ba688290a1bd8d30740d936db26855ebc23e3fee5898b944c1f",
+      "original_length": 23905,
+      "candidate_length": 23905
+    },
+    {
+      "doc_id": "sec_51143_0001104659-16-150502",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465916150502/a16-19797_1ex99d1.htm",
+      "content_sha256": "98fd9b2f5b8cb4f42c2a2761507ebc1738d568bed615d3a78e4d9f70996f9743",
+      "original_length": 24233,
+      "candidate_length": 24233
+    },
+    {
+      "doc_id": "sec_51143_0001104659-17-003081",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465917003081/a17-2670_1ex99d1.htm",
+      "content_sha256": "85764413a2d545abb52b23139211b8741946120d42f268766634f26ecebe8a1a",
+      "original_length": 25035,
+      "candidate_length": 25035
+    },
+    {
+      "doc_id": "sec_51143_0001104659-17-024159",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465917024159/a17-11403_1ex99d1.htm",
+      "content_sha256": "a7e85fdabd34d1c617651f80a18cd87ccc2d8c117ab418cf117719c630af348f",
+      "original_length": 18488,
+      "candidate_length": 18488
+    },
+    {
+      "doc_id": "sec_51143_0001104659-17-045578",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465917045578/a17-17973_1ex99d1.htm",
+      "content_sha256": "0d9af58ad13c9ea31bb95d8079276a80dea1e1c50ee92f9edf72e8f2dd7a6422",
+      "original_length": 24106,
+      "candidate_length": 24106
+    },
+    {
+      "doc_id": "sec_51143_0001104659-17-062532",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465917062532/a17-23977_1ex99d1.htm",
+      "content_sha256": "105edde5e7bd172ed496d379131cdf5670423076a4b9fbfb757878604cf1c8a2",
+      "original_length": 24219,
+      "candidate_length": 24219
+    },
+    {
+      "doc_id": "sec_51143_0001104659-18-002862",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465918002862/a18-3308_1ex99d1.htm",
+      "content_sha256": "729d9b7b4a7bacbfdc3e573f62a862dfa4da8698286a44c06e079e32dc818043",
+      "original_length": 25001,
+      "candidate_length": 25001
+    },
+    {
+      "doc_id": "sec_51143_0001104659-18-024512",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465918024512/a18-10009_1ex99d1.htm",
+      "content_sha256": "3f007a258d1c43865b793b700c4f5f45ea938be4a2aa461d3f5a1308568b70ff",
+      "original_length": 20513,
+      "candidate_length": 20513
+    },
+    {
+      "doc_id": "sec_51143_0001104659-18-045757",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465918045757/a18-17133_1ex99d1.htm",
+      "content_sha256": "c6d719e7d4cad90cfae5f6a4512d85f78d1ca244e5132f339299204f9042870b",
+      "original_length": 24727,
+      "candidate_length": 24727
+    },
+    {
+      "doc_id": "sec_51143_0001104659-18-062295",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465918062295/a18-36505_1ex99d1.htm",
+      "content_sha256": "a5321056e3562a6412ab999c54c04194664a61bbb452d1d9f135aafb1cab64c5",
+      "original_length": 24283,
+      "candidate_length": 24283
+    },
+    {
+      "doc_id": "sec_51143_0001104659-19-002755",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465919002755/a19-2327_1ex99d1.htm",
+      "content_sha256": "7088ea342bab93a54b49c15b1f7b0d82e6d4e917319b0d7f82fbf6c6e375604e",
+      "original_length": 26727,
+      "candidate_length": 26727
+    },
+    {
+      "doc_id": "sec_51143_0001104659-19-021671",
+      "ticker": "IBM",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465919021671/a19-7798_1ex99d1.htm",
+      "content_sha256": "d95c02b80fe262408274b27cf21f64dc0a15ead1ed3aa4fa612f80d96f2aa047",
+      "original_length": 18420,
+      "candidate_length": 18420
+    },
+    {
+      "doc_id": "sec_789019_0001193125-16-441813",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516441813/d121006dex991.htm",
+      "content_sha256": "f457fe1ce4089484872c54d214797ee8c4d3f2136e73c5e7e8e2be10aa1298af",
+      "original_length": 19181,
+      "candidate_length": 19181
+    },
+    {
+      "doc_id": "sec_789019_0001193125-16-550250",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516550250/d177964dex991.htm",
+      "content_sha256": "ec68589e108e30b95240661e365e1c09b6f3e15c1686dad12fad433591a94af0",
+      "original_length": 19048,
+      "candidate_length": 19048
+    },
+    {
+      "doc_id": "sec_789019_0001193125-16-651176",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516651176/d232602dex991.htm",
+      "content_sha256": "1007f478561492759f5ecdd66edfb3a21d273c1d1e47a4150272834aad398f04",
+      "original_length": 38561,
+      "candidate_length": 38561
+    },
+    {
+      "doc_id": "sec_789019_0001193125-16-742793",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516742793/d274148dex991.htm",
+      "content_sha256": "7cf8dd07097b466553f92554738d1e14d4f1c7c28f1b2fc4dacabb4fb92e8bf9",
+      "original_length": 23200,
+      "candidate_length": 23200
+    },
+    {
+      "doc_id": "sec_789019_0001193125-17-019726",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312517019726/d338385dex991.htm",
+      "content_sha256": "4c450d26ea4ec1e9d7bd32e3e313d9d0a21c38b71bb95614f259dd6d824dddd0",
+      "original_length": 24431,
+      "candidate_length": 24431
+    },
+    {
+      "doc_id": "sec_789019_0001193125-17-142963",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312517142963/d373233dex991.htm",
+      "content_sha256": "f6e47578fcbf92bca227322b3468619eacf1a4c69d15524adf29781a80a2ec9b",
+      "original_length": 20796,
+      "candidate_length": 20796
+    },
+    {
+      "doc_id": "sec_789019_0001193125-17-232047",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312517232047/d425932dex991.htm",
+      "content_sha256": "f310a8e224dc53bcb591b446f6ff27b0a5b8cc2d850c8e441ce0190a4e194f5a",
+      "original_length": 36200,
+      "candidate_length": 36200
+    },
+    {
+      "doc_id": "sec_789019_0001193125-17-321202",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312517321202/d483053dex991.htm",
+      "content_sha256": "99423da6bc52b7314984b6cba7d544a71b1c6666d9886f1a11509bbaa6cc3682",
+      "original_length": 16300,
+      "candidate_length": 16300
+    },
+    {
+      "doc_id": "sec_789019_0001193125-18-027377",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312518027377/d468387dex991.htm",
+      "content_sha256": "742f4d0d91c5ae02162ce3d292852d1f3ef269e340d2b1f43653f497a736ffcf",
+      "original_length": 19778,
+      "candidate_length": 19778
+    },
+    {
+      "doc_id": "sec_789019_0001193125-18-134732",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312518134732/d576671dex991.htm",
+      "content_sha256": "5791793f67cacf7b51edc7e8e4f7b9351841e07cde6c49344a5704a909d2512d",
+      "original_length": 17352,
+      "candidate_length": 17352
+    },
+    {
+      "doc_id": "sec_789019_0001193125-18-221458",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312518221458/d501766dex991.htm",
+      "content_sha256": "72b51756bf796c34cb9cf8ef27d4d93e3abaac00378bd86b94e426722f188e8c",
+      "original_length": 30745,
+      "candidate_length": 30745
+    },
+    {
+      "doc_id": "sec_789019_0001193125-18-306365",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312518306365/d640048dex991.htm",
+      "content_sha256": "dfee716da551bb498bc954d9ee1c7a131b29002044255d63b5602fa95552b651",
+      "original_length": 17065,
+      "candidate_length": 17065
+    },
+    {
+      "doc_id": "sec_789019_0001193125-19-022553",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312519022553/d699806dex991.htm",
+      "content_sha256": "7f69dc466078ad6dbbcdf0b007a4e2d8a55e86f2ed4fcde00a6bb62a7082081a",
+      "original_length": 20403,
+      "candidate_length": 20403
+    },
+    {
+      "doc_id": "sec_789019_0001193125-19-117108",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312519117108/d661527dex991.htm",
+      "content_sha256": "d108813576f93cc6e966b297170343dcbe365027a7587a3ee1a719654b51b630",
+      "original_length": 17576,
+      "candidate_length": 17576
+    },
+    {
+      "doc_id": "sec_789019_0001193125-19-196501",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312519196501/d777737dex991.htm",
+      "content_sha256": "72ca17f712df05db1dbf3608f225803c8a03c117e71fb4e1a7c73785d9c8146a",
+      "original_length": 31673,
+      "candidate_length": 31673
+    },
+    {
+      "doc_id": "sec_789019_0001193125-19-272562",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312519272562/d823675dex991.htm",
+      "content_sha256": "b4647c0559b55df5e6f83f0b5301d5f7a336898f2eabfc996d6e29f95be2a4e7",
+      "original_length": 16347,
+      "candidate_length": 16347
+    },
+    {
+      "doc_id": "sec_789019_0001193125-20-018383",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520018383/d875975dex991.htm",
+      "content_sha256": "aa692fbafa1a539b0de84b2df63263521e8b40ccd85a49d59ee48daf2c6e16ab",
+      "original_length": 19616,
+      "candidate_length": 19616
+    },
+    {
+      "doc_id": "sec_789019_0001193125-20-126089",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520126089/d844377dex991.htm",
+      "content_sha256": "c19a71e8257c1cbe14c13f5bc79195db9b0810b7918a49ccb179ee07d9eb15fa",
+      "original_length": 19467,
+      "candidate_length": 19467
+    },
+    {
+      "doc_id": "sec_789019_0001193125-20-197109",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520197109/d941281dex991.htm",
+      "content_sha256": "9a868566fc841e34853d2f524b27c93d202265becb5511286f2c44ce05006549",
+      "original_length": 31961,
+      "candidate_length": 31961
+    },
+    {
+      "doc_id": "sec_789019_0001193125-20-278410",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520278410/d10535dex991.htm",
+      "content_sha256": "e06aa661fd3a8d42b0947028f06dc0307fc92a73bc40ef96f5db0bccf2aeef48",
+      "original_length": 16937,
+      "candidate_length": 16937
+    },
+    {
+      "doc_id": "sec_789019_0001193125-21-017683",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521017683/d65802dex991.htm",
+      "content_sha256": "c36c7782026bfe0e8b47bb3179d5b8ee2f4a48fa24c26980b11524c7d1ed4318",
+      "original_length": 18118,
+      "candidate_length": 18118
+    },
+    {
+      "doc_id": "sec_789019_0001193125-21-134213",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521134213/d179564dex991.htm",
+      "content_sha256": "e82553ba331d1dbfed840f9cec225ca833084f412f49b8586e07fed9daaa91e7",
+      "original_length": 21141,
+      "candidate_length": 21141
+    },
+    {
+      "doc_id": "sec_789019_0001193125-21-225746",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521225746/d200100dex991.htm",
+      "content_sha256": "60b17a4b81da7c9de9356c35ebc919495adef6a38f2a5758b2a798ae3a42437a",
+      "original_length": 30356,
+      "candidate_length": 30356
+    },
+    {
+      "doc_id": "sec_789019_0001193125-21-307941",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521307941/d239488dex991.htm",
+      "content_sha256": "25e24813a16f5fbede8dce322b26b7459effe9ce8ab4141cea63cafc4c0f43a9",
+      "original_length": 19249,
+      "candidate_length": 19249
+    },
+    {
+      "doc_id": "sec_789019_0001193125-22-017041",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522017041/d299919dex991.htm",
+      "content_sha256": "d2b17a1c8fa0ef7c2ef4f4ad8f64036ed596fb91c7e0c1dfe810b70ec3321d1a",
+      "original_length": 17501,
+      "candidate_length": 17501
+    },
+    {
+      "doc_id": "sec_789019_0001193125-22-120207",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522120207/d328712dex991.htm",
+      "content_sha256": "e310185042589ec01b81b57e374ce54fd18dfab9bf54d1f9e4379d6ea330787f",
+      "original_length": 20556,
+      "candidate_length": 20556
+    },
+    {
+      "doc_id": "sec_789019_0001193125-22-202034",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522202034/d372382dex991.htm",
+      "content_sha256": "8284c93de9588db46bc1da8393e4faa5862a45229dfa82f07da116f46de81512",
+      "original_length": 31768,
+      "candidate_length": 31768
+    },
+    {
+      "doc_id": "sec_789019_0001193125-22-268356",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522268356/d361432dex991.htm",
+      "content_sha256": "5ec515ef9f24eb3331a5493f2b1a1f085b9ce34730e3a2b1dd30392040cff55c",
+      "original_length": 19437,
+      "candidate_length": 19437
+    },
+    {
+      "doc_id": "sec_789019_0001193125-23-014230",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312523014230/d406070dex991.htm",
+      "content_sha256": "c44a9c35235924f7cdb408e172674cdc2256bab3883f3f261c39185c1120b6b8",
+      "original_length": 20429,
+      "candidate_length": 20429
+    },
+    {
+      "doc_id": "sec_789019_0001193125-23-115280",
+      "ticker": "MSFT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312523115280/d321368dex991.htm",
+      "content_sha256": "b588eaa724ebff5f0fbde19e06b7c660a332f24f3ca0a954761d866bcff62769",
+      "original_length": 18145,
+      "candidate_length": 18145
+    },
+    {
+      "doc_id": "sec_89800_0001193125-16-440576",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312516440576/d44512dex99.htm",
+      "content_sha256": "b0cc28bef342b7abaa52f00a7f16fd3fbf94bd2035f97ae2ebce154b0767581a",
+      "original_length": 13359,
+      "candidate_length": 13359
+    },
+    {
+      "doc_id": "sec_89800_0001193125-16-549148",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312516549148/d178192dex99.htm",
+      "content_sha256": "0095370266884ad8febb581c4e455a0317c99c96854e3b646c196f370c1d88e5",
+      "original_length": 14282,
+      "candidate_length": 14282
+    },
+    {
+      "doc_id": "sec_89800_0001193125-16-653046",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312516653046/d93725dex99.htm",
+      "content_sha256": "5dc97c864cee2a9819a6b5577f11f9410ab03156be06115a846313eba7371fd7",
+      "original_length": 17449,
+      "candidate_length": 17449
+    },
+    {
+      "doc_id": "sec_89800_0001193125-16-745734",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312516745734/d244444dex99.htm",
+      "content_sha256": "083af1ce0d039c70574b98139fcd7d02ab78e14f65ae12123fdc779b02451e75",
+      "original_length": 18254,
+      "candidate_length": 18254
+    },
+    {
+      "doc_id": "sec_89800_0001193125-17-018804",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312517018804/d337531dex99.htm",
+      "content_sha256": "1b6ac2f6b2f047c989875056e5d2c9ffce15cb8627ca3579248b3bd50ba8b917",
+      "original_length": 18913,
+      "candidate_length": 18913
+    },
+    {
+      "doc_id": "sec_89800_0001193125-17-129703",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312517129703/d381903dex99.htm",
+      "content_sha256": "462a304fa17b2c719f027ca477ee3d7127d9c884369dde81b9f7e49dbe344252",
+      "original_length": 16567,
+      "candidate_length": 16567
+    },
+    {
+      "doc_id": "sec_89800_0001193125-17-231644",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312517231644/d430362dex99.htm",
+      "content_sha256": "83b76528a6a553b88592f3994c6ac87a8e2d15696378f408997f95d0142532ce",
+      "original_length": 22632,
+      "candidate_length": 22632
+    },
+    {
+      "doc_id": "sec_89800_0001193125-17-317280",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312517317280/d464262dex99.htm",
+      "content_sha256": "82472d8a45e888be286c342fc0ef7617790f9726daf61397a4227351d77e8e57",
+      "original_length": 21952,
+      "candidate_length": 21952
+    },
+    {
+      "doc_id": "sec_89800_0001193125-18-019026",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312518019026/d520779dex99.htm",
+      "content_sha256": "4f43d44d6b355a3efa553a624bf67a761543c15d96c0665462ad23081f0c4e2d",
+      "original_length": 20568,
+      "candidate_length": 20568
+    },
+    {
+      "doc_id": "sec_89800_0001193125-18-127698",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312518127698/d573538dex99.htm",
+      "content_sha256": "1178890ba345af06bfbc56ae3e448747eb3f4d20b653998c0ec9eb3bdbf99dbf",
+      "original_length": 18141,
+      "candidate_length": 18141
+    },
+    {
+      "doc_id": "sec_89800_0001193125-18-224182",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312518224182/d560094dex99.htm",
+      "content_sha256": "9c43da1f15c5567d5630f77905ed96a5a614be2841d3d25bbf3c0d996c0d8d1f",
+      "original_length": 24704,
+      "candidate_length": 24704
+    },
+    {
+      "doc_id": "sec_89800_0001193125-18-307034",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312518307034/d643636dex99.htm",
+      "content_sha256": "a4a5c7bf39a530b6ccc526ebf69df2abdda0207ee97a0529799d61ffb735972e",
+      "original_length": 26201,
+      "candidate_length": 26201
+    },
+    {
+      "doc_id": "sec_89800_0001193125-19-009366",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312519009366/d617066dex99.htm",
+      "content_sha256": "c9069946a281c9e54ebfb17a0ad9e55af42307e41706bc5fba7a6a0135fce131",
+      "original_length": 10965,
+      "candidate_length": 10965
+    },
+    {
+      "doc_id": "sec_89800_0001193125-19-023138",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312519023138/d699691dex99.htm",
+      "content_sha256": "51066dd0c6afc8562b6cd585961fb3302b312d8648581868d527eb6e9b204888",
+      "original_length": 28361,
+      "candidate_length": 28361
+    },
+    {
+      "doc_id": "sec_89800_0001193125-19-114173",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312519114173/d738432dex99.htm",
+      "content_sha256": "81a472d16fe163afadebc4e9e95568383ca82a51dee5cfa41343ab9ce14cb4f0",
+      "original_length": 19907,
+      "candidate_length": 19907
+    },
+    {
+      "doc_id": "sec_89800_0001193125-19-199401",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312519199401/d741904dex99.htm",
+      "content_sha256": "f28d5c39a4051dda050ddf7a76847d6ba4d902ad93e032556d065ebc86a61caf",
+      "original_length": 24228,
+      "candidate_length": 24228
+    },
+    {
+      "doc_id": "sec_89800_0001193125-19-271239",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312519271239/d821815dex99.htm",
+      "content_sha256": "af6a7d014a7eefec0f3b2d5c313a45ae5923b6b1881d95a00c85e23605a0b707",
+      "original_length": 25375,
+      "candidate_length": 25375
+    },
+    {
+      "doc_id": "sec_89800_0001193125-20-019027",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312520019027/d879663dex99.htm",
+      "content_sha256": "49eee86ffc653c7268bda57708881e86a9467e16b1dda3fa79e9cc449c5a071f",
+      "original_length": 25381,
+      "candidate_length": 25381
+    },
+    {
+      "doc_id": "sec_89800_0001193125-20-124429",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312520124429/d854887dex99.htm",
+      "content_sha256": "e2ece580c1562a69da10e35b40bc65cb55347c56d9ef6ac5755d18ac33ab5922",
+      "original_length": 21454,
+      "candidate_length": 21454
+    },
+    {
+      "doc_id": "sec_89800_0001193125-20-200421",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312520200421/d45975dex99.htm",
+      "content_sha256": "78b1a1eaee7d82cc7f3a5a49a9329b4205584c6bfd7daa031032cc3c0214e603",
+      "original_length": 24305,
+      "candidate_length": 24305
+    },
+    {
+      "doc_id": "sec_89800_0001193125-20-277492",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312520277492/d912449dex99.htm",
+      "content_sha256": "fafc32f0a5d247da3d987e491885d580d117f9aa66253b75b8cc9557b449453c",
+      "original_length": 24920,
+      "candidate_length": 24920
+    },
+    {
+      "doc_id": "sec_89800_0001193125-21-019921",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521019921/d61075dex99.htm",
+      "content_sha256": "6b64c04d90b230ce5d08f317b3decd2fd49698e9f0ec9ae412a259ad7660e2cc",
+      "original_length": 25077,
+      "candidate_length": 25077
+    },
+    {
+      "doc_id": "sec_89800_0001193125-21-132585",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521132585/d154013dex99.htm",
+      "content_sha256": "8739f0e6615ed384f7aeaccfdb929a1740ba5b8590d3ba33e080a7e83b336c34",
+      "original_length": 19420,
+      "candidate_length": 19420
+    },
+    {
+      "doc_id": "sec_89800_0001193125-21-225004",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521225004/d144442dex99.htm",
+      "content_sha256": "bb0988d51208114033ed531d68e9d09eb5402326002a58de27f41383dcf41dac",
+      "original_length": 20766,
+      "candidate_length": 20766
+    },
+    {
+      "doc_id": "sec_89800_0001193125-21-307190",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521307190/d224900dex99.htm",
+      "content_sha256": "eab755a598c889415eaa77074f82fd2d2a1b32fdcb2521ea49fde251f3466a6d",
+      "original_length": 22557,
+      "candidate_length": 22557
+    },
+    {
+      "doc_id": "sec_89800_0001193125-22-009295",
+      "ticker": "SHW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000119312522009295/d293301dex99.htm",
+      "content_sha256": "e62144de571f181177c4c931ab1cda674b9bcee63c876b881af5232ca363a63e",
+      "original_length": 12027,
+      "candidate_length": 12027
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-16-009923",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746916009923/a2227154zex-99_1.htm",
+      "content_sha256": "2198a92329a1e7eaf18b1d19d363014df011039c503dadd138317989366e92a8",
+      "original_length": 123227,
+      "candidate_length": 123227
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-16-012541",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746916012541/a2228302zex-99_1.htm",
+      "content_sha256": "7ee477ccb1d6e85a2b92c9cae1162de9b56bcb6089ba7efe5f695c1996ab29f3",
+      "original_length": 110624,
+      "candidate_length": 110624
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-16-014471",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746916014471/a2229204zex-99_1.htm",
+      "content_sha256": "0909152744627a93587df1c7ca6fab43ed755db17bca67669c26632d7f07e534",
+      "original_length": 122807,
+      "candidate_length": 122807
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-16-016291",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746916016291/a2230021zex-99_1.htm",
+      "content_sha256": "a7b3a3dbb7fbb747aecc0d44515e0d0b9e934ae9d1cdae1d4de8e26c63c6bd90",
+      "original_length": 132970,
+      "candidate_length": 132970
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-17-000429",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746917000429/a2230729zex-99_1.htm",
+      "content_sha256": "f9bab6fd04a4689b378c1d99a03f2b359801c523ac3fb348f44220f329d7a352",
+      "original_length": 118124,
+      "candidate_length": 118124
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-17-002973",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746917002973/a2231607zex-99_1.htm",
+      "content_sha256": "90177a65852440ed90e6db41298a0f6de044eb6432cf864503a3470000bbbf1d",
+      "original_length": 104814,
+      "candidate_length": 104814
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-17-004884",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746917004884/a2232710zex-99_1.htm",
+      "content_sha256": "e74f97b2a6e24aa82927e4ec5f0031d9bc877110329f71c65654945b1e199ad2",
+      "original_length": 114649,
+      "candidate_length": 114649
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-17-006601",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746917006601/a2233552zex-99_1.htm",
+      "content_sha256": "54411c759aa44ec02f23e0571d9e3100fbc7599bb62128996d6867efbe10a90d",
+      "original_length": 116481,
+      "candidate_length": 116481
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-18-000517",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746918000517/a2234302zex-99_1.htm",
+      "content_sha256": "0561a72c8dfbfee932580eaa941dcf64f985353f4f6122b9dc3b1e666016c65c",
+      "original_length": 118109,
+      "candidate_length": 118109
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-18-003264",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746918003264/a2235352zex-99_1.htm",
+      "content_sha256": "baf1008e9dfb06baf77a4cbe27ef6152beef3a10839ec81b76ade2d84a7858a5",
+      "original_length": 108447,
+      "candidate_length": 108447
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-18-005280",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746918005280/a2236251zex-99_1.htm",
+      "content_sha256": "324253f9f720979611216f7b1fbda45dd9491a7b03f8b61084063150725b2bc1",
+      "original_length": 115542,
+      "candidate_length": 115542
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-18-006854",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746918006854/a2236910zex-99_1.htm",
+      "content_sha256": "1057893b73fdfedcc5eab5fbce7701c28b7b561b33c2ed6e2d32024f9866a8fe",
+      "original_length": 115740,
+      "candidate_length": 115740
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-19-002724",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746919002724/a2238492zex-99_1.htm",
+      "content_sha256": "d1a0fecc5e5d09a273b57e20bb9dac93c05390dd06d4c98ab63e020b87749871",
+      "original_length": 102594,
+      "candidate_length": 102594
+    },
+    {
+      "doc_id": "sec_1063761_0001047469-19-004452",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000104746919004452/a2239288zex-99_1.htm",
+      "content_sha256": "95c3c5386a6854c3d3c956db4f447d4d30388f8e2d61ac21e3ed8786eb1acda7",
+      "original_length": 110849,
+      "candidate_length": 110849
+    },
+    {
+      "doc_id": "sec_1063761_0001104659-19-057499",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465919057499/a2239895zex-99_1.htm",
+      "content_sha256": "2347e6b795ef9b6ff9187fbc58e66f735a26fc51b646e6da5ed220c43881cc4f",
+      "original_length": 110149,
+      "candidate_length": 110149
+    },
+    {
+      "doc_id": "sec_1063761_0001104659-20-010115",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465920010115/a2240552zex-99_1.htm",
+      "content_sha256": "4d5185c4d3bc267ae4aebcf84d3f40f8d97e55ba8d6997b3061b06f9efcdd698",
+      "original_length": 114527,
+      "candidate_length": 114527
+    },
+    {
+      "doc_id": "sec_1063761_0001104659-20-059554",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465920059554/a2241394zex-99_1.htm",
+      "content_sha256": "f376c13bb3a11ba6f85d6b6a7fff73b84a14a322d0a646f4f3a7d15dd5501db6",
+      "original_length": 99624,
+      "candidate_length": 99624
+    },
+    {
+      "doc_id": "sec_1063761_0001104659-20-092742",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465920092742/tm2025091d1_ex99-1.htm",
+      "content_sha256": "889e03a69088eb3f1fb2eaf6e23a70e864df921e437ba675156d7d4a629c2da5",
+      "original_length": 107502,
+      "candidate_length": 107502
+    },
+    {
+      "doc_id": "sec_1063761_0001104659-20-123110",
+      "ticker": "SPG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465920123110/tm2033401d1_ex99-1.htm",
+      "content_sha256": "68e418f6498e98a36bf37c070c3751add235f8f334b447ab0827c8f32961bf37",
+      "original_length": 108345,
+      "candidate_length": 108345
+    },
+    {
+      "doc_id": "sec_1090727_0001193125-22-201511",
+      "ticker": "UPS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1090727/000119312522201511/d369134dex991.htm",
+      "content_sha256": "0aadc836fb19230fdb98f92367693f7fc0230a802d9d1b1a78f9b85a8931f6b2",
+      "original_length": 22454,
+      "candidate_length": 22454
+    }
+  ],
+  "score_difference_documents": [],
+  "all_lm_scoring_fields_identical": true,
+  "direct_lxml_vs_current_bs4_differences_on_all_legacy_string_differences": [],
+  "legacy_text_normalization_note": "Previously saved pilot text includes earlier html.parser CP1252 entity handling and Windows newline normalization. Existing cached text/scores are preserved. Numeric LM and sentence/topic equivalence checked for every nonidentical string.",
+  "score_check_elapsed_seconds": 73.75,
+  "generic_fallback_policy": "C1 control-code points in extracted text use the original BeautifulSoup-lxml parser; FOMC always uses its original parser; lxml parse exceptions fall back. Existing text and score checkpoints are not rewritten.",
+  "content_cache_key": "Full content bytes and fomc flag, hashed by Python and equality-checked; URL/doc_id alone cannot yield a cache hit.",
+  "validation_scope_note": "Performance-parser validation precedes separately documented source-quality repairs (e.g. bounded ARE earnings section, alternate SO/APP exhibits). Those deliberate input changes are not attributed to parser acceleration; existing validated pilot inputs are preserved except reviewed source repairs."
+}

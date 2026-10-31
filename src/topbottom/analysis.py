@@ -38,7 +38,7 @@ def normalize_scores(frame: pd.DataFrame) -> pd.DataFrame:
     out = frame.copy()
     if out.empty:
         return out
-    out["published_at"] = pd.to_datetime(out["published_at"], utc=True, errors="raise")
+    out["published_at"] = pd.to_datetime(out["published_at"], utc=True, format="ISO8601", errors="raise")
     if "ticker" in out:
         out["ticker"] = out["ticker"].map(ticker_key)
     if "uncertainty_rate" not in out:
@@ -57,59 +57,7 @@ def normalize_scores(frame: pd.DataFrame) -> pd.DataFrame:
     return out.sort_values(["published_at", "doc_id"]).reset_index(drop=True)
 
 
-def prepare_market(crsp_path: Path, factors_path: Path, tickers: list[str], output_dir: Path) -> dict:
-    """Recover continuous PERMNO histories using each selected ticker's latest record.
-
-    This is a current-survivor pilot, not historical index membership. Licensed
-    security-level data stay in data/private and must not enter the public repo.
-    """
-    targets = set(map(ticker_key, tickers))
-    cols = ["PERMNO", "Ticker", "MthCalDt", "MthRet", "MthPrc", "ShrOut"]
-    latest = []
-    for chunk in pd.read_csv(crsp_path, usecols=cols, chunksize=200_000):
-        chunk["Ticker"] = chunk["Ticker"].map(ticker_key)
-        latest.append(chunk[chunk["Ticker"].isin(targets)].sort_values("MthCalDt").groupby("PERMNO").tail(1))
-    candidates = pd.concat(latest, ignore_index=True).sort_values("MthCalDt").groupby("PERMNO").tail(1)
-    candidates["cap"] = pd.to_numeric(candidates["MthPrc"], errors="coerce").abs() * pd.to_numeric(candidates["ShrOut"], errors="coerce")
-    candidates = candidates.sort_values(["MthCalDt", "cap"]).groupby("Ticker").tail(1)
-    mapping = dict(zip(candidates.PERMNO, candidates.Ticker))
-    frames = []
-    for chunk in pd.read_csv(crsp_path, usecols=cols, chunksize=200_000):
-        x = chunk[chunk.PERMNO.isin(mapping)].copy()
-        x["ticker"] = x.PERMNO.map(mapping)
-        frames.append(x)
-    monthly = pd.concat(frames, ignore_index=True).rename(columns={"MthCalDt": "date", "MthRet": "return", "PERMNO": "permno"})
-    monthly["return"] = pd.to_numeric(monthly["return"], errors="coerce")
-    monthly["market_cap"] = pd.to_numeric(monthly.MthPrc, errors="coerce").abs() * pd.to_numeric(monthly.ShrOut, errors="coerce")
-    monthly["date"] = pd.to_datetime(monthly["date"])
-    monthly["month"] = monthly.date.dt.to_period("M").astype(str)
-    monthly = monthly[["ticker", "permno", "date", "month", "return", "market_cap"]].sort_values(["ticker", "date"])
-    exact_duplicates = int(monthly.duplicated().sum())
-    monthly = monthly.drop_duplicates()
-    require_unique(monthly, ["ticker", "month"], "CRSP")
-    # Read only six-digit monthly records; annual footer rows are not months.
-    rows = []
-    for line in factors_path.read_text(encoding="utf-8-sig").splitlines():
-        parts = line.split(",")
-        if len(parts) >= 5 and len(parts[0].strip()) == 6 and parts[0].strip().isdigit():
-            try:
-                vals = list(map(float, parts[1:5]))
-            except ValueError:
-                continue
-            ym = parts[0].strip()
-            rows.append({"month": f"{ym[:4]}-{ym[4:]}", "market_return": (vals[0] + vals[3]) / 100, "mkt_rf": vals[0]/100, "smb": vals[1]/100, "hml": vals[2]/100, "rf": vals[3]/100})
-    factors = pd.DataFrame(rows)
-    require_unique(factors, ["month"], "Fama French")
-    output_dir.mkdir(parents=True, exist_ok=True)
-    monthly.to_csv(output_dir / "monthly_returns.csv", index=False)
-    factors.to_csv(output_dir / "market_factors.csv", index=False)
-    with crsp_path.open("rb") as stream:
-        crsp_hash = hashlib.file_digest(stream,"sha256").hexdigest()
-    with factors_path.open("rb") as stream:
-        factors_hash = hashlib.file_digest(stream,"sha256").hexdigest()
-    meta = {"source": "Local classroom CRSP CIZ monthly total returns; Ken French monthly factors", "source_filename": crsp_path.name, "source_sha256": crsp_hash, "factors_filename": factors_path.name, "factors_sha256": factors_hash, "n_tickers": int(monthly.ticker.nunique()), "missing_tickers": sorted(targets-set(monthly.ticker)), "n_rows": len(monthly), "exact_duplicate_rows_removed": exact_duplicates, "conflicting_duplicate_keys": 0, "start": str(monthly.date.min().date()), "end": str(monthly.date.max().date()), "ticker_mapping": records(candidates[["Ticker", "PERMNO", "MthCalDt"]]), "license": "Local use only; do not publish security-level source/derived return rows without redistribution rights."}
-    (output_dir / "market_manifest.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    return meta
+from .market import prepare_market
 
 
 def compound_exact(monthly: pd.DataFrame, months: list[str], column: str) -> float:
@@ -140,9 +88,18 @@ def build_panel(firms: pd.DataFrame, fomc: pd.DataFrame, monthly: pd.DataFrame, 
     scorecols = ["tone", "uncertainty_rate", "forward_tone"] + [f"topic_{x}_tone" for x in TOPICS]
     dates = market.groupby("month").date.max().sort_values()
     dates = dates[dates.dt.month.isin([3, 6, 9, 12])]
-    rows, excluded = [], {"no_firm_history_or_stale": 0, "no_fomc_history": 0, "outcome_incomplete": 0}
+    rows, excluded = [], {"no_firm_history_or_stale": 0, "no_fomc_history": 0, "outcome_incomplete": 0,
+                          "no_price_mapping":0,"pre_available_market_history":0,"post_available_market_history":0,"missing_entry_month":0}
     firms_by_ticker = dict(tuple(firms.groupby("ticker")))
     market_by_ticker = dict(tuple(market.groupby("ticker")))
+    firm_times={t:g.published_at.dt.tz_convert(None).to_numpy(dtype="datetime64[ns]") for t,g in firms_by_ticker.items()}
+    macro_times=fomc.published_at.dt.tz_convert(None).to_numpy(dtype="datetime64[ns]")
+    returns_lookup=dict(zip(zip(market.ticker,market.month),market["return"]))
+    market_months={t:set(g.month) for t,g in market_by_ticker.items()}
+    market_ranges={t:(g.month.min(),g.month.max()) for t,g in market_by_ticker.items()}
+    benchmark_lookup=dict(zip(factors.month,factors.market_return))
+    def from_values(values):
+        return float(np.prod(1+np.asarray(values,dtype=float))-1) if np.isfinite(values).all() else np.nan
     for dt in dates:
         cutoff = pd.Timestamp(dt.date(), tz="UTC")
         if cutoff < firms.published_at.min():
@@ -152,21 +109,38 @@ def build_panel(firms: pd.DataFrame, fomc: pd.DataFrame, monthly: pd.DataFrame, 
         # Entry-month close is still unknown at the midnight cutoff. Momentum
         # therefore uses the three months ending one full month before entry.
         prior = [str(period-x) for x in reversed(range(1,horizon+1))]
-        available_fomc = fomc[fomc.published_at < cutoff]
-        if available_fomc.empty:
+        cutoff_np=np.datetime64(cutoff.tz_localize(None),"ns")
+        macro_idx=int(np.searchsorted(macro_times,cutoff_np,side="left"))-1
+        if macro_idx<0:
             excluded["no_fomc_history"] += len(firms_by_ticker)
             continue
-        macro = available_fomc.iloc[-1]
+        macro = fomc.iloc[macro_idx]
+        mret=from_values([benchmark_lookup.get(m,np.nan) for m in future])
+        formation_month=str(period)
         for ticker, history in firms_by_ticker.items():
-            available = history[(history.published_at < cutoff) & (history.published_at >= cutoff-pd.Timedelta(days=max_age_days))]
-            if available.empty:
+            if ticker not in market_months:
+                excluded["no_price_mapping"]+=1
+                continue
+            first_market,last_market=market_ranges[ticker]
+            if formation_month<first_market:
+                excluded["pre_available_market_history"]+=1
+                continue
+            if formation_month>last_market:
+                excluded["post_available_market_history"]+=1
+                continue
+            if formation_month not in market_months[ticker]:
+                excluded["missing_entry_month"]+=1
+                continue
+            firm_idx=int(np.searchsorted(firm_times[ticker],cutoff_np,side="left"))-1
+            if firm_idx<0:
                 excluded["no_firm_history_or_stale"] += 1
                 continue
-            firm = available.iloc[-1]
-            security = market_by_ticker.get(ticker, market.iloc[:0])
-            ret = compound_exact(security, future, "return")
-            mret = compound_exact(factors, future, "market_return")
-            momentum = compound_exact(security, prior, "return")
+            firm = history.iloc[firm_idx]
+            if firm.published_at<cutoff-pd.Timedelta(days=max_age_days):
+                excluded["no_firm_history_or_stale"]+=1
+                continue
+            ret=from_values([returns_lookup.get((ticker,m),np.nan) for m in future])
+            momentum=from_values([returns_lookup.get((ticker,m),np.nan) for m in prior])
             complete = bool(np.isfinite(ret) and np.isfinite(mret))
             excluded["outcome_incomplete"] += int(not complete)
             row = {"ticker": ticker, "sector": firm.sector, "formation_date": dt.strftime("%Y-%m-%d"), "cutoff": cutoff.isoformat(), "label_end": (period+horizon).end_time.strftime("%Y-%m-%d"), "firm_doc_id": firm.doc_id, "firm_published_at": firm.published_at.isoformat(), "fomc_doc_id": macro.doc_id, "fomc_published_at": macro.published_at.isoformat(), "firm_age_days": (cutoff-firm.published_at).days, "stock_return": ret, "market_return": mret, "excess_return": ret-mret if complete else np.nan, "momentum": momentum, "outcome_complete": complete}
@@ -331,17 +305,22 @@ def model_metrics(predictions: pd.DataFrame, portfolios: pd.DataFrame) -> pd.Dat
     if predictions.empty:
         return pd.DataFrame()
     rows = []
+    observed_sets={m:set(g.loc[g.status.eq("observed"),"formation_date"]) for m,g in portfolios.groupby("model")} if len(portfolios) else {}
+    common_portfolio_calendar=len({frozenset(v) for v in observed_sets.values()})<=1
     for model, group in predictions.groupby("model"):
         complete = group.dropna(subset=["excess_return"])
         ics = [rank_corr(g.prediction, g.excess_return, 5) for _,g in complete.groupby("formation_date")]
         ic = hac_mean(ics)
         port = portfolios[(portfolios.model==model) & portfolios.status.eq("observed")] if not portfolios.empty else pd.DataFrame()
         net = port.net_return if len(port) else pd.Series(dtype=float)
+        ordinals=sorted(pd.Period(d,freq="Q").ordinal for d in port.formation_date) if len(port) else []
+        continuous=bool(ordinals) and all(b-a==1 for a,b in zip(ordinals,ordinals[1:]))
+        comparable_calendar=continuous and common_portfolio_calendar
         nm = hac_mean(net)
-        annual_vol = float(net.std(ddof=1)*2) if len(net)>1 else None
-        annual_return = float(np.prod(1+net)**(4/len(net))-1) if len(net) and (1+net).gt(0).all() else None
+        annual_vol = float(net.std(ddof=1)*2) if len(net)>1 and comparable_calendar else None
+        annual_return = float(np.prod(1+net)**(4/len(net))-1) if len(net) and (1+net).gt(0).all() and comparable_calendar else None
         wealth = np.r_[1., np.cumprod(1+net.to_numpy())] if len(net) else np.array([1.])
-        rows.append({"model": model, "n_oos": len(complete), "n_periods": int(complete.formation_date.nunique()), "mean_ic": ic["mean"], "ic_hac_t": ic["hac_t"], "rmse": float(np.sqrt(np.mean((complete.prediction-complete.excess_return)**2))) if len(complete) else None, "net_quarterly_mean": nm["mean"], "net_hac_t": nm["hac_t"], "annualized_return": annual_return, "annualized_volatility": annual_vol, "sharpe_zero_rate": float(net.mean()/net.std(ddof=1)*2) if len(net)>1 and net.std(ddof=1)>0 else None, "max_drawdown": float(np.min(wealth/np.maximum.accumulate(wealth)-1)) if len(net) else None, "n_portfolio_periods": len(net), "cost_bps": 10., "status": "exploratory" if ic["n"]>=8 else "insufficient"})
+        rows.append({"model": model, "n_oos": len(complete), "n_periods": int(complete.formation_date.nunique()), "mean_ic": ic["mean"], "ic_hac_t": ic["hac_t"], "rmse": float(np.sqrt(np.mean((complete.prediction-complete.excess_return)**2))) if len(complete) else None, "net_quarterly_mean": nm["mean"], "net_hac_t": nm["hac_t"] if comparable_calendar else None, "annualized_return": annual_return, "annualized_volatility": annual_vol, "sharpe_zero_rate": float(net.mean()/net.std(ddof=1)*2) if len(net)>1 and net.std(ddof=1)>0 and comparable_calendar else None, "max_drawdown": float(np.min(wealth/np.maximum.accumulate(wealth)-1)) if len(net) and comparable_calendar else None, "n_portfolio_periods": len(net), "portfolio_calendar_status":"common_contiguous" if comparable_calendar else "incomplete_or_different_calendar", "cost_bps": 10., "status": "exploratory" if ic["n"]>=8 else "insufficient"})
     return pd.DataFrame(rows)
 
 
@@ -360,7 +339,7 @@ def sector_model_metrics(predictions: pd.DataFrame) -> pd.DataFrame:
                      "rmse": float(np.sqrt(np.mean((complete.prediction-complete.excess_return)**2))) if len(complete) else None,
                      "sector_mean_time_series_rank_corr": rank_corr(means.prediction,means.excess_return,8) if len(means)>=8 else None,
                      "median_firms_per_period": float(complete.groupby("formation_date").size().median()) if len(complete) else None,
-                     "status": "exploratory_small_sector"})
+                     "status": "exploratory_small_sector" if len(complete) and complete.groupby("formation_date").size().median()<10 else "exploratory"})
     return pd.DataFrame(rows)
 
 
@@ -399,10 +378,16 @@ def aggregate_text_series(panel: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame()
     rows = []
     for scope, sample in [("All", panel)] + list(panel.groupby("sector")):
+        previous_members={}
         for date, g in sample.groupby("formation_date"):
             for topic in ("overall",)+TOPICS:
                 suffix = "tone" if topic=="overall" else f"topic_{topic}_tone"
-                rows.append({"scope": scope, "formation_date": date, "topic": topic, "bottom_up": g[f"bu_{suffix}"].mean(), "top_down": g[f"td_{suffix}"].iloc[0], "n_firms": int(g[f"bu_{suffix}"].notna().sum())})
+                members=set(g.loc[g[f"bu_{suffix}"].notna(),"ticker"])
+                old=previous_members.get(topic)
+                union=members|old if old is not None else set()
+                change=len(members.symmetric_difference(old))/len(union) if old is not None and union else None
+                rows.append({"scope": scope, "formation_date": date, "topic": topic, "bottom_up": g[f"bu_{suffix}"].mean(), "top_down": g[f"td_{suffix}"].iloc[0], "n_firms": len(members),"membership_change_fraction":change})
+                previous_members[topic]=members
     return pd.DataFrame(rows)
 
 
@@ -436,7 +421,7 @@ def disagreement_analysis(series: pd.DataFrame, min_history: int = 12, gap_thres
             if abs(gap)<gap_threshold:
                 continue
             corporate, fed = -np.sign(gap)*(bn-b), np.sign(gap)*(mn-m)
-            if abs(nextgap)>=abs(gap)*.75:
+            if abs(nextgap)>abs(gap)*.75:
                 outcome = "persistent_or_diverging"
             elif corporate>0 and fed>0:
                 outcome = "both_adjust"
@@ -472,7 +457,7 @@ def descriptive_report(firms: pd.DataFrame, fomc: pd.DataFrame) -> dict:
     sector = firms.groupby("sector").agg(documents=("doc_id", "size"), firms=("ticker", "nunique"), mean_tone=("tone", "mean")).reset_index()
     timeline = []
     for name, data in [("firm",firms),("fomc",fomc)]:
-        years = pd.to_datetime(data.published_at, utc=True).dt.year.value_counts().sort_index()
+        years = pd.to_datetime(data.published_at, utc=True, format="ISO8601").dt.year.value_counts().sort_index()
         timeline += [{"source": name, "year": int(y), "documents": int(n)} for y,n in years.items()]
     topics = []
     for name, data in [("firm",firms),("fomc",fomc)]:
@@ -486,8 +471,11 @@ def descriptive_report(firms: pd.DataFrame, fomc: pd.DataFrame) -> dict:
 def derive_findings(coverage: dict, metrics: pd.DataFrame, leads: pd.DataFrame) -> list[dict]:
     """Narrative derived from saved metrics; no performance-driven model tuning."""
     labels={"baseline":"기본 통제변수", "bottom_up":"바텀업", "top_down":"탑다운", "combined":"결합"}
-    findings=[{"severity":"scope","title":"실제 자료로 실행한 탐색적 파일럿",
-               "text":f"{coverage['tickers']}개 기업·{coverage['sectors']}개 섹터, 기업 문서 {coverage['firm_documents']:,}건과 FOMC {coverage['fomc_documents']}건을 처리했습니다. S&P 500 전체의 결론으로 확대할 수 없습니다."}]
+    full=coverage.get("target_issuers",0)>33
+    title="현재 구성 발행사 전수 수집과 실제 분석 범위" if full else "실제 자료로 실행한 탐색적 파일럿"
+    scope_text=(f"목표 {coverage['target_issuers']}개 발행사 중 {coverage['attempted_issuers']}개 수집 시도, {coverage['document_issuers']}개 문서 확보, {coverage['analysis_issuers']}개 분기 패널 연결, {coverage['oos_issuers']}개 완결 수익률 표본외 평가입니다. " if full else "")
+    findings=[{"severity":"scope","title":title,
+               "text":scope_text+f"2016–2025년에 공개된 기업 문서 {coverage['firm_documents']:,}건과 FOMC {coverage['fomc_documents']}건을 처리했습니다. 현재 구성종목을 과거에 적용한 표본이므로 역사적 S&P 500 전체의 결과는 아닙니다."}]
     if len(metrics) and len(metrics.dropna(subset=["rmse"])):
         comparable=metrics.dropna(subset=["rmse"])
         best=comparable.loc[comparable.rmse.idxmin()]
@@ -497,7 +485,7 @@ def derive_findings(coverage: dict, metrics: pd.DataFrame, leads: pd.DataFrame) 
             combined,bu,td=(by_model.loc[m] for m in ("combined","bottom_up","top_down"))
             text+=f" 결합 모델 RMSE는 {combined.rmse:.4f}이며, 평균 순위 IC는 결합 {combined.mean_ic:.4f}, 탑다운 {td.mean_ic:.4f}, 바텀업 {bu.mean_ic:.4f}입니다."
         text+=" 수익률 수준의 오차와 종목 순위는 다른 평가 기준입니다. 제한된 분기 표본의 탐색 결과로 모형 우월성이 확증된 것은 아닙니다."
-        findings.append({"severity":"exploratory","title":"수익률 오차와 종목 순위는 다른 결과를 보인다","text":text})
+        findings.append({"severity":"exploratory","title":"수익률 오차와 종목 순위 예측력을 함께 평가한다","text":text})
     else:
         findings.append({"severity":"missing","title":"OOS 결과 미산출","text":"최소 12개 성숙 분기·100개 학습 행 조건이 충족되지 않아 투자 성과를 만들어 내지 않았습니다."})
     if len(leads):
@@ -506,15 +494,16 @@ def derive_findings(coverage: dict, metrics: pd.DataFrame, leads: pd.DataFrame) 
             td_to_bu,bu_to_td=(overall.loc[k] for k in ("top_down_to_bottom_up","bottom_up_to_top_down"))
             def change(value):
                 return f"{abs(value):.2f}% {'감소' if value>=0 else '증가'}"
-            text=f"전체 어조의 다음 분기 예측에서 자기 전기 값만 사용한 모형보다, 탑다운 정보를 추가한 바텀업 어조 RMSE는 {change(td_to_bu.improvement_pct)}, 바텀업 정보를 추가한 탑다운 어조 RMSE는 {change(bu_to_td.improvement_pct)}했습니다({int(td_to_bu.n_oos)}개 OOS 시점). 작은 탐색적 차이이며 경제·실적 예측의 정확성이나 정보원의 우월성을 확증하지 않습니다."
-            findings.append({"severity":"exploratory","title":"어조의 선행 정보 차이는 작다","text":text})
+            text=f"전체 어조의 다음 분기 예측에서 자기 전기 값만 사용한 모형보다, 탑다운 정보를 추가한 바텀업 어조 RMSE는 {change(td_to_bu.improvement_pct)}, 바텀업 정보를 추가한 탑다운 어조 RMSE는 {change(bu_to_td.improvement_pct)}했습니다({int(td_to_bu.n_oos)}개 OOS 시점). 탐색적 차이이며 경제·실적 예측의 정확성이나 정보원의 우월성을 확증하지 않습니다."
+            findings.append({"severity":"exploratory","title":"다른 정보원이 어조 예측에 추가하는 정보","text":text})
     return findings
 
 
 def build_report(firms: pd.DataFrame, fomc: pd.DataFrame, panel: pd.DataFrame, exclusions: dict,
                  validity: pd.DataFrame, predictions: pd.DataFrame, portfolios: pd.DataFrame,
                  metrics: pd.DataFrame, series: pd.DataFrame, resolutions: pd.DataFrame,
-                 leads: pd.DataFrame, folds: list[dict], market_meta: dict | None = None) -> dict:
+                 leads: pd.DataFrame, folds: list[dict], market_meta: dict | None = None,
+                 scope: str = "pilot", coverage_extra: dict | None = None) -> dict:
     firms, fomc = normalize_scores(firms), normalize_scores(fomc)
     evaluated = predictions.dropna(subset=["excess_return"]) if len(predictions) else predictions
     matched_panel = panel.dropna(subset=["excess_return"]) if len(panel) else panel
@@ -523,20 +512,26 @@ def build_report(firms: pd.DataFrame, fomc: pd.DataFrame, panel: pd.DataFrame, e
                     fomc_documents_used=int(panel.fomc_doc_id.nunique()) if len(panel) else 0,
                     first_fomc_release=fomc.published_at.min().isoformat(),
                     last_fomc_release=fomc.published_at.max().isoformat())
+    coverage.update(coverage_extra or {})
     resolution_counts = records(resolutions.groupby(["scope","topic","outcome"]).size().reset_index(name="count")) if len(resolutions) else []
     limitations = [
-        "Selected current S&P 500 companies are a feasibility sample, not the historical S&P 500 universe; survivorship and nonrandom selection prevent index-wide generalization.",
+        "The fixed current S&P 500 issuer universe is not historical index membership. Survivorship, corporate reorganizations, and unavailable sources limit generalization.",
         "Current GICS sector labels are held fixed; historical reclassifications and constituent membership are not reconstructed.",
+        "A fixed course dictionary archive (20200204) is applied retrospectively across 2016-2025. Source and return availability are point-in-time, but the dictionary/model versions available at each historical date are not reconstructed; sampled FinBERT comparisons use one fixed revision.",
         "LM dictionary affect scores do not identify hawkishness, cost versus demand channels, or the economic direction of inflation/employment. Topic scores are common-topic tone proxies.",
-        "SEC acceptance is used as conservative availability; actual investor-relations release can precede SEC filing. Quarter-end inputs discard releases on the final trading day.",
+        "SEC sources use acceptance as conservative availability. Verified official-IR replacements use the later of SEC acceptance and 00:00 America/New_York on the day after the stated IR release date; original timestamps remain recorded. Quarter-end inputs discard releases on the final trading day.",
         "Only disclosures no more than 120 days old enter formation; source collection failures can create nonrandom exclusions.",
-        "OOS estimates use a selected pilot and limited quarterly observations. HAC t-statistics do not correct dozens of topic/sector comparisons; all findings are exploratory.",
+        "OOS estimates have limited quarterly observations. HAC t-statistics do not correct dozens of topic/sector comparisons; all findings are exploratory.",
         "FOMC information is common across firms in each quarter; the macro time-series sample is the number of quarters, not the number of company-quarter rows.",
-        "Topic means include only firms that mention the topic. Their composition and counts can change over time, especially with only three selected firms per sector.",
+        "Topic means include only market-matched firms that mention the topic. Counts and membership change over time; mean changes are not exclusively within-firm perception changes.",
         "Market-adjusted BHAR equals stock buy-and-hold return minus broad US market buy-and-hold return; it is not factor alpha or an S&P 500-only benchmark.",
         "Long-short returns assume 100% long and 100% short exposure, quarterly close execution and 10 bp per dollar traded. Borrow fees, funding, slippage and market impact are unmodeled.",
-        "The full-corpus FinBERT return backtest, EPS-surprise controls, accounting-outcome validation and causal identification are not part of the executed LM pilot. A separate sampled LM/FinBERT agreement experiment does not establish return predictive superiority.",
+        "The full-corpus FinBERT return backtest, EPS-surprise controls, accounting-outcome validation and causal identification are not part of the executed LM analysis. A separate sampled LM/FinBERT agreement experiment does not establish return predictive superiority.",
         "Text lead-lag and convergence describe source language. They do not establish which institution is correct about the economy or guarantee return predictability.",
+        "Within a sector and quarter, TD features and TD-sector interactions are constant; within-sector TD stock rankings are driven by the varying momentum control. Sector-mean time-series performance is a different comparison.",
+        "Ridge uses X'X + 10I. The fixed numerical penalty is unchanged from the pilot, but relative regularization weakens as training rows increase; pilot/full differences are not a pure sample-size experiment.",
+        "The full run includes source-quality corrections discovered during the expanded audit, including previously retained pilot documents. The preserved pilot is an overlapping baseline, not an independent holdout; changes combine coverage, composition, source corrections and relative regularization.",
+        "Annualized portfolio metrics and portfolio HAC are withheld if observed quarters have interior gaps or differ across models; missing selected returns are never silently reweighted.",
     ]
     modules = [
         {"id": "bottom_up_validity", "status": "executed_exploratory" if len(validity) else "unavailable", "question": "기업 어조는 향후 시장 대비 수익률과 관련되는가?", "method": "Quarterly cross-sectional Spearman IC, whole sample and GICS sectors; HAC over quarters."},
@@ -551,12 +546,43 @@ def build_report(firms: pd.DataFrame, fomc: pd.DataFrame, panel: pd.DataFrame, e
     return {"meta": {"generated_at": datetime.now(timezone.utc).isoformat(), "status": "exploratory_pilot", "scope": "Current-constituent selected-sector pilot; not full S&P 500", "start": panel.formation_date.min() if len(panel) else None, "end": panel.formation_date.max() if len(panel) else None, "last_evaluated_formation": matched_panel.formation_date.max() if len(matched_panel) else None, "return_end": matched_panel.label_end.max() if len(matched_panel) else None, "method": "LM affect + quarterly 3-month returns + expanding OOS ridge", "ridge_alpha": 10., "min_train_quarters": 12, "horizon_months": 3}, "coverage": coverage, "modules": modules, "descriptive": descriptive_report(firms,fomc), "validity": {"overall": records(validity[validity.scope.eq("All")]) if len(validity) else [], "by_sector": records(validity[~validity.scope.eq("All")]) if len(validity) else []}, "models": records(metrics), "models_by_sector": records(sector_model_metrics(predictions)), "portfolios": records(portfolios), "disagreement": {"summary": resolution_counts, "lead_lag": records(leads), "events": records(resolutions), "notes": ["Fixed origin z-score scales; retrospective outcome labels are not investment inputs.", "Affect convergence is not proof of economic accuracy."]}, "topic_time_series": records(series), "findings": findings, "limitations": limitations, "sources": sources, "validation": {"folds": folds, "point_in_time": "All disclosure timestamps < final trading date 00:00 UTC. All training outcomes end strictly before test formation date.", "return_formula": "prod(1+stock_month_return)-prod(1+market_month_return), exact next 3 calendar months", "market": market_meta or {}}}
 
 
-def run_analysis(project: Path) -> dict:
-    processed, private, reports = project/"data/processed", project/"data/private", project/"reports"
+def run_analysis(project: Path, scope: str = "auto", reports_dir: Path | None = None,
+                 private_dir: Path | None = None, final: bool = False) -> dict:
+    """Freeze inputs per run; full checkpoint defaults never overwrite deliverables."""
+    from .coverage import coverage_funnel
+    project=Path(project)
+    universe=pd.read_csv(project/"data/reference/selected_universe.csv")
+    if scope=="auto":
+        scope="full" if len(universe)>33 else "pilot"
+    if scope not in ("pilot","full"):
+        raise ValueError("scope must be auto, pilot or full")
+    if scope=="pilot":
+        pilot=json.loads((project/"configs/research.json").read_text(encoding="utf-8"))["pilot_tickers"]
+        universe=universe[universe.ticker.isin(pilot)].copy()
+    processed=project/"data/processed"
+    private=Path(private_dir) if private_dir is not None else project/("data/private/full" if scope=="full" else "data/private")
+    reports=Path(reports_dir) if reports_dir is not None else project/("reports" if final or scope=="pilot" else "reports/full_checkpoint")
+    if scope=="full" and reports.resolve()==(project/"reports").resolve() and not final:
+        raise ValueError("Full results require --final before replacing published reports")
+    private.mkdir(parents=True,exist_ok=True)
     firms = pd.read_csv(processed/"firm_scores.csv")
+    firms=firms[firms.ticker.isin(universe.ticker)].copy()
     fomc = pd.read_csv(processed/"fomc_scores.csv")
+    collection=pd.read_csv(processed/"issuer_collection_status.csv").fillna("") if (processed/"issuer_collection_status.csv").exists() else pd.DataFrame()
+    if len(collection):
+        collection=collection[collection.ticker.isin(universe.ticker)]
+    if final and scope=="full" and (len(collection)!=len(universe) or collection.status.isin(["pending","running"]).any()):
+        raise ValueError("Final full-universe report requires all target collection attempts to finish")
+    snapshots={"firm_scores":firms,"fomc_scores":fomc,"universe":universe,"collection_status":collection}
+    input_manifest={}
+    for name,data in snapshots.items():
+        payload=data.to_csv(index=False,lineterminator="\n").encode("utf-8")
+        (private/f"{name}_used.csv").write_bytes(payload)
+        input_manifest[name]={"rows":len(data),"sha256":hashlib.sha256(payload).hexdigest()}
     monthly = pd.read_csv(private/"monthly_returns.csv")
     factors = pd.read_csv(private/"market_factors.csv")
+    audit_path=private/"market_mapping_audit.csv"
+    market_audit=pd.read_csv(audit_path).fillna("") if audit_path.exists() else pd.DataFrame()
     panel, exclusions = build_panel(firms,fomc,monthly,factors)
     validity = signal_validity(panel)
     predictions, folds = expanding_predictions(panel,include_ablation=True)
@@ -569,9 +595,16 @@ def run_analysis(project: Path) -> dict:
     resolutions, leads = disagreement_analysis(series)
     market_meta_path = private/"market_manifest.json"
     market_meta = json.loads(market_meta_path.read_text(encoding="utf-8")) if market_meta_path.exists() else {}
-    public_market_keys = {"source", "source_filename", "source_sha256", "factors_filename", "factors_sha256", "n_tickers", "n_rows", "exact_duplicate_rows_removed", "conflicting_duplicate_keys", "start", "end", "license"}
+    public_market_keys = {"source", "source_filename", "source_sha256", "factors_filename", "factors_sha256", "n_tickers", "n_rows", "exact_duplicate_rows_removed", "conflicting_duplicate_keys", "start", "end", "license", "mapping_status_counts", "target_tickers", "cache_reused"}
     public_market_meta = {k:v for k,v in market_meta.items() if k in public_market_keys}
-    report = build_report(firms,fomc,panel,exclusions,validity,main_predictions,portfolios,metrics,series,resolutions,leads,folds,public_market_meta)
+    target_securities=len(pd.read_csv(project/"data/reference/universe_snapshot.csv")) if scope=="full" else len(universe)
+    extra,funnel,issuer_status=coverage_funnel(universe,collection,firms,monthly,panel,main_predictions,market_audit,target_securities)
+    extra.update(funnel_by_sector=records(funnel),issuer_status=records(issuer_status))
+    report = build_report(firms,fomc,panel,exclusions,validity,main_predictions,portfolios,metrics,series,resolutions,leads,folds,public_market_meta,scope,extra)
+    report["meta"].update(scope="full_current_constituents" if scope=="full" else "selected_33_issuer_pilot",
+                          status="exploratory_full_current_universe" if scope=="full" and final else "exploratory_full_checkpoint" if scope=="full" else "exploratory_pilot",
+                          final=final)
+    report["validation"]["inputs"]=input_manifest
     if len(panel):
         report["descriptive"]["company_panel_coverage"] = records(panel.groupby(["ticker","sector"]).agg(
             formation_quarters=("formation_date","nunique"),return_observed=("excess_return","count"),
@@ -579,10 +612,24 @@ def run_analysis(project: Path) -> dict:
     report["topic_ablation"] = records(ablation)
     report["validation"]["momentum_control"] = "Three completed calendar months ending one month before entry; entry-month return is unavailable at signal cutoff."
     report["validation"]["hac_lag_quarters"] = 1
+    baseline_path=project/"reports/pilot_baseline.json"
+    comparison=[]
+    if scope=="full" and baseline_path.exists():
+        baseline=json.loads(baseline_path.read_text(encoding="utf-8"))
+        old={m["model"]:m for m in baseline["models"]}
+        for metric in report["models"]:
+            previous=old.get(metric["model"],{})
+            for name in ("n_oos","n_periods","rmse","mean_ic","annualized_return","max_drawdown"):
+                before,after=previous.get(name),metric.get(name)
+                comparison.append({"model":metric["model"],"metric":name,"pilot":before,"full":after,
+                                   "difference":after-before if before is not None and after is not None else None})
+        report["pilot_comparison"]={"baseline_sha256":hashlib.sha256(baseline_path.read_bytes()).hexdigest(),
+            "pilot_issuers":baseline["coverage"]["tickers"],"rows":comparison,
+            "interpretation":"Same prespecified model and chronological rules; composition, data coverage, audited source-quality corrections (including pilot documents) and relative ridge penalty differ. The preserved pilot overlaps this sample and is not an independent holdout or causal sample-size experiment."}
     reports.mkdir(parents=True, exist_ok=True)
     for name, frame in [("panel",panel),("predictions",predictions)]:
         frame.to_csv(private/f"{name}.csv", index=False, lineterminator="\n")
-    for name, frame in [("signal_validity",validity),("portfolios",portfolios),("model_metrics",metrics),("model_sector_metrics",sector_metrics),("topic_ablation",ablation),("topic_time_series",series),("disagreement_events",resolutions),("lead_lag",leads)]:
+    for name, frame in [("signal_validity",validity),("portfolios",portfolios),("model_metrics",metrics),("model_sector_metrics",sector_metrics),("topic_ablation",ablation),("topic_time_series",series),("disagreement_events",resolutions),("lead_lag",leads),("coverage_funnel",funnel),("issuer_coverage",issuer_status),("pilot_comparison",pd.DataFrame(comparison))]:
         frame.to_csv(reports/f"{name}.csv", index=False, lineterminator="\n")
     temporary_report = reports/"results.json.tmp"
     temporary_report.write_bytes(json.dumps(report,ensure_ascii=False,indent=2,allow_nan=False).encode("utf-8"))

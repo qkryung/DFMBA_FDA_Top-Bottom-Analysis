@@ -1,10 +1,44 @@
 {
   "start_year": 2016,
   "end_year": 2025,
-  "universe_basis": "Current S&P 500 constituent snapshot, not historical membership; selected 33-company pilot",
-  "pilot_tickers": ["GOOGL", "META", "DIS", "AMZN", "HD", "MCD", "PG", "KO", "WMT", "XOM", "CVX", "COP", "JPM", "BAC", "GS", "UNH", "JNJ", "PFE", "CAT", "HON", "UPS", "AAPL", "MSFT", "IBM", "APD", "SHW", "FCX", "AMT", "PLD", "SPG", "NEE", "DUK", "SO"],
-  "sec_requests_per_second": 4,
-  "sec_workers": 4,
+  "universe_basis": "Fixed current S&P 500 constituent snapshot and current GICS labels; all 500 distinct current issuers attempted, not historical membership",
+  "pilot_tickers": [
+    "GOOGL",
+    "META",
+    "DIS",
+    "AMZN",
+    "HD",
+    "MCD",
+    "PG",
+    "KO",
+    "WMT",
+    "XOM",
+    "CVX",
+    "COP",
+    "JPM",
+    "BAC",
+    "GS",
+    "UNH",
+    "JNJ",
+    "PFE",
+    "CAT",
+    "HON",
+    "UPS",
+    "AAPL",
+    "MSFT",
+    "IBM",
+    "APD",
+    "SHW",
+    "FCX",
+    "AMT",
+    "PLD",
+    "SPG",
+    "NEE",
+    "DUK",
+    "SO"
+  ],
+  "sec_requests_per_second": 6,
+  "sec_workers": 16,
   "historical_cik_overrides": {
     "XOM": {
       "cik": 34088,
@@ -14,15 +48,384 @@
     }
   },
   "additional_historical_ciks": {
-    "DIS": [{"cik": 1001039, "start_year": 2016, "end_year": 2019, "valid_through_date": "2019-03-19", "reason": "Pre-2019 Disney entity; current CIK 1744489 begins after the Disney-Fox reorganization", "source_url": "https://data.sec.gov/submissions/CIK0001001039.json"}]
+    "DIS": [
+      {
+        "cik": 1001039,
+        "start_year": 2016,
+        "end_year": 2019,
+        "valid_through_date": "2019-03-19",
+        "reason": "Pre-2019 Disney entity; current CIK 1744489 begins after the Disney-Fox reorganization",
+        "source_url": "https://data.sec.gov/submissions/CIK0001001039.json"
+      }
+    ],
+    "AVGO": [
+      {
+        "cik": 1649338,
+        "start_year": 2016,
+        "end_year": 2018,
+        "valid_through_date": "2018-04-03",
+        "reason": "Broadcom Limited predecessor before April 4, 2018 redomiciliation to Delaware; one-for-one exchange retained AVGO identity. Does not append unrelated pre-merger Broadcom Corp history.",
+        "source_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-completes-redomiciliation-united-states-0"
+      }
+    ],
+    "APO": [
+      {
+        "cik": 1411494,
+        "start_year": 2016,
+        "end_year": 2021,
+        "valid_through_date": "2021-12-31",
+        "reason": "Apollo AAM Class A shares exchanged one-for-one for successor AGM shares in January 2022 Apollo-Athene merger. Adds Apollo predecessor only, not separate Athene releases; business reporting perimeter changed.",
+        "source_url": "https://ir.apollo.com/sec-filings/content/0001193125-22-000274/d285518d8k12b.htm"
+      }
+    ],
+    "APA": [
+      {
+        "cik": 6769,
+        "start_year": 2016,
+        "end_year": 2021,
+        "valid_through_date": "2021-02-28",
+        "reason": "Apache Corporation predecessor before March 1,2021 APA holding-company reorganization; one-for-one common share exchange and unchanged APA ticker.",
+        "source_url": "https://investor.apacorp.com/news-releases/news-release-details/apache-corporation-and-apa-corporation-announce-completion-new"
+      }
+    ],
+    "BLK": [
+      {
+        "cik": 1364742,
+        "start_year": 2016,
+        "end_year": 2024,
+        "valid_through_date": "2024-09-30",
+        "reason": "Old BlackRock predecessor before October 1,2024 holding-company reorganization accompanying GIP acquisition; one-for-one share exchange retained BLK ticker. Reporting perimeter changed.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312524229601/d856271d8k12b.htm"
+      }
+    ],
+    "BG": [
+      {
+        "cik": 1144519,
+        "start_year": 2016,
+        "end_year": 2023,
+        "valid_through_date": "2023-10-31",
+        "reason": "Bunge Limited predecessor before November 1,2023 Swiss redomiciliation; one-for-one exchange retained BG ticker and operating business.",
+        "source_url": "https://investors.bunge.com/news-and-events/press-releases/2023/01-11-2023-132451677"
+      }
+    ],
+    "CI": [
+      {
+        "cik": 701221,
+        "start_year": 2016,
+        "end_year": 2018,
+        "valid_through_date": "2018-12-19",
+        "reason": "Old Cigna shares exchanged one-for-one for successor New Cigna on December 20,2018. Adds Cigna predecessor only, not Express Scripts history or retrospective pro forma results; reporting perimeter changed.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/701221/000114036118045478/ex99_1.htm"
+      }
+    ],
+    "FERG": [
+      {
+        "cik": 1832433,
+        "start_year": 2016,
+        "end_year": 2024,
+        "valid_through_date": "2024-07-31",
+        "reason": "Ferguson plc one-for-one successor reorganization effective August 1,2024; same operating business. Earlier SEC history may be limited because US listing began March 2021.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1832433/000119312524191090/d850112d8k.htm"
+      }
+    ],
+    "EVRG": [
+      {
+        "cik": 54507,
+        "start_year": 2016,
+        "end_year": 2018,
+        "valid_through_date": "2018-06-03",
+        "reason": "Westar Energy is the accounting acquirer/reporting predecessor of Evergy; Westar shares exchanged one-for-one on June 4,2018. Adds Westar only, not separate Great Plains history. Reporting perimeter expands after merger.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1711269/000119312519235960/d777364d8k.htm"
+      }
+    ],
+    "LIN": [
+      {
+        "cik": 884905,
+        "start_year": 2016,
+        "end_year": 2018,
+        "valid_through_date": "2018-10-30",
+        "reason": "Praxair is accounting acquirer and reporting predecessor of Linde; Praxair shares exchanged one-for-one on October 31,2018. Adds Praxair only, not German Linde AG standalone history or retrospective pro forma results. Reporting perimeter changed.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1707925/000170792519000076/R7.htm"
+      }
+    ],
+    "MRVL": [
+      {
+        "cik": 1058057,
+        "start_year": 2016,
+        "end_year": 2021,
+        "valid_through_date": "2021-04-19",
+        "reason": "Marvell Technology Group Ltd shares exchanged one-for-one for successor Marvell Technology Inc on April20,2021. Adds Marvell predecessor only, not Inphi prior history; reporting perimeter changed.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1058057/000119312521122807/d156000d8k.htm"
+      }
+    ],
+    "STE": [
+      {
+        "cik": 1624899,
+        "start_year": 2016,
+        "end_year": 2019,
+        "valid_through_date": "2019-03-27",
+        "reason": "STERIS UK holding-company shares exchanged one-for-one for Irish successor effective March28,2019. Adds same-business UK predecessor only; no inferred unrelated legacy issuer.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1757898/000119312519089164/d725181d8k.htm"
+      }
+    ],
+    "TPL": [
+      {
+        "cik": 97517,
+        "start_year": 2016,
+        "end_year": 2021,
+        "valid_through_date": "2021-01-10",
+        "reason": "Texas Pacific Land Trust transferred all assets, employees and liabilities to successor corporation effective January11,2021; one-for-one share exchange. Preserves trust-to-corporation continuity with structural-change disclosure.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1811074/000121390021001303/ea133016-8k_texaspacific.htm"
+      }
+    ]
   },
   "additional_accessions": {
-    "1063761": ["0001047469-19-000321"]
+    "1063761": [
+      "0001047469-19-000321"
+    ],
+    "1097149": [
+      "0001102624-16-002629",
+      "0001102624-16-003153"
+    ],
+    "899051": [
+      "0000899051-19-000059"
+    ],
+    "820027": [
+      "0001104659-17-005802"
+    ],
+    "6951": [
+      "0000006951-24-000017"
+    ],
+    "875045": [
+      "0000875045-19-000038"
+    ],
+    "874761": [
+      "0000874761-22-000009"
+    ],
+    "1664703": [
+      "0001664703-19-000020"
+    ],
+    "906345": [
+      "0000906345-22-000040"
+    ],
+    "1739940": [
+      "0000950159-19-000028"
+    ],
+    "1058090": [
+      "0001058090-16-000078"
+    ],
+    "723254": [
+      "0000723254-16-000071"
+    ],
+    "711404": [
+      "0000711404-17-000027"
+    ],
+    "1166691": [
+      "0001104659-18-047181"
+    ],
+    "1156039": [
+      "0001193125-22-110122"
+    ],
+    "1324424": [
+      "0001324424-22-000006"
+    ],
+    "40545": [
+      "0000040545-17-000020"
+    ],
+    "1121788": [
+      "0000950170-25-060551"
+    ],
+    "79282": [
+      "0000950170-22-019915",
+      "0000950170-23-034102"
+    ],
+    "1996810": [
+      "0001996810-25-000132"
+    ],
+    "49826": [
+      "0000049826-22-000003"
+    ],
+    "715957": [
+      "0000715957-18-000016"
+    ],
+    "91576": [
+      "0001628280-16-020233"
+    ],
+    "879101": [
+      "0000950170-24-119238"
+    ],
+    "707549": [
+      "0000707549-16-000011"
+    ],
+    "63754": [
+      "0000063754-18-000083"
+    ],
+    "927653": [
+      "0000927653-20-000013"
+    ],
+    "912595": [
+      "0000912595-18-000023"
+    ],
+    "1037646": [
+      "0001037646-25-000009"
+    ],
+    "874766": [
+      "0000874766-17-000038",
+      "0000874766-20-000033"
+    ],
+    "1285785": [
+      "0001285785-25-000031"
+    ],
+    "895421": [
+      "0001157523-19-001537"
+    ],
+    "73309": [
+      "0001193125-19-196283"
+    ],
+    "76334": [
+      "0000076334-17-000049"
+    ],
+    "1534701": [
+      "0001534701-24-000030"
+    ],
+    "922224": [
+      "0000922224-22-000002"
+    ],
+    "49196": [
+      "0000049196-16-000066",
+      "0000049196-24-000035"
+    ],
+    "1393311": [
+      "0001393311-17-000025"
+    ],
+    "882835": [
+      "0000882835-20-000009"
+    ],
+    "1022079": [
+      "0001022079-17-000190"
+    ],
+    "1682852": [
+      "0001682852-19-000028",
+      "0001682852-22-000049"
+    ],
+    "101829": [
+      "0000101829-17-000042"
+    ],
+    "217346": [
+      "0000217346-21-000052"
+    ],
+    "59478": [
+      "0000059478-16-000232",
+      "0000059478-16-000249",
+      "0000059478-16-000346"
+    ],
+    "857005": [
+      "0000950170-25-061017",
+      "0001654954-19-008466"
+    ],
+    "1442145": [
+      "0001437749-23-012194"
+    ],
+    "1674101": [
+      "0001628280-20-011700"
+    ],
+    "11544": [
+      "0000011544-17-000005"
+    ],
+    "106040": [
+      "0000106040-20-000038"
+    ],
+    "946581": [
+      "0001628280-23-002424"
+    ],
+    "72903": [
+      "0000072903-21-000081"
+    ],
+    "877212": [
+      "0000877212-21-000154"
+    ],
+    "1792044": [
+      "0001792044-21-000033"
+    ],
+    "766704": [
+      "0000766704-18-000057",
+      "0000766704-19-000006"
+    ],
+    "831001": [
+      "0001104659-21-050513",
+      "0001104659-24-079431"
+    ]
   },
   "additional_accession_notes": {
-    "0001047469-19-000321": "SPG 2019-02-01 release: submissions item tag is 2.01 rather than 2.02; earnings-release exhibit independently checked"
+    "0001047469-19-000321": "SPG 2019-02-01 release: submissions item tag is 2.01 rather than 2.02; earnings-release exhibit independently checked",
+    "0001102624-16-002629": "ALGN 2016-04-28 quarterly release candidate; submissions tags only9.01. Exact accession reviewed for source recovery; exhibit still must pass financial-results selection.",
+    "0001102624-16-003153": "ALGN 2016-07-28 quarterly release candidate; original8-K tags only9.01, same-day amendment has2.02. Prefer actual original release availability if substantive exhibit exists.",
+    "0000899051-19-000059": "ALL quarterly earnings release incorrectly tagged2.01 rather than2.02 in SEC submissions metadata. Reviewed against issuer earnings release: https://www.allstateinvestors.com/static-files/914c1e5a-6753-4fdf-9085-f49859bc4264",
+    "0001104659-17-005802": "AMP quarterly earnings release incorrectly tagged2.01 rather than2.02 in SEC submissions metadata. Reviewed against issuer earnings release: https://ir.ameriprise.com/news/news-details/2017/Ameriprise-Financial-Reports-Fourth-Quarter-and-Full-Year-2016-Results/default.aspx",
+    "0000006951-24-000017": "AMAT 2024-05-16 Item2.01 metadata typo; official8-K body states Item2.02: https://ir.appliedmaterials.com/static-files/5d29c960-d5ca-4be3-9182-622ab76bba01",
+    "0000875045-19-000038": "BIIB 2019-10-22 quarterly earnings8-K candidate tagged9.01 only; substantive release exhibit remains required.",
+    "0000874761-22-000009": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/874761/000087476122000009/aes-20220224.htm",
+    "0001664703-19-000020": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1664703/000166470319000020/a8-kxq22019earningsannounc.htm",
+    "0000906345-22-000040": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/906345/000090634522000040/cpt-20221027.htm",
+    "0000950159-19-000028": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1739940/000095015919000028/cigna8k.htm",
+    "0001058090-16-000078": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1058090/000105809016000078/cmg-20160630x8k.htm",
+    "0000723254-16-000071": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/723254/000072325416000071/ctasform8-k12x16.htm",
+    "0000711404-17-000027": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/711404/000071140417000027/cooper8kq32017form.htm",
+    "0001104659-18-047181": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1166691/000110465918047181/a18-17706_18k.htm",
+    "0001193125-22-110122": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1156039/000119312522110122/d542944d8k.htm",
+    "0001324424-22-000006": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1324424/000132442422000006/expe-20220210.htm",
+    "0000040545-17-000020": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/40545/000004054517000020/ge8k1q17.htm",
+    "0000950170-25-060551": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1121788/000095017025060551/grmn-20250430.htm",
+    "0000950170-22-019915": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/79282/000095017022019915/bro-20221024.htm",
+    "0000950170-23-034102": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/79282/000095017023034102/bro-20230724.htm",
+    "0001996810-25-000132": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1996810/000199681025000132/gev-20250723.htm",
+    "0000049826-22-000003": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/49826/000004982622000003/itw-20220203.htm",
+    "0000715957-18-000016": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/715957/000071595718000016/deiearnings8k04272018.htm",
+    "0001628280-16-020233": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/91576/000162828016020233/keycorp3q16er8-k.htm",
+    "0000950170-24-119238": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/879101/000095017024119238/kim-20241031.htm",
+    "0000707549-16-000011": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/707549/000070754916000011/lrcx_8-kx3q.htm",
+    "0000063754-18-000083": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/63754/000006375418000083/mkc-8xkxseptember272018.htm",
+    "0000927653-20-000013": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/927653/000092765320000013/mck8-k12312019.htm",
+    "0000912595-18-000023": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/912595/000091259518000023/maa33118-er.htm",
+    "0001037646-25-000009": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1037646/000103764625000009/mtd-20250206.htm",
+    "0000874766-17-000038": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/874766/000087476617000038/form8-kcover072717.htm",
+    "0000874766-20-000033": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/874766/000087476620000033/form8-kcover3312020.htm",
+    "0001285785-25-000031": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1285785/000128578525000031/mos-20250506.htm",
+    "0001157523-19-001537": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/895421/000115752319001537/a52013522.htm",
+    "0001193125-19-196283": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/73309/000119312519196283/d779543d8k.htm",
+    "0000076334-17-000049": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/76334/000007633417000049/coverform8-k3qfy17.htm",
+    "0001534701-24-000030": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1534701/000153470124000030/psx-20240131.htm",
+    "0000922224-22-000002": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/922224/000092222422000002/ppl-20220218.htm",
+    "0000049196-16-000066": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/49196/000004919616000066/hban20160630_8k.htm",
+    "0000049196-24-000035": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/49196/000004919624000035/hban-20240419.htm",
+    "0001393311-17-000025": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1393311/000139331117000025/psa-20171025x8k.htm",
+    "0000882835-20-000009": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/882835/000088283520000009/rop-20200423.htm",
+    "0001022079-17-000190": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1022079/000102207917000190/dgx093020178-k.htm",
+    "0001682852-19-000028": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1682852/000168285219000028/moderna8-kx2q198x14x2019.htm",
+    "0001682852-22-000049": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1682852/000168285222000049/mrna-20221103.htm",
+    "0000101829-17-000042": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/101829/000010182917000042/a2017-09x308xker.htm",
+    "0000217346-21-000052": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/217346/000021734621000052/txt-20210729.htm",
+    "0000059478-16-000232": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/59478/000005947816000232/a8-k2016janguidance.htm",
+    "0000059478-16-000249": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/59478/000005947816000249/a8-kq42015earnings.htm",
+    "0000059478-16-000346": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/59478/000005947816000346/q12016earnings8-k.htm",
+    "0001654954-19-008466": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/857005/000165495419008466/form8-kq3fy19.htm",
+    "0000950170-25-061017": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/857005/000095017025061017/ptc-20250430.htm",
+    "0001437749-23-012194": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1442145/000143774923012194/vrsk20230131_8k.htm",
+    "0001628280-20-011700": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1674101/000162828020011700/vrt-20200805.htm",
+    "0000011544-17-000005": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/11544/000001154417000005/wrb1231168k.htm",
+    "0000106040-20-000038": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/106040/000010604020000038/wdc-20200805.htm",
+    "0001628280-23-002424": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/946581/000162828023002424/ttwo-20230206.htm",
+    "0000072903-21-000081": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/72903/000007290321000081/xel-20211028.htm",
+    "0000877212-21-000154": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/877212/000087721221000154/zbra-20210803.htm",
+    "0001792044-21-000033": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/1792044/000179204421000033/vtrs-20211108.htm",
+    "0000766704-18-000057": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/766704/000076670418000057/a3q188-k.htm",
+    "0000766704-19-000006": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/766704/000076670419000006/a4q188-k.htm",
+    "0001104659-21-050513": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/831001/000110465921050513/c-20210210x8k.htm",
+    "0001104659-24-079431": "Metadata-mislabeled release: actual primary8-K explicitly contains Item2.02 Results of Operations heading; only inspected because publication quarter was empty. https://www.sec.gov/Archives/edgar/data/831001/000110465924079431/c-20240712x8k.htm"
   },
   "text_method": "Loughran-McDonald positive, negative and uncertainty dictionary, local course version 20200204",
   "topic_method": "Prespecified multi-label keyword sentence classification; exploratory, not validated human labels",
-  "availability_rule": "SEC acceptance UTC timestamp; FOMC actual minutes release date at 14:00 America/New_York"
+  "availability_rule": "SEC acceptance UTC timestamp; FOMC actual minutes release date at 14:00 America/New_York",
+  "sec_rate_limit_note": "One shared client below SEC10 requests/sec/user maximum. Initial8/sec reduced to4 after one503; after >=10min and2400 successful requests, resumed at6/sec. New403/429/503 reduces to4/sec with backoff.",
+  "sec_max_requests_per_second": 8
 }

@@ -1,0 +1,45 @@
+{
+  "stages": [
+    {
+      "priority": 1,
+      "title": "경제 방향과 가이던스의 의미 검증",
+      "why": "긍정·부정 감성만으로 물가·고용의 방향이나 기업의 수요·비용 영향을 구분하기 어렵습니다.",
+      "deliverable": "경제 방향·가이던스 라벨과 교차검토 문장 표본을 만들고, 경영진 설명·가이던스를 재무표·법적 상용구와 분리해 점수화하는 방안을 제안합니다.",
+      "validation": "문서별 개발·검증 표본을 분리해 라벨별 오류를 확인합니다. 원래 전체 점수와 본문 구간별 점수를 같은 수익률 패널로 비교해 문서 형식·섹터 어휘의 영향을 점검합니다.",
+      "investment_use": "같은 주제와 전망 시계의 기업·연준 점수를 비교해 해석 가능한 괴리 후보를 만듭니다.",
+      "source_urls": [
+        "https://sraf.nd.edu/loughranmcdonald-master-dictionary/",
+        "https://huggingface.co/ProsusAI/finbert",
+        "https://www.federalreserve.gov/monetarypolicy/fomcminutes20251210.htm"
+      ]
+    },
+    {
+      "priority": 2,
+      "title": "수치 실적을 통제한 텍스트의 추가 가치",
+      "why": "텍스트가 이미 알려진 매출·EPS와 같은 정보를 반복하는지, 별도 전망 정보를 담는지 구분해야 합니다.",
+      "deliverable": "공개 시점이 맞는 실적·가이던스 변수와 전체 코퍼스 LM·FinBERT 비교 패널을 제안합니다.",
+      "validation": "사람 라벨 검증 후 같은 기업·기간·시계열 분할에서 비교합니다. 다음 연구의 평균 손실 정규화와 규제 강도 선택은 학습 구간 내부의 시간순 검증으로 사전 설계하며, 최종 평가 구간은 선택에 사용하지 않습니다.",
+      "investment_use": "수치 실적을 넘어서는 정보가 재현될 때 종목선정 신호로 검토합니다. 컨센서스가 없으면 서프라이즈로 명명하지 않습니다.",
+      "source_urls": [
+        "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+        "https://www.sec.gov/files/form8-k.pdf",
+        "https://huggingface.co/ProsusAI/finbert",
+        "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html",
+        "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html"
+      ]
+    },
+    {
+      "priority": 3,
+      "title": "주제·섹터 가설의 비용 후 재현성",
+      "why": "기업 수의 확대만으로 거시 관측 기간이 늘지는 않으며, 탐색한 섹터·주제가 많을수록 재검증이 중요합니다.",
+      "deliverable": "소수의 사전 지정 가설, 공통 표본의 주제 제거 비교, 섹터 중립·거래비용 민감도 평가를 제안합니다.",
+      "validation": "주제·보유기간·비용 가정을 먼저 고정하고 다중검정과 기간별 안정성을 확인합니다. TD 주제·BU 주제·상호작용을 각각 제외하는 사전 지정 비교로 출처별 추가 기여를 나눕니다. 동일 기업 고정 표본과 동일 가중·시점 시가총액 가중 비교로 집계 어조의 구성 효과도 점검합니다.",
+      "investment_use": "재현된 바텀업 정보는 섹터 내 종목선정, 거시 상호작용은 노출 조절 후보로 평가합니다. 괴리의 투자 효용은 별도 검증합니다.",
+      "source_urls": [
+        "https://www.spglobal.com/spdji/en/documents/methodologies/methodology-sp-us-indices.pdf",
+        "https://wrds-www.wharton.upenn.edu/classroom/sp500-introduction/over-time/"
+      ]
+    }
+  ],
+  "scope_note": "500개 발행사 전체 수집 시도, 497개 기업 문서 확보와 495개 기업의 표본 밖 평가를 마친 최종 결과에 근거한 후속 개발 제안입니다. 결합 우월성이 확인되지 않아 경제 의미 검증과 수치 실적 통제를 우선합니다. 아래 작업은 실행 완료 항목이 아닙니다. Case 3의 공시·텍스트 연구에 집중하며 현재 구성종목 분석과 과거 구성종목 복원은 구분합니다. 출처는 데이터·모델 정의의 근거이고 실험 순서와 투자 활용은 이 프로젝트의 제안입니다."
+}

@@ -1,0 +1,12 @@
+sector,target_issuers,attempted_issuers,document_issuers,market_matched_issuers,market_matched_issuers_all_target,analysis_issuers,oos_issuers,quarantined_issuers
+Communication Services,19,19,19,19,19,19,18,0
+Consumer Discretionary,47,47,47,47,47,47,47,0
+Consumer Staples,34,34,33,33,33,33,33,0
+Energy,21,21,21,21,21,21,21,0
+Financials,76,76,76,76,76,76,76,0
+Health Care,60,60,60,60,60,60,60,0
+Industrials,83,83,81,81,81,81,81,0
+Information Technology,75,75,75,75,75,75,74,0
+Materials,24,24,24,24,24,24,24,0
+Real Estate,30,30,30,30,30,30,30,0
+Utilities,31,31,31,31,31,31,31,0

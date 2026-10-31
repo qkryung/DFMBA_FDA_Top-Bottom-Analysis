@@ -1,0 +1,501 @@
+issuer_id,ticker,company,sector,collection_status,filing_regime,documents,attempted,has_documents,market_matched,market_matched_all_target,analysis_included,oos_included,quarantined,exclusion_reason,mapping_status,market_history_start,market_history_end,mapping_reason,mapping_source_url,first_study_period_filing,quarters_covered
+66740,MMM,3M,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+91142,AOS,A. O. Smith,Industrials,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-14,40
+1800,ABT,Abbott Laboratories,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1551152,ABBV,AbbVie,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2013-01,2025-12,,,2016-01-05,40
+1467373,ACN,Accenture,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2001-07,2025-12,,,2016-01-05,40
+796343,ADBE,Adobe Inc.,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+2488,AMD,Advanced Micro Devices,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,40
+874761,AES,AES Corporation,Utilities,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+4977,AFL,Aflac,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-26,40
+1090872,A,Agilent Technologies,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-20,40
+2969,APD,Air Products,Materials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1559720,ABNB,Airbnb,Consumer Discretionary,completed_with_gaps,8-K,20,True,True,True,True,True,True,False,included,matched_exact_active,2020-12,2025-12,,,2016-09-22,20
+1086222,AKAM,Akamai Technologies,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+915913,ALB,Albemarle Corporation,Materials,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1035443,ARE,Alexandria Real Estate Equities,Real Estate,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1097149,ALGN,Align Technology,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2001-01,2025-12,,,2016-01-04,40
+1579241,ALLE,Allegion,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2013-12,2025-12,,,2016-01-04,40
+352541,LNT,Alliant Energy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+899051,ALL,Allstate,Financials,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1652044,GOOGL,Alphabet Inc. (Class A),Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2004-08,2025-12,,,,40
+764180,MO,Altria,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1018724,AMZN,Amazon,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1748790,AMCR,Amcor,Materials,completed_with_gaps,8-K,26,True,True,True,True,True,True,False,included,matched_exact_active,2019-06,2025-12,,,2018-08-06,26
+1002910,AEE,Ameren,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+4904,AEP,American Electric Power,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+4962,AXP,American Express,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+5272,AIG,American International Group,Financials,completed,8-K,44,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1053507,AMT,American Tower,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1410636,AWK,American Water Works,Utilities,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2008-04,2025-12,,,2016-01-05,40
+820027,AMP,Ameriprise Financial,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2005-10,2025-12,,,2016-01-11,40
+1037868,AME,Ametek,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+318154,AMGN,Amgen,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+820313,APH,Amphenol,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+6281,ADI,Analog Devices,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+315293,AON,Aon plc,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-05,40
+1841666,APA,APA Corporation,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2021-03-01,40
+1858681,APO,Apollo Global Management,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2011-03,2025-12,,,2021-05-07,40
+320193,AAPL,Apple Inc.,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+6951,AMAT,Applied Materials,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1751008,APP,AppLovin,Communication Services,completed_with_gaps,8-K,19,True,True,True,True,True,True,False,included,matched_exact_active,2021-04,2025-12,,,2018-08-24,19
+1521332,APTV,Aptiv,Consumer Discretionary,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2011-11,2025-12,,,2016-01-12,40
+947484,ACGL,Arch Capital Group,Financials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-02,40
+7084,ADM,Archer Daniels Midland,Consumer Staples,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1176948,ARES,Ares Management,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2014-05,2025-12,,,2016-01-21,40
+1596532,ANET,Arista Networks,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2014-06,2025-12,,,2016-01-04,40
+354190,AJG,Arthur J. Gallagher & Co.,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-25,40
+1267238,AIZ,Assurant,Financials,completed,8-K,44,True,True,True,True,True,True,False,included,matched_exact_active,2004-02,2025-12,,,2016-01-04,40
+732717,T,AT&T,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+731802,ATO,Atmos Energy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+769397,ADSK,Autodesk,Information Technology,completed,8-K,44,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+8670,ADP,Automatic Data Processing,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+866787,AZO,AutoZone,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+8818,AVY,Avery Dennison,Materials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+1069183,AXON,Axon Enterprise,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2001-06,2025-12,,,2016-01-08,40
+1701605,BKR,Baker Hughes,Energy,completed_with_gaps,8-K,34,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2017-03-29,34
+9389,BALL,Ball Corporation,Materials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+70858,BAC,Bank of America,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+10456,BAX,Baxter International,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+10795,BDX,Becton Dickinson,Health Care,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-29,40
+1067983,BRK.B,Berkshire Hathaway,Financials,completed_with_gaps,8-K,34,True,True,True,True,True,True,False,included,matched_explicit_alias,2000-01,2025-12,Class B selected explicitly; CRSP ticker omits share-class suffix.,https://www.berkshirehathaway.com/brkshareholderinfo/compab.pdf,2016-01-06,34
+764478,BBY,Best Buy,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+842023,TECH,Bio-Techne,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+875045,BIIB,Biogen,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-27,40
+2012383,BLK,BlackRock,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2024-02-20,40
+1393818,BX,Blackstone Inc.,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-06,2025-12,,,2016-01-05,40
+1512673,XYZ,"Block, Inc.",Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2015-11,2025-12,,,2016-01-08,40
+1664703,BE,Bloom Energy,Industrials,completed_with_gaps,8-K,31,True,True,True,True,True,True,False,included,matched_exact_active,2018-07,2025-12,,,2016-03-25,30
+1390777,BNY,BNY Mellon,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_explicit_alias,2000-01,2025-12,BK changed to BNY on 2026-05-21; issuer and CUSIP unchanged. The 2025 ticker BNY is an unrelated closed-end fund and is excluded.,https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-announces-planned-change-of-stock-ticker-symbol-to-bny-130465.html,2016-01-06,40
+12927,BA,Boeing,Industrials,completed,8-K,44,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1075531,BKNG,Booking Holdings,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+885725,BSX,Boston Scientific,Health Care,completed,8-K,45,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+14272,BMY,Bristol Myers Squibb,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1730168,AVGO,Broadcom,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2009-08,2025-12,,,2018-02-06,40
+1383312,BR,Broadridge Financial Solutions,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2007-04,2025-12,,,2016-01-05,40
+79282,BRO,Brown & Brown,Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-20,40
+14693,BF.B,Brown–Forman,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_explicit_alias,2000-01,2025-12,Class B selected explicitly; CRSP ticker omits share-class suffix.,https://investors.brown-forman.com/investors/stock-information/dividend-history/default.aspx,2016-01-08,40
+1996862,BG,Bunge Global,Consumer Staples,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2001-08,2025-12,,,2023-11-01,40
+1037540,BXP,"BXP, Inc.",Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1043277,CHRW,C.H. Robinson,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+813672,CDNS,Cadence Design Systems,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+906345,CPT,Camden Property Trust,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+927628,COF,Capital One,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+721371,CAH,Cardinal Health,Health Care,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+815097,CCL,Carnival Corporation,Consumer Discretionary,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,38
+1783180,CARR,Carrier Global,Industrials,completed_with_gaps,8-K,23,True,True,True,True,True,True,False,included,matched_exact_active,2020-04,2025-12,,,2019-08-09,23
+1690820,CVNA,Carvana,Consumer Discretionary,completed_with_gaps,8-K,36,True,True,True,True,True,True,False,included,matched_exact_active,2017-04,2025-12,,,2016-12-22,35
+726958,CASY,Casey's,Consumer Staples,completed,8-K,52,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-14,40
+18230,CAT,Caterpillar Inc.,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1374310,CBOE,Cboe Global Markets,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2010-06,2025-12,,,2016-01-13,40
+1138118,CBRE,CBRE Group,Real Estate,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2004-06,2025-12,,,2016-01-12,40
+1402057,CDW,CDW Corporation,Information Technology,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2013-06,2025-12,,,2016-01-28,40
+1140859,COR,Cencora,Health Care,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,39
+1071739,CNC,Centene Corporation,Health Care,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2001-12,2025-12,,,2016-01-05,40
+1130310,CNP,CenterPoint Energy,Utilities,completed_with_gaps,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,39
+1324404,CF,CF Industries,Materials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2005-08,2025-12,,,2016-01-26,40
+1100682,CRL,Charles River Laboratories,Health Care,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-06,2025-12,,,2016-01-08,39
+316709,SCHW,Charles Schwab Corporation,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1091667,CHTR,Charter Communications,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2010-09,2025-12,,,2016-01-04,40
+93410,CVX,Chevron Corporation,Energy,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1058090,CMG,Chipotle Mexican Grill,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2006-01,2025-12,,,2016-01-06,40
+896159,CB,Chubb Limited,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,40
+313927,CHD,Church & Dwight,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+936395,CIEN,Ciena,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1739940,CI,Cigna,Health Care,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2018-05-16,39
+20286,CINF,Cincinnati Financial,Financials,completed,8-K,48,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-26,40
+723254,CTAS,Cintas,Industrials,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,30
+858877,CSCO,Cisco,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+831001,C,Citigroup,Financials,completed,8-K,45,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+759944,CFG,Citizens Financial Group,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2014-09,2025-12,,,2016-01-22,40
+21076,CLX,Clorox,Consumer Staples,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1156375,CME,CME Group,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2002-12,2025-12,,,2016-01-29,40
+811156,CMS,CMS Energy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+21344,KO,Coca-Cola Company (The),Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1058290,CTSH,Cognizant,Information Technology,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+820318,COHR,Coherent Corp.,Information Technology,completed_with_gaps,8-K,36,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,36
+1679788,COIN,Coinbase,Financials,completed_with_gaps,8-K,20,True,True,True,True,True,True,False,included,matched_exact_active,2021-04,2025-12,,,2016-07-21,19
+21665,CL,Colgate-Palmolive,Consumer Staples,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,39
+1166691,CMCSA,Comcast,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2002-11,2025-12,,,2016-01-05,40
+1035983,FIX,Comfort Systems USA,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+1163165,COP,ConocoPhillips,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1047862,ED,Consolidated Edison,Utilities,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+16918,STZ,Constellation Brands,Consumer Staples,completed_with_gaps,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,33
+1868275,CEG,Constellation Energy,Utilities,completed_with_gaps,8-K,15,True,True,True,True,True,True,False,included,matched_exact_active,2022-02,2025-12,,,2021-07-26,15
+711404,COO,Cooper Companies (The),Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+900075,CPRT,Copart,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+24741,GLW,Corning Inc.,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1175454,CPAY,Corpay,Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2010-12,2025-12,,,2016-01-22,40
+1057352,CSGP,CoStar Group,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-12,40
+909832,COST,Costco,Consumer Staples,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,37
+849395,CRH,CRH plc,Materials,completed_with_gaps,mixed_8K_6K,24,True,True,True,True,True,True,False,included,matched_exact_active,2023-09,2025-12,,,2016-01-04,24
+1535527,CRWD,CrowdStrike,Information Technology,completed_with_gaps,8-K,27,True,True,True,True,True,True,False,included,matched_exact_active,2019-06,2025-12,,,2019-02-25,26
+1051470,CCI,Crown Castle,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+277948,CSX,CSX Corporation,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-12,40
+26172,CMI,Cummins,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+64803,CVS,CVS Health,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+313616,DHR,Danaher Corporation,Health Care,completed,8-K,50,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+940944,DRI,Darden Restaurants,Consumer Discretionary,completed_with_gaps,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,39
+1561550,DDOG,Datadog,Information Technology,completed_with_gaps,8-K,25,True,True,True,True,True,True,False,included,matched_exact_active,2019-09,2025-12,,,2016-01-12,25
+927066,DVA,DaVita,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+910521,DECK,Deckers Brands,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-26,40
+315189,DE,Deere & Company,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1571996,DELL,Dell Technologies,Information Technology,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2018-12,2025-12,,,2016-01-14,39
+27904,DAL,Delta Air Lines,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-05,2025-12,,,2016-01-05,40
+1090012,DVN,Devon Energy,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1093557,DXCM,Dexcom,Health Care,completed_with_gaps,8-K,48,True,True,True,True,True,True,False,included,matched_exact_active,2005-04,2025-12,,,2016-01-11,39
+1539838,FANG,Diamondback Energy,Energy,completed,8-K,45,True,True,True,True,True,True,False,included,matched_exact_active,2012-10,2025-12,,,2016-01-13,40
+1297996,DLR,Digital Realty,Real Estate,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2004-10,2025-12,,,2016-01-12,40
+29534,DG,Dollar General,Consumer Staples,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2009-11,2025-12,,,2016-01-21,40
+935703,DLTR,Dollar Tree,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+715957,D,Dominion Energy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1286681,DPZ,Domino's,Consumer Discretionary,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2004-07,2025-12,,,2016-01-08,40
+1792789,DASH,DoorDash,Consumer Discretionary,completed_with_gaps,8-K,20,True,True,True,True,True,True,False,included,matched_exact_active,2020-12,2025-12,,,2020-02-13,20
+29905,DOV,Dover Corporation,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-13,40
+1751788,DOW,Dow Inc.,Materials,completed_with_gaps,8-K,26,True,True,True,True,True,True,False,included,matched_exact_active,2019-04,2025-12,,,2018-09-07,26
+882184,DHI,D. R. Horton,Consumer Discretionary,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-21,40
+936340,DTE,DTE Energy,Utilities,completed,8-K,79,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1326160,DUK,Duke Energy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1666700,DD,DuPont,Industrials,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2017-09,2025-12,,,2016-03-01,33
+1551182,ETN,Eaton Corporation,Industrials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-22,40
+1065088,EBAY,eBay Inc.,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+1415404,ECHO,EchoStar,Communication Services,completed_with_gaps,8-K,26,True,True,True,True,True,True,False,included,matched_explicit_alias,2008-01,2025-12,EchoStar changed SATS to ECHO on 2026-06-24. Historical ticker ECHO from another issuer is excluded.,https://ir.echostar.com/news-releases/news-release-details/echostar-changing-stocker-ticker-sats-echo-marking-companys-next,2016-01-05,26
+31462,ECL,Ecolab,Materials,completed,8-K,48,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+827052,EIX,Edison International,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1099800,EW,Edwards Lifesciences,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-04,2025-12,,,2016-01-07,40
+1156039,ELV,Elevance Health,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2001-10,2025-12,,,2016-01-12,40
+105634,EME,Emcor,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+32604,EMR,Emerson Electric,Industrials,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-13,40
+65984,ETR,Entergy,Utilities,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+821189,EOG,EOG Resources,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+33213,EQT,EQT Corporation,Energy,completed,8-K,44,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+33185,EFX,Equifax,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1101239,EQIX,Equinix,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2002-12,2025-12,,,2016-01-12,40
+922621,ERIE,Erie Indemnity,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+920522,ESS,Essex Property Trust,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-14,40
+1001250,EL,Estée Lauder Companies (The),Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1095073,EG,Everest Group,Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1711269,EVRG,Evergy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2017-07-10,40
+1474432,P,Everpure,Information Technology,completed,8-K,43,True,True,True,True,True,True,False,included,matched_explicit_alias,2015-10,2025-12,"Everpure, formerly Pure Storage, changed PSTG to P on 2026-04-17; CUSIP unchanged. Historical ticker P from another issuer is excluded.",https://www.everpuredata.com/company/newsroom/press-releases/everpure-to-change-ticker-symbol.html,2016-01-08,40
+72741,ES,Eversource Energy,Utilities,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-20,40
+1109357,EXC,Exelon,Utilities,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,39
+895126,EXE,Expand Energy,Energy,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2021-02,2025-12,,,2016-01-05,37
+1324424,EXPE,Expedia Group,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2005-08,2025-12,,,2016-01-05,40
+746515,EXPD,Expeditors International,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-20,40
+1289490,EXR,Extra Space Storage,Real Estate,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2004-08,2025-12,,,2016-01-07,39
+2115436,XOM,ExxonMobil,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1048695,FFIV,"F5, Inc.",Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1013237,FDS,FactSet,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+814547,FICO,Fair Isaac,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-20,40
+815556,FAST,Fastenal,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-14,40
+34903,FRT,Federal Realty Investment Trust,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1048911,FDX,FedEx,Industrials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+2082247,FDXF,FedEx Freight,Industrials,not_yet_listed_in_study_period,other_forms_only,0,True,False,False,False,False,False,False,not_yet_listed_in_study_period,not_listed_in_market_study_period,,,"Independent regular-way trading began 2026-06-01, after the market dataset ends; parent FedEx returns are not substituted.",https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Completes-Spin-Off-of-FedEx-Freight/default.aspx,2025-08-29,0
+2011641,FERG,Ferguson Enterprises,Industrials,completed_with_gaps,8-K,23,True,True,True,True,True,True,False,included,matched_exact_active,2021-03,2025-12,,,2024-03-01,20
+1136893,FIS,Fidelity National Information Services,Financials,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2001-07,2025-12,,,2016-01-04,40
+35527,FITB,Fifth Third Bancorp,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-13,40
+1274494,FSLR,First Solar,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2006-11,2025-12,,,2016-01-05,40
+1031296,FE,FirstEnergy,Utilities,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+798354,FISV,Fiserv,Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+866374,FLEX,Flex Ltd.,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+37996,F,Ford Motor Company,Consumer Discretionary,completed_with_gaps,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,39
+1262039,FTNT,Fortinet,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2009-11,2025-12,,,2016-01-22,40
+1659166,FTV,Fortive,Industrials,completed_with_gaps,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2016-07,2025-12,,,2016-01-13,38
+1754301,FOXA,Fox Corporation (Class A),Communication Services,completed_with_gaps,8-K,27,True,True,True,True,True,True,False,included,matched_exact_active,2019-03,2025-12,,,2018-10-09,27
+38777,BEN,Franklin Resources,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+831259,FCX,Freeport-McMoRan,Materials,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1121788,GRMN,Garmin,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-12,2025-12,,,2016-01-19,40
+749251,IT,Gartner,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+40545,GE,GE Aerospace,Industrials,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,38
+1932393,GEHC,GE HealthCare,Health Care,completed_with_gaps,8-K,13,True,True,True,True,True,True,False,included,matched_exact_active,2023-01,2025-12,,,2022-07-29,12
+1996810,GEV,GE Vernova,Industrials,completed_with_gaps,8-K,7,True,True,True,True,True,True,False,included,matched_exact_active,2024-04,2025-12,,,2023-10-27,7
+849399,GEN,Gen Digital,Information Technology,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+1474735,GNRC,Generac,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2010-02,2025-12,,,2016-01-08,40
+40533,GD,General Dynamics,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+40704,GIS,General Mills,Consumer Staples,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,39
+1467858,GM,General Motors,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2010-11,2025-12,,,2016-01-04,40
+40987,GPC,Genuine Parts Company,Consumer Discretionary,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+882095,GILD,Gilead Sciences,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1123360,GPN,Global Payments,Financials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2001-02,2025-12,,,2016-01-05,40
+320335,GL,Globe Life,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1609711,GDDY,GoDaddy,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2015-04,2025-12,,,2016-02-11,40
+886982,GS,Goldman Sachs,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+45012,HAL,Halliburton,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+874766,HIG,Hartford (The),Financials,completed,8-K,44,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+46080,HAS,Hasbro,Consumer Discretionary,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+860730,HCA,HCA Healthcare,Health Care,completed,8-K,45,True,True,True,True,True,True,False,included,matched_exact_active,2011-03,2025-12,,,2016-01-08,40
+765880,DOC,Healthpeak Properties,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1000228,HSIC,Henry Schein,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+47111,HSY,Hershey Company (The),Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1645590,HPE,Hewlett Packard Enterprise,Information Technology,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2015-11,2025-12,,,2016-01-20,38
+1585689,HLT,Hilton Worldwide,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2013-12,2025-12,,,2016-02-12,40
+354950,HD,Home Depot (The),Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+2089271,HONA,Honeywell Aerospace,Industrials,not_yet_listed_in_study_period,other_forms_only,0,True,False,False,False,False,False,False,not_yet_listed_in_study_period,not_listed_in_market_study_period,,,"Independent regular-way trading began 2026-06-29, after the market dataset ends; parent Honeywell returns are not substituted.",https://www.honeywell.com/us/en/news/press-releases/2026/06/honeywell-technologies-launches-independent-pure-play-automation-company-following-honeywell-aerospace-spin-off,2025-10-01,0
+773840,HON,Honeywell Technologies,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+48465,HRL,Hormel Foods,Consumer Staples,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1070750,HST,Host Hotels & Resorts,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+4281,HWM,Howmet Aerospace,Industrials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+47217,HPQ,HP Inc.,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-26,40
+48898,HUBB,Hubbell Incorporated,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+49071,HUM,Humana,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+49196,HBAN,Huntington Bancshares,Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-14,40
+1501585,HII,Huntington Ingalls Industries,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2011-03,2025-12,,,2016-01-06,40
+51143,IBM,IBM,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+832101,IEX,IDEX Corporation,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-26,40
+874716,IDXX,Idexx Laboratories,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+49826,ITW,Illinois Tool Works,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-25,40
+1110803,ILMN,"Illumina, Inc.",Health Care,completed_with_gaps,8-K,45,True,True,True,True,True,True,False,included,matched_exact_active,2000-07,2025-12,,,2016-01-04,39
+879169,INCY,Incyte,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1699150,IR,Ingersoll Rand,Industrials,completed_with_gaps,8-K,35,True,True,True,True,True,True,False,included,matched_exact_active,2017-05,2025-12,,,2017-02-28,34
+1145197,PODD,Insulet Corporation,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2007-05,2025-12,,,2016-01-08,40
+50863,INTC,Intel,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1381197,IBKR,Interactive Brokers,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-05,2025-12,,,2016-01-05,40
+1571949,ICE,Intercontinental Exchange,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2005-11,2025-12,,,2016-01-05,40
+51253,IFF,International Flavors & Fragrances,Materials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,40
+51434,IP,International Paper,Materials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+896878,INTU,Intuit,Information Technology,completed,8-K,49,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1035267,ISRG,Intuitive Surgical,Health Care,completed,8-K,51,True,True,True,True,True,True,False,included,matched_exact_active,2000-06,2025-12,,,2016-01-13,40
+914208,IVZ,Invesco,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-12,2025-12,,,2016-01-05,40
+1687229,INVH,Invitation Homes,Real Estate,completed_with_gaps,8-K,35,True,True,True,True,True,True,False,included,matched_exact_active,2017-02,2025-12,,,2016-10-17,35
+1478242,IQV,IQVIA,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2013-05,2025-12,,,2016-02-10,40
+1020569,IRM,Iron Mountain,Real Estate,completed_with_gaps,8-K,36,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,36
+728535,JBHT,J.B. Hunt,Industrials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-13,40
+898293,JBL,Jabil,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+779152,JKHY,Jack Henry & Associates,Financials,completed,8-K,49,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-12,40
+52988,J,Jacobs Solutions,Industrials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+200406,JNJ,Johnson & Johnson,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+833444,JCI,Johnson Controls,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-14,40
+19617,JPM,JPMorgan Chase,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1944048,KVUE,Kenvue,Consumer Staples,completed_with_gaps,8-K,11,True,True,True,True,True,True,False,included,matched_exact_active,2023-05,2025-12,,,2022-08-30,10
+1418135,KDP,Keurig Dr Pepper,Consumer Staples,completed_with_gaps,8-K,38,True,True,True,True,True,True,False,included,matched_exact_active,2018-07,2025-12,,,2016-01-06,38
+91576,KEY,KeyCorp,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1601046,KEYS,Keysight Technologies,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2014-11,2025-12,,,2016-01-11,40
+55785,KMB,Kimberly-Clark,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+879101,KIM,Kimco Realty,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1506307,KMI,Kinder Morgan,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2011-02,2025-12,,,2016-01-20,40
+1404912,KKR,KKR & Co.,Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2010-07,2025-12,,,2016-01-12,40
+319201,KLAC,KLA Corporation,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1637459,KHC,Kraft Heinz,Consumer Staples,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2015-07,2025-12,,,2016-01-05,39
+56873,KR,Kroger,Consumer Staples,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+202058,LHX,L3Harris,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+920148,LH,Labcorp,Health Care,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,39
+707549,LRCX,Lam Research,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-12,40
+1300514,LVS,Las Vegas Sands,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2004-12,2025-12,,,2016-01-04,40
+1336920,LDOS,Leidos,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2006-10,2025-12,,,2016-01-04,40
+920760,LEN,Lennar,Consumer Discretionary,completed_with_gaps,8-K,42,True,True,True,True,True,True,False,included,matched_explicit_alias,2000-01,2025-12,LEN is Class A; LEN.B is Class B. CRSP ticker alone is ambiguous.,https://investors.lennar.com/~/media/Files/L/Lennar-IR-V3/documents/annual-reports/annual-report-2024.pdf,2016-01-05,38
+1069202,LII,Lennox International,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+59478,LLY,Lilly (Eli),Health Care,completed,8-K,46,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1707925,LIN,Linde plc,Materials,completed_with_gaps,8-K,36,True,True,True,True,True,True,False,included,matched_exact_active,2018-10,2025-12,,,2017-06-01,36
+1335258,LYV,Live Nation Entertainment,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2005-12,2025-12,,,2016-01-08,40
+936468,LMT,Lockheed Martin,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+60086,L,Loews Corporation,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+60667,LOW,Lowe's,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1397187,LULU,Lululemon Athletica,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-07,2025-12,,,2016-01-11,40
+1633978,LITE,Lumentum,Information Technology,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2015-08,2025-12,,,2016-01-26,40
+1489393,LYB,LyondellBasell,Materials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2010-10,2025-12,,,2016-01-05,40
+36270,MTB,M&T Bank,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1510295,MPC,Marathon Petroleum,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2011-07,2025-12,,,2016-01-04,40
+1048286,MAR,Marriott International,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+62709,MRSH,Marsh McLennan,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_explicit_alias,2000-01,2025-12,MMC changed to MRSH on 2026-01-14; legal issuer and CUSIP unchanged.,https://www.marsh.com/en/corp/about/news/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html,2016-01-06,40
+916076,MLM,Martin Marietta Materials,Materials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-05,40
+1835632,MRVL,Marvell Technology,Information Technology,completed_with_gaps,8-K,44,True,True,True,True,True,True,False,included,matched_exact_active,2000-06,2025-12,,,2020-12-22,38
+62996,MAS,Masco,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+1141391,MA,Mastercard,Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2006-05,2025-12,,,2016-01-08,40
+63754,MKC,McCormick & Company,Consumer Staples,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_explicit_alias,2000-01,2025-12,MKC is non-voting common; CRSP COM V is the separate MKC.V voting class.,https://ir.mccormick.com/investor-faqs,2016-01-27,29
+63908,MCD,McDonald's,Consumer Discretionary,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+927653,MCK,McKesson,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1613103,MDT,Medtronic,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,40
+310158,MRK,Merck & Co.,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1326801,META,Meta Platforms,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2012-05,2025-12,,,,40
+1099219,MET,MetLife,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-04,2025-12,,,2016-01-05,40
+1037646,MTD,Mettler Toledo,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+789570,MGM,MGM Resorts,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+827054,MCHP,Microchip Technology,Information Technology,completed,8-K,44,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+723125,MU,Micron Technology,Information Technology,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,38
+789019,MSFT,Microsoft,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+912595,MAA,Mid-America Apartment Communities,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1682852,MRNA,Moderna,Health Care,completed_with_gaps,8-K,34,True,True,True,True,True,True,False,included,matched_exact_active,2018-12,2025-12,,,2016-08-24,28
+1103982,MDLZ,Mondelez International,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2001-06,2025-12,,,2016-01-05,40
+1280452,MPWR,Monolithic Power Systems,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2004-11,2025-12,,,2016-01-05,40
+865752,MNST,Monster Beverage,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-12,40
+1059556,MCO,Moody's Corporation,Financials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+895421,MS,Morgan Stanley,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1285785,MOS,Mosaic Company (The),Materials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2004-10,2025-12,,,2016-01-12,40
+68505,MSI,Motorola Solutions,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1408198,MSCI,MSCI,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-11,2025-12,,,2016-01-05,40
+1120193,NDAQ,"Nasdaq, Inc.",Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2005-02,2025-12,,,2016-01-05,40
+1002047,NTAP,NetApp,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1065280,NFLX,Netflix,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2002-05,2025-12,,,2016-01-06,40
+1164727,NEM,Newmont,Materials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+1564708,NWSA,News Corp (Class A),Communication Services,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2013-07,2025-12,,,2016-01-05,40
+753308,NEE,NextEra Energy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+320187,NKE,"Nike, Inc.",Consumer Discretionary,completed_with_gaps,8-K,50,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,39
+1111711,NI,NiSource,Utilities,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-27,39
+72331,NDSN,Nordson Corporation,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+702165,NSC,Norfolk Southern,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+73124,NTRS,Northern Trust,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1133421,NOC,Northrop Grumman,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1513761,NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,completed,8-K,46,True,True,True,True,True,True,False,included,matched_exact_active,2013-01,2025-12,,,2016-01-06,40
+1013871,NRG,NRG Energy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2004-03,2025-12,,,2016-01-05,40
+73309,NUE,Nucor,Materials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-28,40
+1045810,NVDA,Nvidia,Information Technology,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,40
+906163,NVR,"NVR, Inc.",Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1413447,NXPI,NXP Semiconductors,Information Technology,completed,mixed_8K_6K,42,True,True,True,True,True,True,False,included,matched_exact_active,2010-08,2025-12,,,2016-02-04,40
+898173,ORLY,O'Reilly Automotive,Consumer Discretionary,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,39
+797468,OXY,Occidental Petroleum,Energy,completed_with_gaps,8-K,50,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,39
+878927,ODFL,Old Dominion,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+29989,OMC,Omnicom Group,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1097864,ON,ON Semiconductor,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-04,2025-12,,,2016-01-06,40
+1039684,OKE,Oneok,Energy,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1341439,ORCL,Oracle Corporation,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-21,40
+1781335,OTIS,Otis Worldwide,Industrials,completed_with_gaps,8-K,23,True,True,True,True,True,True,False,included,matched_exact_active,2020-04,2025-12,,,2019-08-09,23
+75362,PCAR,Paccar,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+75677,PKG,Packaging Corporation of America,Materials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1321655,PLTR,Palantir Technologies,Information Technology,completed_with_gaps,8-K,21,True,True,True,True,True,True,False,included,matched_exact_active,2020-09,2025-12,,,2016-11-23,21
+1327567,PANW,Palo Alto Networks,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2012-07,2025-12,,,2016-01-04,40
+76334,PH,Parker Hannifin,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+723531,PAYX,Paychex,Industrials,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-04,33
+1633917,PYPL,PayPal,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2015-07,2025-12,,,2016-01-06,40
+77360,PNR,Pentair,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2012-10,2025-12,,,2016-01-06,40
+77476,PEP,PepsiCo,Consumer Staples,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,39
+78003,PFE,Pfizer,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1004980,PCG,PG&E Corporation,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1413329,PM,Philip Morris International,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2008-03,2025-12,,,2016-01-05,40
+1534701,PSX,Phillips 66,Energy,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2012-05,2025-12,,,2016-01-06,40
+764622,PNW,Pinnacle West Capital,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+713676,PNC,PNC Financial Services,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+79879,PPG,PPG Industries,Materials,completed,8-K,46,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+922224,PPL,PPL Corporation,Utilities,completed,8-K,46,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1126328,PFG,Principal Financial Group,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2001-10,2025-12,,,2016-01-04,40
+80424,PG,Procter & Gamble,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+80661,PGR,Progressive Corporation,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1045609,PLD,Prologis,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1137774,PRU,Prudential Financial,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2001-12,2025-12,,,2016-01-04,40
+857005,PTC,PTC Inc.,Information Technology,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-20,40
+788784,PEG,Public Service Enterprise Group,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1393311,PSA,Public Storage,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,40
+822416,PHM,PulteGroup,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-28,40
+2058873,Q,Qnity Electronics,Information Technology,completed_with_gaps,8-K,1,True,True,True,True,True,False,False,no_observed_oos_return,matched_exact_active,2025-11,2025-12,,,2025-04-24,1
+804328,QCOM,Qualcomm,Information Technology,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,39
+1050915,PWR,Quanta Services,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-10,40
+1022079,DGX,Quest Diagnostics,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1037038,RL,Ralph Lauren Corporation,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,40
+720005,RJF,Raymond James Financial,Financials,completed_with_gaps,8-K,48,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,38
+1713445,RDDT,Reddit,Communication Services,completed_with_gaps,8-K,7,True,True,True,True,True,True,False,included,matched_exact_active,2024-03,2025-12,,,2017-07-31,7
+726728,O,Realty Income,Real Estate,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+910606,REG,Regency Centers,Real Estate,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+872589,REGN,Regeneron Pharmaceuticals,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1281761,RF,Regions Financial Corporation,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+1060391,RSG,Republic Services,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+943819,RMD,ResMed,Health Care,completed_with_gaps,8-K,38,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,38
+31791,RVTY,Revvity,Health Care,completed_with_gaps,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-04,39
+1783879,HOOD,Robinhood Markets,Financials,completed_with_gaps,8-K,18,True,True,True,True,True,True,False,included,matched_exact_active,2021-07,2025-12,,,2019-08-06,18
+1024478,ROK,Rockwell Automation,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+84839,ROL,"Rollins, Inc.",Industrials,completed_with_gaps,8-K,38,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,37
+882835,ROP,Roper Technologies,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+745732,ROST,Ross Stores,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-28,40
+884887,RCL,Royal Caribbean Group,Consumer Discretionary,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-02,40
+101829,RTX,RTX Corporation,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+64040,SPGI,S&P Global,Financials,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,39
+1108524,CRM,Salesforce,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2004-06,2025-12,,,2016-01-05,40
+2023554,SNDK,Sandisk,Information Technology,completed_with_gaps,8-K,3,True,True,True,True,True,True,False,included,matched_exact_active,2025-02,2025-12,,,2024-06-13,3
+1034054,SBAC,SBA Communications,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-10,40
+87347,SLB,Schlumberger,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+1137789,STX,Seagate Technology,Information Technology,completed,8-K,46,True,True,True,True,True,True,False,included,matched_exact_active,2002-12,2025-12,,,2016-01-04,40
+1032208,SRE,Sempra,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1373715,NOW,ServiceNow,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2012-06,2025-12,,,2016-01-06,40
+89800,SHW,Sherwin-Williams,Materials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1063761,SPG,Simon Property Group,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+2041610,SKYD,Skydance,Communication Services,completed_with_gaps,8-K,1,True,True,True,True,True,False,False,no_observed_oos_return,matched_explicit_alias,2025-08,2025-12,Paramount Skydance changed PSKY to SKYD on 2026-10-06. Only the PSKY security history is used; predecessor PARA is not spliced.,https://www.sec.gov/Archives/edgar/data/2041610/000110465926113913/tm2626659d7_8k.htm,2024-11-04,1
+4127,SWKS,Skyworks Solutions,Information Technology,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+91419,SJM,J.M. Smucker Company (The),Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+2005951,SW,Smurfit Westrock,Materials,completed_with_gaps,8-K,6,True,True,True,True,True,True,False,included,matched_exact_active,2024-07,2025-12,,,2024-02-14,6
+91440,SNA,Snap-on,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1964738,SOLV,Solventum,Health Care,completed_with_gaps,8-K,7,True,True,True,True,True,True,False,included,matched_exact_active,2024-04,2025-12,,,2023-02-14,7
+92122,SO,Southern Company,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+92380,LUV,Southwest Airlines,Industrials,completed,8-K,54,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-11,40
+93556,SWK,Stanley Black & Decker,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-28,40
+829224,SBUX,Starbucks,Consumer Discretionary,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+93751,STT,State Street Corporation,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-06,40
+1022671,STLD,Steel Dynamics,Materials,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-12,39
+1757898,STE,Steris,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2018-11-06,40
+310764,SYK,Stryker Corporation,Health Care,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1375365,SMCI,Supermicro,Information Technology,completed,8-K,54,True,True,True,True,True,True,False,included,matched_exact_active,2007-03,2025-12,,,2016-01-12,40
+1601712,SYF,Synchrony Financial,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2014-07,2025-12,,,2016-01-05,40
+883241,SNPS,Synopsys,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+96021,SYY,Sysco,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1283699,TMUS,T-Mobile US,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-04,2025-12,,,2016-01-05,40
+1113169,TROW,T. Rowe Price,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+946581,TTWO,Take-Two Interactive,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+1116132,TPR,"Tapestry, Inc.",Consumer Discretionary,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2000-10,2025-12,,,2016-01-04,40
+1389170,TRGP,Targa Resources,Energy,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2010-12,2025-12,,,2016-01-05,40
+27419,TGT,Target Corporation,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1385157,TEL,TE Connectivity,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-07,2025-12,,,2016-01-12,40
+1094285,TDY,Teledyne Technologies,Information Technology,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+97210,TER,Teradyne,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-26,40
+1318605,TSLA,"Tesla, Inc.",Consumer Discretionary,completed,8-K,81,True,True,True,True,True,True,False,included,matched_exact_active,2010-06,2025-12,,,2016-01-04,40
+97476,TXN,Texas Instruments,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+1811074,TPL,Texas Pacific Land Corporation,Energy,completed_with_gaps,8-K,35,True,True,True,True,True,True,False,included,matched_exact_active,2021-01,2025-12,,,2020-05-19,35
+217346,TXT,Textron,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+97745,TMO,Thermo Fisher Scientific,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+109198,TJX,TJX Companies,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-01,40
+1973266,TKO,TKO Group Holdings,Communication Services,completed_with_gaps,8-K,9,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2023-05-12,9
+916365,TSCO,Tractor Supply,Consumer Discretionary,completed,8-K,45,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,40
+1466258,TT,Trane Technologies,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-05,40
+1260221,TDG,TransDigm Group,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2006-03,2025-12,,,2016-01-04,40
+86312,TRV,Travelers Companies (The),Financials,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+864749,TRMB,Trimble Inc.,Information Technology,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+92230,TFC,Truist Financial,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1447669,TWLO,Twilio,Information Technology,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2016-06,2025-12,,,2016-01-11,38
+860731,TYL,Tyler Technologies,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-27,40
+100493,TSN,Tyson Foods,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-02-05,40
+36104,USB,U.S. Bancorp,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1543151,UBER,Uber,Industrials,completed_with_gaps,8-K,28,True,True,True,True,True,True,False,included,matched_exact_active,2019-05,2025-12,,,2018-12-06,27
+74208,UDR,"UDR, Inc.",Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1403568,ULTA,Ulta Beauty,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2007-10,2025-12,,,2016-02-11,40
+100885,UNP,Union Pacific Corporation,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+100517,UAL,United Airlines Holdings,Industrials,completed,8-K,54,True,True,True,True,True,True,False,included,matched_exact_active,2006-02,2025-12,,,2016-01-07,40
+1090727,UPS,United Parcel Service,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1067701,URI,United Rentals,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+731766,UNH,UnitedHealth Group,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+352915,UHS,Universal Health Services,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-13,40
+1035002,VLO,Valero Energy,Energy,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1393052,VEEV,Veeva Systems,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2013-10,2025-12,,,2016-01-04,40
+740260,VTR,Ventas,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1967680,VLTO,Veralto,Industrials,completed_with_gaps,8-K,9,True,True,True,True,True,True,False,included,matched_exact_active,2023-10,2025-12,,,2023-03-31,9
+1014473,VRSN,Verisign,Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-20,40
+1442145,VRSK,Verisk Analytics,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2009-10,2025-12,,,2016-01-05,40
+732712,VZ,Verizon,Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+875320,VRTX,Vertex Pharmaceuticals,Health Care,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+1674101,VRT,Vertiv,Industrials,completed_with_gaps,8-K,26,True,True,True,True,True,True,False,included,matched_exact_active,2018-07,2025-12,,,2018-04-23,24
+1792044,VTRS,Viatris,Health Care,completed_with_gaps,8-K,20,True,True,True,True,True,True,False,included,matched_exact_active,2020-11,2025-12,,,2019-10-25,20
+1705696,VICI,Vici Properties,Real Estate,completed_with_gaps,8-K,32,True,True,True,True,True,True,False,included,matched_exact_active,2018-02,2025-12,,,2017-05-12,32
+1403161,V,Visa Inc.,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2008-03,2025-12,,,2016-01-12,40
+1692819,VST,Vistra Corp.,Utilities,completed_with_gaps,8-K,34,True,True,True,True,True,True,False,included,matched_exact_active,2017-05,2025-12,,,2016-12-23,34
+906107,VMRK,Vivmark Residential,Real Estate,completed,8-K,40,True,True,True,True,True,True,False,included,matched_explicit_alias,2000-01,2025-12,Vivmark retained Equity Residential CIK 906107 after the 2026 merger/name change. EQR security continuity is used; business composition changed and AVB is not spliced.,https://www.sec.gov/Archives/edgar/data/915912/000110465926094930/tm2622947d1_ex99-1.htm,2016-01-04,40
+1396009,VMC,Vulcan Materials Company,Materials,completed_with_gaps,8-K,38,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-07,38
+2128626,VYLR,Vylor,Consumer Staples,not_yet_listed_in_study_period,no_study_period_filings,0,True,False,False,False,False,False,False,not_yet_listed_in_study_period,not_listed_in_market_study_period,,,"New issuer CIK 2128626 began independent trading in October 2026, after the market dataset ends; parent Corteva returns are not substituted.",https://www.sec.gov/Archives/edgar/data/2128626/000119312526402928/ck0002128626-20260924.htm,,0
+11544,WRB,W. R. Berkley Corporation,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-14,40
+277135,GWW,W. W. Grainger,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+943452,WAB,Wabtec,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-27,40
+104169,WMT,Walmart,Consumer Staples,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+1744489,DIS,Walt Disney Company (The),Communication Services,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,,40
+823768,WM,Waste Management,Industrials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-20,40
+1000697,WAT,Waters Corporation,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+783325,WEC,WEC Energy Group,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+72971,WFC,Wells Fargo,Financials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-04,40
+766704,WELL,Welltower,Real Estate,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,40
+105770,WST,West Pharmaceutical Services,Health Care,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+106040,WDC,Western Digital,Information Technology,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-19,40
+106535,WY,Weyerhaeuser,Real Estate,completed_with_gaps,8-K,39,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-14,39
+719955,WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-27,40
+107263,WMB,Williams Companies,Energy,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-15,40
+1140536,WTW,Willis Towers Watson,Financials,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2001-06,2025-12,,,2016-01-04,40
+1327811,WDAY,"Workday, Inc.",Information Technology,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2012-10,2025-12,,,2016-01-06,40
+1174922,WYNN,Wynn Resorts,Consumer Discretionary,completed,8-K,42,True,True,True,True,True,True,False,included,matched_exact_active,2002-10,2025-12,,,2016-01-15,40
+72903,XEL,Xcel Energy,Utilities,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+1524472,XYL,Xylem Inc.,Industrials,completed,8-K,41,True,True,True,True,True,True,False,included,matched_exact_active,2011-11,2025-12,,,2016-01-27,40
+1041061,YUM,Yum! Brands,Consumer Discretionary,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-05,40
+877212,ZBRA,Zebra Technologies,Information Technology,completed_with_gaps,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2000-01,2025-12,,,2016-01-08,39
+1136869,ZBH,Zimmer Biomet,Health Care,completed,8-K,43,True,True,True,True,True,True,False,included,matched_exact_active,2001-08,2025-12,,,2016-01-05,40
+1555280,ZTS,Zoetis,Health Care,completed,8-K,40,True,True,True,True,True,True,False,included,matched_exact_active,2013-02,2025-12,,,2016-01-05,40

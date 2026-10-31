@@ -2,6 +2,7 @@
 
 Usage: python scripts/build_slides.py --proposal
        python scripts/build_slides.py --results reports/results.json
+       python scripts/build_slides.py --full-results reports/results.json
 
 PowerPoint and pywin32 are optional presentation-build dependencies, not analysis
 dependencies. The checked-in PPTX files can be read on other operating systems.
@@ -355,10 +356,34 @@ def fmt(value, digits=3, pct=False):
     return f"{value*100:.{digits}f}%" if pct else f"{value:.{digits}f}"
 
 
-def results(input_path):
+def result_scope(result, require_full=False):
+    """Keep issuer, security and estimation universes distinct in every deck."""
+    full = result.get("meta", {}).get("scope") == "full_current_constituents"
+    if require_full and not full:
+        raise ValueError("Full deck requires meta.scope='full_current_constituents'; pilot data cannot be relabelled as full coverage.")
+    if full:
+        if result.get("meta", {}).get("status") != "exploratory_full_current_universe":
+            raise ValueError("Full deck requires final full-universe status; checkpoint results cannot be published as the final presentation.")
+        cov = result["coverage"]
+        required = ("target_issuers", "target_securities", "attempted_issuers",
+                    "document_issuers", "market_matched_issuers",
+                    "analysis_issuers", "oos_issuers")
+        missing = [key for key in required if cov.get(key) is None]
+        if missing:
+            raise ValueError("Full deck requires explicit coverage denominators: " + ", ".join(missing))
+        if not (0 <= cov["oos_issuers"] <= cov["analysis_issuers"] <= cov["market_matched_issuers"] <= cov["document_issuers"] <= cov["attempted_issuers"] <= cov["target_issuers"] <= cov["target_securities"]):
+            raise ValueError("Inconsistent issuer/security coverage denominators.")
+    return "full" if full else "pilot"
+
+
+def results(input_path, require_full=False):
     source_bytes = input_path.read_bytes()
     r = json.loads(source_bytes.decode("utf-8"))
+    scope = result_scope(r, require_full)
+    full = scope == "full"
     fb_path = input_path.parent / "finbert_method_comparison.json"
+    if not fb_path.exists():
+        fb_path = ROOT / "reports" / "finbert_method_comparison.json"
     fb_bytes = fb_path.read_bytes() if fb_path.exists() else b""
     fb = json.loads(fb_bytes.decode("utf-8")) if fb_bytes else {}
     fb_done = fb.get("status") == "executed"
@@ -368,29 +393,47 @@ def results(input_path):
         fb_note += f" FinBERT 입력 중 {fb['truncated_sentences']}개 문장은 모델의 길이 제한으로 잘렸습니다."
     cov, meta = r["coverage"], r["meta"]
     evaluated_periods = max((v.get("n_periods", 0) for v in r["models"]), default=0)
+    portfolio_period_counts = sorted({v.get("n_portfolio_periods", 0) for v in r["models"]})
+    portfolio_period_label = "/".join(str(v) for v in portfolio_period_counts)
     source_urls = tuple(v["url"] for v in r.get("sources", []))
-    d = Deck("results_pilot")
+    d = Deck(f"results_{scope}")
     d.source_sha256 = hashlib.sha256(source_bytes).hexdigest()
     if fb_bytes:
         d.finbert_sha256 = hashlib.sha256(fb_bytes).hexdigest()
+    scope_note = (f"현재 구성종목의 {cov['target_issuers']}개 기업, {cov['target_securities']}개 주식 클래스 전수를 수집 대상으로 삼았습니다. 기업별 대표 주식으로 분석하며, 수집 {cov['document_issuers']}개 기업, 분기 패널 포함 {cov['analysis_issuers']}개 기업, 표본 밖 평가 포함 {cov['oos_issuers']}개 기업입니다. 패널에는 신호와 진입월 가격이 있는 관측치를 포함하며, 표본 밖 평가는 이후 3개월 수익률이 완결된 관측치에 한합니다. 수집 목표 전체와 실제 분석 분모를 구분합니다. 현재 구성종목의 과거 문서를 분석한 것이며 과거 시점의 S&P 500 구성종목을 복원한 결과는 아닙니다."
+                  if full else "실제 자료로 실행한 탐색적 파일럿 결과입니다. 현재 구성종목에서 선택한 표본이므로 이 결과를 과거 S&P 500 전체의 결과로 해석할 수는 없습니다.")
     s = d.slide(None,
-        f"실제 자료로 실행한 탐색적 파일럿 결과입니다. {cov['tickers']}개 기업, {cov['sectors']}개 섹터의 기업 문서 {cov['firm_documents']:,}건과 FOMC 의사록 {cov['fomc_documents']}건을 분석했습니다. 현재 구성종목에서 선택한 표본이므로 이 결과를 과거 S&P 500 전체의 결과로 해석할 수는 없습니다. 이번 수익률 분석은 LM 사전 기반입니다. {fb_note}",
+        f"{scope_note} {cov['tickers']}개 기업, {cov['sectors']}개 섹터의 기업 문서 {cov['firm_documents']:,}건과 FOMC 의사록 {cov['fomc_documents']}건을 처리했습니다. 이번 수익률 분석은 LM 사전 기반입니다. {fb_note}",
         30, source_urls, dark=True)
     d.text(s, "연준의 말과 기업의 말", 55, 103, 850, 75, 44, "white", True)
-    d.text(s, "실제 자료로 실행한 탐색적 파일럿", 58, 207, 825, 55, 30, "white")
-    d.text(s, f"{cov['tickers']}개 기업    {cov['sectors']}개 섹터    {cov['formation_periods']}개 형성 분기", 58, 319, 835, 50, 26, "white", True)
-    d.text(s, "선택 표본 · LM 사전 분석 · S&P 500 전체로 일반화 불가", 58, 448, 835, 36, 18, "white")
+    d.text(s, "현재 S&P 500 구성종목 전수 대상 분석" if full else "실제 자료로 실행한 탐색적 파일럿", 58, 207, 825, 55, 30, "white")
+    if full:
+        d.text(s, f"목표 {cov['target_issuers']}기업 · 수집 {cov['document_issuers']}기업 · 패널 {cov['analysis_issuers']}기업", 58, 319, 835, 50, 25, "white", True)
+        d.text(s, "현재 구성종목 기준 · LM 사전 분석 · 과거 편입·편출은 미복원", 58, 448, 835, 36, 18, "white")
+    else:
+        d.text(s, f"{cov['tickers']}개 기업    {cov['sectors']}개 섹터    {cov['formation_periods']}개 형성 분기", 58, 319, 835, 50, 26, "white", True)
+        d.text(s, "선택 표본 · LM 사전 분석 · S&P 500 전체로 일반화 불가", 58, 448, 835, 36, 18, "white")
 
     s = d.slide("실행 데이터와 분석 범위",
-        f"기업 문서는 {cov['first_firm_release'][:10]}부터 {cov['last_firm_release'][:10]}까지 공개된 자료입니다. 수익률을 연결한 관측치는 {cov['return_matched']:,}개이며, 실제 수익률로 표본 밖 성과를 평가한 기간은 {evaluated_periods}분기입니다. 예측을 생성했어도 이후 수익률이 없으면 평가에서 제외합니다. 기업마다 문서 확보 수가 다르므로 문서 수와 개별 관측치 수를 함께 공개합니다. GICS는 현재 섹터를 고정해 사용했고 과거 구성종목이나 섹터 이동을 복원하지 않았습니다.",
+        f"기업 문서는 {cov['first_firm_release'][:10]}부터 {cov['last_firm_release'][:10]}까지 공개된 자료입니다. 수익률을 연결한 관측치는 {cov['return_matched']:,}개이며, 실제 수익률로 표본 밖 성과를 평가한 기간은 {evaluated_periods}분기입니다. 예측을 생성했어도 이후 수익률이 없으면 평가에서 제외합니다. 기업마다 문서 확보 수가 다르므로 문서 수와 개별 관측치 수를 함께 공개합니다. GICS는 현재 섹터를 고정해 사용했고 과거 구성종목이나 섹터 이동을 복원하지 않았습니다. " + (f"기업 실적발표자료는 SEC 공시와 검증된 공식 IR에서 확보한 보도자료, 실적 주주서한·공식 업데이트를 포함하며 실적발표 콜 전문은 아닙니다. SEC 공시와 연결되는 날짜만 알려진 IR 대체 원문은 SEC 접수시점과 공식 IR 공개일 다음 날 뉴욕 자정 중 늦은 시점을 가용시점으로 사용합니다. 수집 시도는 {cov['attempted_issuers']}개 기업, 가격 자료가 매칭된 기업은 {cov['market_matched_issuers']}개입니다. 분기 패널 포함 {cov['analysis_issuers']}개 기업과 {cov['panel_rows']:,}개 관측치는 신호와 진입월 가격이 있는 경우이며, 이후 3개월 수익률 완결 여부는 별도 조건입니다. 주식 클래스와 고유 기업 수는 다릅니다. 제외 사유별 세부 수치는 HTML과 결과 JSON에서 확인할 수 있습니다." if full else ""),
         45, source_urls)
-    d.table(s, [
+    coverage_rows = [
         ["분석 항목", "실행 규모"],
         ["기업 실적 문서", f"{cov['firm_documents']:,}건 / {cov['tickers']}개 기업"],
         ["FOMC 의사록", f"{cov['fomc_documents']:,}건"],
         ["수익률 매칭", f"{cov['return_matched']:,}개 기업·분기 관측치"],
         ["수익률 포함 OOS 평가", f"{evaluated_periods}개 분기"],
-    ], 57, 139, 847, 285, [425, 422], 23)
+    ]
+    if full:
+        coverage_rows = [
+            ["분석 단계", "기업 수와 관측치"],
+            ["전체 수집 목표", f"{cov['target_issuers']}기업 / {cov['target_securities']}주식 클래스"],
+            ["실적자료 확보 (SEC·공식 IR)", f"{cov['document_issuers']}/{cov['target_issuers']}기업 · {cov['firm_documents']:,}문서"],
+            ["분기 패널 포함", f"{cov['analysis_issuers']}/{cov['target_issuers']}기업 · {cov['panel_rows']:,}관측치"],
+            ["표본 밖 평가 포함", f"{cov['oos_issuers']}/{cov['target_issuers']}기업 · {evaluated_periods}분기"],
+            ["FOMC 의사록", f"{cov['fomc_documents']:,}문서 · {cov['formation_periods']}형성 분기"],
+        ]
+    d.table(s, coverage_rows, 57, 139, 847, 285, [405, 442], 21 if full else 23)
     d.text(s, f"기업 공개일: {cov['first_firm_release'][:10]} – {cov['last_firm_release'][:10]}", 58, 452, 845, 31, 19, "muted")
 
     sectors = r["descriptive"]["sector_coverage"]
@@ -399,19 +442,20 @@ def results(input_path):
                  "Health Care": "헬스케어", "Industrials": "산업재", "Information Technology": "정보기술",
                  "Materials": "소재", "Real Estate": "부동산", "Utilities": "유틸리티"}
     s = d.slide("섹터별 표본 구성",
-        "이 그림은 섹터별로 수집한 기업 문서 수를 보여줍니다. 기업 수를 균형 있게 정해도 과거 공시의 보존 상태와 수집 성공률에 따라 문서 수에는 차이가 생깁니다. 분석의 대표성을 판단할 때 이런 차이를 함께 살펴야 합니다. 현재 표본은 수집과 분석 가능성을 검증하기 위한 표본이며 모든 섹터 내 기업을 대표하지 않습니다.",
+        ("이 그림은 섹터별로 수집한 기업 문서 수를 보여줍니다. 현재 구성종목 전체를 수집 대상으로 삼아도 상장 시기, 과거 공시의 보존 상태와 수집 성공률에 따라 문서 수에는 차이가 생깁니다. 문서 수가 많은 섹터를 효과가 큰 섹터로 해석하지 않습니다. 수익률 매칭 후 실제 분석에 포함되는 기업 수와 제외 사유도 HTML에서 함께 확인합니다."
+         if full else "이 그림은 섹터별로 수집한 기업 문서 수를 보여줍니다. 기업 수를 균형 있게 정해도 과거 공시의 보존 상태와 수집 성공률에 따라 문서 수에는 차이가 생깁니다. 분석의 대표성을 판단할 때 이런 차이를 함께 살펴야 합니다. 현재 표본은 수집과 분석 가능성을 검증하기 위한 표본이며 모든 섹터 내 기업을 대표하지 않습니다."),
         40, source_urls)
     d.chart(s, [sector_ko.get(v["sector"], v["sector"]) for v in sectors],
             [("수집 문서 수", [v["documents"] for v in sectors])], 52, 124, 857, 337)
-    d.text(s, "단위: 실적 문서 건수. 현재 GICS 고정 분류, 선택 표본", 58, 480, 840, 26, 17, "muted")
+    d.text(s, "단위: 기업 실적발표자료 건수. 현재 GICS 고정 분류, 확보한 문서 기준" if full else "단위: 실적 문서 건수. 현재 GICS 고정 분류, 선택 표본", 58, 480, 840, 26, 17, "muted")
 
     topic_names = {"inflation": "물가", "employment": "고용", "growth": "성장·수요",
                    "investment": "투자", "rates": "금융여건"}
     topics = list(topic_names)
     ablation = [v for v in r.get("topic_ablation", []) if v["scope"] == "All" and v.get("rmse_increase_pct") is not None]
     ablation_map = {v["topic"]: v for v in ablation}
-    s = d.slide("거시 주제 특성의 추가 예측 기여",
-        "어떤 거시 주제가 추가 정보인지 보기 위해 결합 모델에서 한 주제의 명시적 특성을 제외하고 다시 학습했습니다. 기업과 FOMC의 해당 주제 어조, 섹터별 거시 상호작용과 해당 주제의 기업·연준 상호작용을 함께 뺍니다. 일반 어조와 일반 상호작용에는 해당 주제의 정보가 일부 남아 있으므로 주제 정보 전체를 제거한 실험은 아닙니다. 그래프는 같은 기업·분기의 표본 밖 관측치에서 주제 제외 후 RMSE가 얼마나 변했는지 보여줍니다. 양수이면 해당 주제 특성을 빼자 예측이 나빠졌다는 뜻이고, 음수이면 제외했을 때 예측이 좋아졌다는 뜻입니다. 이는 모형 내 추가 기여이며 경제적 인과효과는 아닙니다. 섹터별 비교는 HTML에서 확인할 수 있습니다.",
+    s = d.slide("기업·연준 주제 특성의 추가 예측 기여" if full else "거시 주제 특성의 추가 예측 기여",
+        "어떤 거시 주제가 추가 정보인지 보기 위해 결합 모델에서 한 주제의 명시적 특성을 제외하고 다시 학습했습니다. 기업과 FOMC의 해당 주제 어조, 섹터별 거시 상호작용과 해당 주제의 기업·연준 상호작용을 함께 뺍니다. 일반 어조와 일반 상호작용에는 해당 주제의 정보가 일부 남아 있으므로 주제 정보 전체를 제거한 실험은 아닙니다. 그래프는 같은 기업·분기의 표본 밖 관측치에서 주제 제외 후 RMSE가 얼마나 변했는지 보여줍니다. 양수이면 해당 주제 특성을 빼자 예측이 나빠졌다는 뜻이고, 음수이면 제외했을 때 예측이 좋아졌다는 뜻입니다. 이는 기업·FOMC·상호작용의 해당 주제 변수를 함께 제거한 모형 비교이며 FOMC 단독의 기여는 아닙니다. 경제적 인과효과로 해석하지 않습니다. 섹터별 비교는 HTML에서 확인할 수 있습니다.",
         45, source_urls)
     d.text(s, "해당 주제의 명시적 특성을 제외한 뒤 예측오차 변화", 58, 126, 845, 33, 21, "teal", True)
     if ablation:
@@ -432,14 +476,14 @@ def results(input_path):
     if not selected:
         selected = overall[:5]
     s = d.slide("기업 텍스트와 다음 분기 수익률",
-        "분기마다 기업 신호와 다음 3개월 시장 대비 수익률의 순위상관을 계산하고, 그 분기별 상관계수를 평균했습니다. IC가 양수이면 신호가 높은 기업의 이후 수익률이 높은 경향이고, 음수이면 반대입니다. 불확실성 지표는 값이 클수록 불확실한 표현이 많다는 의미이므로 어조와 해석이 다릅니다. 표의 t값은 분기 간 상관을 고려한 HAC 추정치이며 여러 섹터와 주제를 동시에 살핀 다중검정을 보정하지 않았습니다. 따라서 탐색 결과로 해석해야 합니다.",
+        "분기마다 기업 신호와 다음 3개월 시장 대비 수익률의 순위상관을 계산하고, 그 분기별 상관계수를 평균했습니다. IC가 양수이면 신호가 높은 기업의 이후 수익률이 높은 경향이고, 음수이면 반대입니다. 불확실성 지표는 값이 클수록 불확실한 표현이 많다는 의미이므로 어조와 해석이 다릅니다. 표의 t값은 분기 간 상관을 고려한 HAC 추정치이며 여러 섹터와 주제를 동시에 살핀 다중검정을 보정하지 않았습니다. 따라서 탐색 결과로 해석해야 합니다." + (" 이 원점수 유효성 점검은 완결 수익률이 있는 2016년 1분기부터 2025년 3분기까지 39분기의 기술적 분석입니다. 뒤에서 비교하는 학습 모형의 표본 밖 26분기 성과와는 평가 범위가 다릅니다." if full else ""),
         50, source_urls)
     rows = [["기업 신호", "평균 IC", "HAC t", "분기 수"]]
     rows += [[signal_labels.get(v["signal"], v["signal"]), fmt(v.get("mean_ic")), fmt(v.get("hac_t"), 2), str(v["n_periods"])] for v in selected]
     if len(rows) == 1:
         rows.append(["유효성 평가", "미산출", "미산출", "0"])
     d.table(s, rows, 57, 141, 847, 290, [359, 170, 159, 159], 21)
-    d.text(s, "IC = 분기별 횡단면 Spearman 순위상관의 평균", 58, 451, 840, 30, 18, "teal", True)
+    d.text(s, "원점수 평균 IC · 기술적 점검 39분기 (모델 OOS 26분기와 구분)" if full else "IC = 분기별 횡단면 Spearman 순위상관의 평균", 58, 451, 840, 30, 18, "teal", True)
     d.text(s, "시장 대비 수익률은 미국 주식시장 벤치마크 차감 수익률이며 팩터 알파가 아님", 58, 487, 843, 20, 14, "muted")
 
     sector_validity = [v for v in r["validity"]["by_sector"] if v["signal"] == "bu_tone" and v.get("mean_ic") is not None]
@@ -451,16 +495,16 @@ def results(input_path):
                 [("평균 IC", [v["mean_ic"] for v in sector_validity])], 52, 124, 857, 337)
     else:
         d.text(s, "섹터별 순위상관의 최소 기업 수 조건 미충족", 58, 205, 840, 80, 28, "navy", True)
-    d.text(s, "섹터 내 소수 기업의 탐색 결과. 표본 확대와 다중검정 보정 필요", 58, 480, 840, 26, 17, "muted")
+    d.text(s, "평균 IC · 원점수 기술적 점검 · 섹터별 표본과 다중검정 검토" if full else "섹터 내 소수 기업의 탐색 결과. 표본 확대와 다중검정 보정 필요", 58, 480, 840, 26, 17, "muted")
 
     model_order = ["baseline", "bottom_up", "top_down", "combined"]
     models = sorted(r["models"], key=lambda v: model_order.index(v["model"]))
     labels = {"baseline": "통제변수만", "bottom_up": "바텀업", "top_down": "탑다운", "combined": "결합"}
     s = d.slide("정보를 결합했을 때의 표본 밖 성과",
-        f"같은 표본과 통제변수를 사용해 기준 모델, 바텀업, 탑다운, 결합 모델을 비교했습니다. 최소 {meta['min_train_quarters']}개의 과거 분기를 학습한 뒤 미래 기간을 예측했습니다. RMSE는 작을수록 예측 오차가 작습니다. 순위상관과 포트폴리오 성과는 다른 기준이므로 함께 보아야 합니다. 롱숏 수익률은 100퍼센트 매수와 100퍼센트 매도 노출을 가정하며, 거래한 금액에 10bp 비용을 적용한 시나리오입니다. 차입비용, 자금조달비용, 시장충격은 포함하지 않았습니다. 작은 선택 표본의 결과로 특정 접근법의 우월성을 확정하지 않습니다.",
+        f"같은 표본과 통제변수를 사용해 기준 모델, 바텀업, 탑다운, 결합 모델을 비교했습니다. 최소 {meta['min_train_quarters']}개의 과거 분기를 학습한 뒤 미래 기간을 예측했습니다. RMSE는 작을수록 예측 오차가 작습니다. 순위상관과 포트폴리오 성과는 다른 기준이므로 함께 보아야 합니다. 롱숏 수익률은 100퍼센트 매수와 100퍼센트 매도 노출을 가정하며, 거래한 금액에 10bp 비용을 적용한 시나리오입니다. 차입비용, 자금조달비용, 시장충격은 포함하지 않았습니다. " + ("기업 수가 늘어도 독립적인 거시 관측 기간이 늘어난 것은 아닙니다. 예측오차와 IC는 26분기, 비용 후 포트폴리오는 24개 공통 분기를 평가했습니다. 2019년 2·3분기 형성 포트폴리오는 선택된 SMCI의 미래 수익률이 사용한 CRSP 자료에서 누락되어 제외됐습니다. 포트폴리오 형성은 2019년 12월 말부터 2025년 9월 말까지이며 실현 수익률은 2020년 1월부터 2025년 12월까지입니다. 평가 분기의 제약과 현재 구성종목 선택의 영향을 고려해야 합니다." if full else "작은 선택 표본의 결과로 특정 접근법의 우월성을 확정하지 않습니다."),
         65, source_urls)
     rows = [["모델", "평균 IC", "RMSE", "비용 후 분기 평균"]]
-    rows += [[labels.get(v["model"], v["model"]), fmt(v.get("mean_ic")), fmt(v.get("rmse"), 4), fmt(v.get("net_quarterly_mean"), 2, True)] for v in models]
+    rows += [[labels.get(v["model"], v["model"]), fmt(v.get("mean_ic"), 4 if full else 3), fmt(v.get("rmse"), 4), fmt(v.get("net_quarterly_mean"), 2, True)] for v in models]
     if len(rows) == 1:
         rows.append(["학습 표본 부족", "미산출", "미산출", "미산출"])
     d.table(s, rows, 57, 141, 847, 255, [203, 166, 165, 313], 21)
@@ -471,7 +515,7 @@ def results(input_path):
         delta = 100 * (combined_rmse / base_rmse - 1)
         change = "증가" if delta >= 0 else "감소"
         d.text(s, f"결합 예측오차: 기준 모델 대비 {abs(delta):.1f}% {change}", 58, 414, 840, 33, 23, "teal", True)
-    d.text(s, f"수익률 평가 {evaluated_periods}분기 · 과거 {meta['min_train_quarters']}분기 이상으로만 학습", 58, 455, 840, 28, 18, "muted")
+    d.text(s, f"예측 {evaluated_periods}분기 · 롱숏 {portfolio_period_label}분기 · 과거 {meta['min_train_quarters']}분기 이상 학습" if full else f"수익률 평가 {evaluated_periods}분기 · 과거 {meta['min_train_quarters']}분기 이상으로만 학습", 58, 455, 840, 28, 18, "muted")
     d.text(s, "롱 100%·숏 100%, 거래금액당 10bp 비용 가정. 차입·자금조달·시장충격 비용 제외", 58, 487, 846, 21, 14, "muted")
 
     counts = [v for v in r["disagreement"]["summary"] if v["scope"] == "All" and v["topic"] == "overall"]
@@ -497,18 +541,18 @@ def results(input_path):
     d.text(s, "상대적 어조의 수렴을 경제 전망의 정확성이나 투자 우위로 해석하지 않음", 58, 487, 845, 21, 15, "muted")
 
     s = d.slide("이번 결과의 범위와 후속 검증",
-        "실제 공개 문서의 수집, 공통 주제별 점수화, 기업 수익률 연결, 표본 밖 예측과 괴리 분석을 실행했습니다. 다만 표본 선택과 생존편향, 현재 GICS의 고정 적용은 남아 있습니다. LM 어조는 매파성이나 원가와 수요의 경제적 방향을 구분하지 않으므로 의미에 대한 검증도 필요합니다. " + fb_note + " 사람 정답을 사용하지 않은 점수 일치도 비교이므로 분류 정확도를 검증한 결과도 아닙니다. 후속 분석에서는 과거 구성종목을 복원하고, 전체 코퍼스의 FinBERT 수익률 검증과 EPS 서프라이즈·실적 통제를 진행해야 합니다. 코드와 HTML에서 결과와 자료 출처를 함께 확인할 수 있습니다.",
+        "실제 공개 문서의 수집, 공통 주제별 점수화, 기업 수익률 연결, 표본 밖 예측과 괴리 분석을 실행했습니다. 다만 표본 선택과 생존편향, 현재 GICS의 고정 적용은 남아 있습니다. LM 어조는 매파성이나 원가와 수요의 경제적 방향을 구분하지 않으므로 의미에 대한 검증도 필요합니다. " + fb_note + " 사람 정답을 사용하지 않은 점수 일치도 비교이므로 분류 정확도를 검증한 결과도 아닙니다. 후속 분석에서는 과거 구성종목을 복원하고, 전체 코퍼스의 FinBERT 수익률 검증과 EPS 서프라이즈·실적 통제를 진행해야 합니다. " + ("이번 전수 대상 분석은 표본 확대와 원문 선택·추출 교정을 함께 반영했습니다. 따라서 이전 33개 기업 파일럿과의 차이를 표본 확대만의 효과로 해석할 수 없습니다. " if full else "") + "코드와 HTML에서 결과와 자료 출처를 함께 확인할 수 있습니다.",
         50, source_urls + (SOURCES["finbert"],))
     d.table(s, [
         ["이번 실행", "후속 검증"],
-        ["선택 기업·현재 GICS 표본", "역사적 구성종목·섹터 복원"],
+        ["현재 구성종목 전수 대상 수집" if full else "선택 기업·현재 GICS 표본", "역사적 구성종목·섹터 복원"],
         ["LM 어조·공통 주제 분류", "전체 코퍼스 FinBERT 수익률 검증"],
         ["3개월 수익률·표본 밖 예측", "실적·EPS 서프라이즈 통제"],
         ["어조 괴리·선후행 진단", "주제·섹터별 안정성 재확인"],
     ], 57, 141, 847, 260, [416, 431], 21)
     if fb_done:
         d.text(s, f"LM·FinBERT: {fb['documents']}문서·{fb['sentences']:,}문장의 점수 일치도 비교 완료", 58, 422, 845, 33, 20, "teal", True)
-    d.text(s, "전체 코퍼스의 투자성과 비교는 후속 검증", 58, 467, 843, 33, 22, "navy", True)
+    d.text(s, f"점수 상관 {fb['lm_finbert_matched_spearman']:.3f} · 투자성과 비교는 후속 검증" if full and fb_done else "전체 코퍼스의 투자성과 비교는 후속 검증", 58, 467, 843, 33, 22, "navy", True)
     return d.finish()
 
 
@@ -518,11 +562,17 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--proposal", action="store_true")
     p.add_argument("--results", type=Path)
+    p.add_argument("--full-results", type=Path,
+                   help="Build results_full.pptx from frozen full_current_constituents results with explicit coverage denominators.")
     args = p.parse_args()
-    if args.proposal or not args.results:
+    if args.results and args.full_results:
+        p.error("Use --results or --full-results, not both.")
+    if args.proposal or not (args.results or args.full_results):
         proposal()
     if args.results:
         results(args.results)
+    if args.full_results:
+        results(args.full_results, require_full=True)
 
 
 if __name__ == "__main__":

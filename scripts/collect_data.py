@@ -8,7 +8,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from topbottom.data import CachedClient, prepare_dictionaries, load_universe, collect_fomc, collect_firms, write_coverage
+from topbottom.data import CachedClient, prepare_dictionaries, load_universe, collect_fomc, collect_firms, write_coverage, write_csv_atomic
 from topbottom.text import TextScorer
 
 
@@ -20,6 +20,8 @@ def main():
     parser.add_argument("--start-year", type=int)
     parser.add_argument("--end-year", type=int)
     parser.add_argument("--tickers", help="Comma-separated explicit ticker selection")
+    parser.add_argument("--force-issuers", action="store_true", help="Reattempt selected issuer checkpoints; existing successful document scores are reused.")
+    parser.add_argument("--refresh-universe", action="store_true", help="Explicitly replace the frozen constituent snapshot; changes the study population.")
     args = parser.parse_args()
     for folder in ("data/processed", "data/reference", "reports"):
         (ROOT/folder).mkdir(parents=True, exist_ok=True)
@@ -29,7 +31,7 @@ def main():
     if args.dictionary_zip: prepare_dictionaries(ROOT, args.dictionary_zip)
     scorer = TextScorer(ROOT)
     client = CachedClient(ROOT, rps=config["sec_requests_per_second"])
-    universe = load_universe(ROOT, client)
+    universe = load_universe(ROOT, client, refresh=args.refresh_universe)
     universe["current_snapshot_cik"] = universe["cik"]
     universe["cik_mapping_note"] = "Current snapshot CIK"
     for ticker, mapping in config.get("historical_cik_overrides", {}).items():
@@ -40,14 +42,21 @@ def main():
     if args.scope == "pilot": selected = universe[universe.ticker.isin(config["pilot_tickers"])]
     if args.tickers: selected = universe[universe.ticker.isin(args.tickers.split(","))]
     # One issuer's filing is not an independent document for each share class.
-    selected = selected.drop_duplicates("cik", keep="first").copy()
+    alternatives = universe.groupby("current_snapshot_cik").ticker.agg(lambda x: "|".join(x)).to_dict()
+    selected = selected.drop_duplicates("current_snapshot_cik", keep="first").copy()
+    selected["issuer_id"] = selected["current_snapshot_cik"]
+    selected["alternate_tickers"] = selected.current_snapshot_cik.map(alternatives)
     config["universe_basis"] = "Current S&P 500 constituent snapshot and current GICS labels; " + ("selected pilot" if args.scope == "pilot" else "all distinct current issuer CIKs")
+    if args.tickers and (ROOT/"data/reference/selected_universe.csv").exists():
+        current_selection = pd.read_csv(ROOT/"data/reference/selected_universe.csv")
+        if len(current_selection) > len(config["pilot_tickers"]):
+            config["universe_basis"] = "Fixed current S&P 500 constituent snapshot and current GICS labels; all distinct current issuer CIKs; targeted recovery leaves this universe unchanged"
     if not args.tickers:
-        selected.to_csv(ROOT/"data/reference/selected_universe.csv", index=False)
+        write_csv_atomic(selected, ROOT/"data/reference/selected_universe.csv")
     if args.only in ("all", "fomc"):
         collect_fomc(ROOT, client, scorer, config["start_year"], config["end_year"])
     if args.only in ("all", "firms"):
-        collect_firms(ROOT, client, scorer, selected, config["start_year"], config["end_year"], config["sec_workers"])
+        collect_firms(ROOT, client, scorer, selected, config["start_year"], config["end_year"], config["sec_workers"], force=args.force_issuers)
     coverage_selection = selected
     if args.tickers and (ROOT/"data/reference/selected_universe.csv").exists():
         coverage_selection = pd.read_csv(ROOT/"data/reference/selected_universe.csv")

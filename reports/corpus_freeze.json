@@ -1,0 +1,14 @@
+{
+  "frozen_at": "2026-10-31T17:11:33.146558+00:00",
+  "scope": "All 500 issuer representatives of the fixed current constituent snapshot attempted; 497 with retained source documents, 2016-2025 publication window.",
+  "firm_documents": 19613,
+  "fomc_documents": 81,
+  "input_sha256": {
+    "data/processed/firm_scores.csv": "b9cd527843f57f049b3b5536c55575962d62d0463268155b959924198ce322c3",
+    "data/processed/fomc_scores.csv": "8a5b52ce93f43f5515775424243da77bbbb4fa31cf7651dda50ffca7c6ef9058",
+    "data/reference/selected_universe.csv": "051eb2f65c07a9b49b0d8e3394ffcc90bae7d5408f361d964461ed563ad927b3",
+    "data/processed/issuer_collection_status.csv": "135e1b66a013d0c35b4b0f3e3beba7021a490b7524dc24508fc0a5c049f723d9"
+  },
+  "all_sec_acceptance_timestamps_crosschecked": true,
+  "unresolved_source_repairs": 0
+}

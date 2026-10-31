@@ -1,0 +1,79 @@
+{
+  "note": "Session metrics are snapshots through metrics_observed_through; requests after that snapshot and before orderly stop may be uncounted. No private headers stored.",
+  "sessions": [
+    {
+      "session_started_at": "2026-10-31T15:09:19.312125+00:00",
+      "http_requests": 24100,
+      "status_counts": {
+        "200": 24099,
+        "503": 1
+      },
+      "mean_response_seconds_excluding_limiter": 1.142981908713797,
+      "requests_last_60_seconds": 230,
+      "current_global_sec_requests_per_second": 4.0,
+      "metrics_observed_through": "2026-10-31T16:06:51.824288+00:00",
+      "ended_at": "2026-10-31T16:06:53.812322+00:00",
+      "rate_history": [
+        {
+          "rate": 8,
+          "reason": "Initial shared SEC limiter below per-user10 maximum"
+        },
+        {
+          "rate": 4,
+          "observed_at": "2026-10-31T15:56:17.741476+00:00",
+          "reason": "One HTTP503; automatic backoff and reduction"
+        },
+        {
+          "next_session_rate": 6,
+          "reason": "At least10minutes and2400 successful requests without403/429/additional503; bounded checkpoint resume authorized"
+        }
+      ]
+    },
+    {
+      "session_started_at": "2026-10-31T16:07:00.168644+00:00",
+      "updated_at": "2026-10-31T16:42:00.801814+00:00",
+      "http_requests": 12300,
+      "status_counts": {
+        "200": 12300
+      },
+      "mean_response_seconds_excluding_limiter": 1.3484183739836146,
+      "requests_last_60_seconds": 360,
+      "current_global_sec_requests_per_second": 6.0,
+      "phase": "initial_full_collection_after_cooldown",
+      "stop_reason": "Transient Windows/OneDrive CSV replacement lock at final issuer flush; all completed document checkpoints retained",
+      "metrics_observed_through": "2026-10-31T16:42:00.801814+00:00"
+    },
+    {
+      "phase": "source_recovery",
+      "session_started_at": "2026-10-31T16:44:47.719164+00:00",
+      "ended_at": "2026-10-31T16:52:51.867083+00:00",
+      "http_requests": 1560,
+      "status_counts": {
+        "200": 1560
+      },
+      "current_global_sec_requests_per_second": 6.0,
+      "mean_response_seconds_excluding_limiter": 0.5383852564104018,
+      "count_basis": "Exact completed network request count for the recovery client; includes official IR requests, excludes disk-cache hits"
+    },
+    {
+      "phase": "final_bounded_source_repairs",
+      "session_started_at": "2026-10-31T16:57:56.743824+00:00",
+      "ended_at": "2026-10-31T16:58:12.503405+00:00",
+      "http_requests": 0,
+      "status_counts": {},
+      "current_global_sec_requests_per_second": 6.0,
+      "count_basis": "Exact completed network requests; disk-cache hits excluded"
+    },
+    {
+      "phase": "final_bounded_source_repairs",
+      "session_started_at": "2026-10-31T16:58:43.626525+00:00",
+      "ended_at": "2026-10-31T16:59:00.775415+00:00",
+      "http_requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "current_global_sec_requests_per_second": 6.0,
+      "count_basis": "Exact completed network requests; disk-cache hits excluded"
+    }
+  ]
+}

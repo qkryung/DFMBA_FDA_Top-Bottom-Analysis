@@ -6,6 +6,8 @@ the saved check summary contains no company-level market observations.
 from __future__ import annotations
 
 import csv
+import argparse
+import hashlib
 import json
 import math
 from collections import defaultdict
@@ -38,13 +40,19 @@ def shift_month(date, offset):
 
 
 def main():
-    report = json.loads((ROOT/"reports/results.json").read_text(encoding="utf-8"))
-    firms = read_rows(ROOT/"data/processed/firm_scores.csv")
-    fomc = read_rows(ROOT/"data/processed/fomc_scores.csv")
-    panel = read_rows(ROOT/"data/private/panel.csv")
-    predictions = read_rows(ROOT/"data/private/predictions.csv")
-    stock_rows = read_rows(ROOT/"data/private/monthly_returns.csv")
-    factor_rows = read_rows(ROOT/"data/private/market_factors.csv")
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--reports-dir",type=Path,default=ROOT/"reports")
+    parser.add_argument("--private-dir",type=Path)
+    args=parser.parse_args()
+    report = json.loads((args.reports_dir/"results.json").read_text(encoding="utf-8"))
+    private=args.private_dir or ROOT/("data/private/full" if report["meta"].get("scope")=="full_current_constituents" else "data/private")
+    frozen=(private/"firm_scores_used.csv").exists() and "inputs" in report["validation"]
+    firms = read_rows(private/"firm_scores_used.csv" if frozen else ROOT/"data/processed/firm_scores.csv")
+    fomc = read_rows(private/"fomc_scores_used.csv" if frozen else ROOT/"data/processed/fomc_scores.csv")
+    panel = read_rows(private/"panel.csv")
+    predictions = read_rows(private/"predictions.csv")
+    stock_rows = read_rows(private/"monthly_returns.csv")
+    factor_rows = read_rows(private/"market_factors.csv")
     stock = {(r["ticker"],r["month"]):number(r["return"]) for r in stock_rows}
     market = {r["month"]:number(r["market_return"]) for r in factor_rows}
     company_docs = defaultdict(list)
@@ -55,9 +63,13 @@ def main():
     def check(name, passed, observations):
         checks.append({"name":name,"status":"pass" if passed else "fail","observations":observations})
 
-    check("Final report matches current collected corpus",report["coverage"]["firm_documents"]==len(firms) and report["coverage"]["fomc_documents"]==len(fomc),len(firms)+len(fomc))
+    check("Report matches its frozen source corpus",report["coverage"]["firm_documents"]==len(firms) and report["coverage"]["fomc_documents"]==len(fomc),len(firms)+len(fomc))
+    if frozen:
+        inputs=report["validation"]["inputs"]
+        check("Frozen input SHA256 matches report",all(hashlib.sha256((private/f"{k}_used.csv").read_bytes()).hexdigest()==v["sha256"] for k,v in inputs.items()),len(inputs))
     check("Unique company-quarter panel",len({(r["ticker"],r["formation_date"]) for r in panel})==len(panel),len(panel))
     check("Unique security-month market input",len(stock)==len(stock_rows),len(stock_rows))
+    check("Every panel entry has an observable market row",all((r["ticker"],r["formation_date"][:7]) in stock for r in panel),len(panel))
     wrong_availability=wrong_selection=wrong_returns=wrong_momentum=wrong_scores=0
     return_errors=[]
     for row in panel:
@@ -101,7 +113,7 @@ def main():
             wrong_momentum += int(math.isfinite(momentum))
     check("All source timestamps precede entry-day cutoff and satisfy age",wrong_availability==0,len(panel))
     check("Selected documents independently equal latest eligible releases",wrong_selection==0,len(panel))
-    check("Saved panel scores match current source-score files",wrong_scores==0,len(panel)*16)
+    check("Saved panel scores match frozen source-score files",wrong_scores==0,len(panel)*16)
     check("Independent exact-calendar BHAR recomputation and missing outcomes",wrong_returns==0,len(panel))
     check("Independent lagged-momentum recomputation excludes entry month",wrong_momentum==0,len(panel))
     folds=report["validation"]["folds"]
@@ -119,11 +131,35 @@ def main():
         else:
             wrong_rmse += int(metric["rmse"] is not None)
     check("Independent saved-prediction RMSE matches public model metrics",wrong_rmse==0,len(report["models"]))
-    check("Public market metadata excludes security identifier mapping","ticker_mapping" not in report["validation"]["market"],1)
+    def contains_identifier_key(value):
+        if isinstance(value,dict):
+            return any(k.lower() in ("ticker_mapping","preparation_signature","permno") or contains_identifier_key(v) for k,v in value.items())
+        return isinstance(value,list) and any(contains_identifier_key(v) for v in value)
+    check("Public market metadata excludes security identifier mapping",not contains_identifier_key(report["validation"]["market"]),1)
+    if "issuer_status" in report["coverage"]:
+        coverage=report["coverage"]
+        stages={"attempted_issuers":"attempted","document_issuers":"has_documents","market_matched_issuers":"market_matched","analysis_issuers":"analysis_included","oos_issuers":"oos_included","quarantined_issuers":"quarantined"}
+        issuer=coverage["issuer_status"]
+        check("Issuer funnel reconciles to fixed target and stage flags",len(issuer)==coverage["target_issuers"] and all(sum(bool(r[col]) for r in issuer)==coverage[k] for k,col in stages.items()),len(issuer))
+        check("Sector funnel reconciles to overall coverage",all(sum(s[k] for s in coverage["funnel_by_sector"])==coverage[k] for k in ["target_issuers"]+list(stages)),len(coverage["funnel_by_sector"]))
+        check("Observed OOS and panel issuer flags match saved records",coverage["oos_issuers"]==len({r["ticker"] for r in predictions if math.isfinite(number(r["excess_return"]))}) and coverage["analysis_issuers"]==len({r["ticker"] for r in panel}),len(issuer))
+    portfolio_rows=read_rows(args.reports_dir/"portfolios.csv")
+    calendars=defaultdict(set)
+    for row in portfolio_rows:
+        if row["status"]=="observed":
+            calendars[row["model"]].add(row["formation_date"])
+    same_calendar=len({frozenset(c) for c in calendars.values()})<=1
+    calendar_errors=0
+    for metric in report["models"]:
+        dates=sorted(calendars[metric["model"]])
+        continuous=bool(dates) and all(shift_month(a,3)==b[:7] for a,b in zip(dates,dates[1:]))
+        if not (continuous and same_calendar):
+            calendar_errors+=int(any(metric.get(k) is not None for k in ("annualized_return","annualized_volatility","max_drawdown","sharpe_zero_rate","net_hac_t")))
+    check("Portfolio calendar gaps cannot silently yield annualized comparisons",calendar_errors==0,len(report["models"]))
     output={"generated_at":datetime.now(timezone.utc).isoformat(),"status":"pass" if all(c["status"]=="pass" for c in checks) else "fail",
             "checks":checks,"n_checks":len(checks),"max_independent_return_error":max(return_errors) if return_errors else None,
             "scope":"Numerical/source-timing checks of saved analysis; does not validate topic semantics, eliminate survivorship bias, or verify rendered artifacts."}
-    (ROOT/"reports/analysis_validation.json").write_bytes(json.dumps(output,indent=2).encode("utf-8"))
+    (args.reports_dir/"analysis_validation.json").write_bytes(json.dumps(output,indent=2).encode("utf-8"))
     print(f"{output['status'].upper()}: {sum(c['status']=='pass' for c in checks)}/{len(checks)} independent analysis checks")
     for c in checks:
         if c["status"]!="pass":

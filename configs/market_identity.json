@@ -1,0 +1,19 @@
+{
+  "aliases": {
+    "BRK.B": {"source_ticker": "BRK", "security_name": "BERKSHIRE HATHAWAY INC DEL; COM B; CONS", "reason": "Class B selected explicitly; CRSP ticker omits share-class suffix.", "source_url": "https://www.berkshirehathaway.com/brkshareholderinfo/compab.pdf"},
+    "BF.B": {"source_ticker": "BF", "security_name": "BROWN FORMAN CORP; COM B; CONS", "reason": "Class B selected explicitly; CRSP ticker omits share-class suffix.", "source_url": "https://investors.brown-forman.com/investors/stock-information/dividend-history/default.aspx"},
+    "LEN": {"source_ticker": "LEN", "security_name": "LENNAR CORP; COM A; CONS", "reason": "LEN is Class A; LEN.B is Class B. CRSP ticker alone is ambiguous.", "source_url": "https://investors.lennar.com/~/media/Files/L/Lennar-IR-V3/documents/annual-reports/annual-report-2024.pdf"},
+    "MKC": {"source_ticker": "MKC", "security_name": "MCCORMICK & CO INC; COM NONE; CONS", "reason": "MKC is non-voting common; CRSP COM V is the separate MKC.V voting class.", "source_url": "https://ir.mccormick.com/investor-faqs"},
+    "MRSH": {"source_ticker": "MMC", "reason": "MMC changed to MRSH on 2026-01-14; legal issuer and CUSIP unchanged.", "source_url": "https://www.marsh.com/en/corp/about/news/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html"},
+    "P": {"source_ticker": "PSTG", "reason": "Everpure, formerly Pure Storage, changed PSTG to P on 2026-04-17; CUSIP unchanged. Historical ticker P from another issuer is excluded.", "source_url": "https://www.everpuredata.com/company/newsroom/press-releases/everpure-to-change-ticker-symbol.html"},
+    "ECHO": {"source_ticker": "SATS", "reason": "EchoStar changed SATS to ECHO on 2026-06-24. Historical ticker ECHO from another issuer is excluded.", "source_url": "https://ir.echostar.com/news-releases/news-release-details/echostar-changing-stocker-ticker-sats-echo-marking-companys-next"},
+    "BNY": {"source_ticker": "BK", "reason": "BK changed to BNY on 2026-05-21; issuer and CUSIP unchanged. The 2025 ticker BNY is an unrelated closed-end fund and is excluded.", "source_url": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-announces-planned-change-of-stock-ticker-symbol-to-bny-130465.html"},
+    "SKYD": {"source_ticker": "PSKY", "reason": "Paramount Skydance changed PSKY to SKYD on 2026-10-06. Only the PSKY security history is used; predecessor PARA is not spliced.", "source_url": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926113913/tm2626659d7_8k.htm"},
+    "VMRK": {"source_ticker": "EQR", "reason": "Vivmark retained Equity Residential CIK 906107 after the 2026 merger/name change. EQR security continuity is used; business composition changed and AVB is not spliced.", "source_url": "https://www.sec.gov/Archives/edgar/data/915912/000110465926094930/tm2622947d1_ex99-1.htm"}
+  },
+  "unavailable": {
+    "FDXF": {"reason": "Independent regular-way trading began 2026-06-01, after the market dataset ends; parent FedEx returns are not substituted.", "source_url": "https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Completes-Spin-Off-of-FedEx-Freight/default.aspx"},
+    "HONA": {"reason": "Independent regular-way trading began 2026-06-29, after the market dataset ends; parent Honeywell returns are not substituted.", "source_url": "https://www.honeywell.com/us/en/news/press-releases/2026/06/honeywell-technologies-launches-independent-pure-play-automation-company-following-honeywell-aerospace-spin-off"},
+    "VYLR": {"reason": "New issuer CIK 2128626 began independent trading in October 2026, after the market dataset ends; parent Corteva returns are not substituted.", "source_url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526402928/ck0002128626-20260924.htm"}
+  }
+}

@@ -1,46 +1,56 @@
 {
-  "generated_at": "2026-10-31T14:24:42.100496+00:00",
+  "generated_at": "2026-10-31T17:13:47.208422+00:00",
   "status": "pass",
   "checks": [
     {
-      "name": "Final report matches current collected corpus",
+      "name": "Report matches its frozen source corpus",
       "status": "pass",
-      "observations": 1414
+      "observations": 19694
+    },
+    {
+      "name": "Frozen input SHA256 matches report",
+      "status": "pass",
+      "observations": 4
     },
     {
       "name": "Unique company-quarter panel",
       "status": "pass",
-      "observations": 1320
+      "observations": 18948
     },
     {
       "name": "Unique security-month market input",
       "status": "pass",
-      "observations": 10093
+      "observations": 133691
+    },
+    {
+      "name": "Every panel entry has an observable market row",
+      "status": "pass",
+      "observations": 18948
     },
     {
       "name": "All source timestamps precede entry-day cutoff and satisfy age",
       "status": "pass",
-      "observations": 1320
+      "observations": 18948
     },
     {
       "name": "Selected documents independently equal latest eligible releases",
       "status": "pass",
-      "observations": 1320
+      "observations": 18948
     },
     {
-      "name": "Saved panel scores match current source-score files",
+      "name": "Saved panel scores match frozen source-score files",
       "status": "pass",
-      "observations": 21120
+      "observations": 303168
     },
     {
       "name": "Independent exact-calendar BHAR recomputation and missing outcomes",
       "status": "pass",
-      "observations": 1320
+      "observations": 18948
     },
     {
       "name": "Independent lagged-momentum recomputation excludes entry month",
       "status": "pass",
-      "observations": 1320
+      "observations": 18948
     },
     {
       "name": "All reported training outcomes matured before forecast cutoff",
@@ -61,9 +71,29 @@
       "name": "Public market metadata excludes security identifier mapping",
       "status": "pass",
       "observations": 1
+    },
+    {
+      "name": "Issuer funnel reconciles to fixed target and stage flags",
+      "status": "pass",
+      "observations": 500
+    },
+    {
+      "name": "Sector funnel reconciles to overall coverage",
+      "status": "pass",
+      "observations": 11
+    },
+    {
+      "name": "Observed OOS and panel issuer flags match saved records",
+      "status": "pass",
+      "observations": 500
+    },
+    {
+      "name": "Portfolio calendar gaps cannot silently yield annualized comparisons",
+      "status": "pass",
+      "observations": 4
     }
   ],
-  "n_checks": 12,
+  "n_checks": 18,
   "max_independent_return_error": 4.440892098500626e-16,
   "scope": "Numerical/source-timing checks of saved analysis; does not validate topic semantics, eliminate survivorship bias, or verify rendered artifacts."
 }

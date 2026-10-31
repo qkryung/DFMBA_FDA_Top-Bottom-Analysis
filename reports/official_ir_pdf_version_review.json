@@ -1,0 +1,173 @@
+{
+  "scope": "Verified official original IR PDF replacements only; metadata constrains version timing but does not establish public release time. Later revisions omitted from source lists.",
+  "documents": [
+    {
+      "ticker": "GE",
+      "publication_date": "2016-01-22",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_press_release_01222016_0.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2016-01-22T13:43:12+00:00",
+        "modification": "2016-01-22T14:01:41+00:00"
+      },
+      "ir_date_only_available_bound": "2016-01-23T05:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "feab0f5ef35afa5626ef0bbb98f10727b4b1fd413f392e4c4e777919f665a905"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2016-10-21",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_10212016_1.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2016-10-21T02:22:52+00:00",
+        "modification": "2016-10-21T02:22:55+00:00"
+      },
+      "ir_date_only_available_bound": "2016-10-22T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "81087f431ced74ed1eb840597c03fe8af3ee6314ae550ba33848a836ead2e5e9"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2017-01-20",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_01202017_0.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2017-01-20T12:37:35+00:00",
+        "modification": "2017-01-20T12:37:40+00:00"
+      },
+      "ir_date_only_available_bound": "2017-01-21T05:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "c8f90636992b3a32101dd359041ef89344f71db79bd240c1f680948cbe23557e"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2017-07-21",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_07212017.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2017-07-21T09:30:34+00:00",
+        "modification": "2017-07-21T09:30:36+00:00"
+      },
+      "ir_date_only_available_bound": "2017-07-22T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "c27ad29f38da472dc1db003f62c65c6845ae8c5ebf5c4367ad2ebf7d18449455"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2017-10-20",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_10202017_1_0.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2017-10-20T14:05:48+00:00",
+        "modification": "2017-10-20T14:05:50+00:00"
+      },
+      "ir_date_only_available_bound": "2017-10-21T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "1196f03e22f3cc833fa16e642956c6d568a54ddf97308100229a34ae97fd9afb"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2018-04-20",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_04202018.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2018-04-20T11:51:15+00:00",
+        "modification": "2018-04-20T11:51:15+00:00"
+      },
+      "ir_date_only_available_bound": "2018-04-21T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "481d17dba54e591fc249ab49122c273b658cefb1b58c2ab685813ed6004ebe41"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2018-07-20",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_07202018_2.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2018-07-20T11:16:43+00:00",
+        "modification": "2018-07-20T11:17:41+00:00"
+      },
+      "ir_date_only_available_bound": "2018-07-21T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "1010cb42aa9d284f2091f84c34c2fe0bbb7215a379a969d2e52bfb5e58daf806"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2018-10-30",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_10302018.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2018-10-30T10:27:57+00:00",
+        "modification": "2018-10-30T10:27:57+00:00"
+      },
+      "ir_date_only_available_bound": "2018-10-31T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "a0b0612dd1d6a127e5a3e9e0719ee7e8b5d7ea98c08ef1ce05e43ea41e0aaa8c"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2019-01-31",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_01312019.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2019-01-31T11:56:47+00:00",
+        "modification": "2019-01-31T11:56:47+00:00"
+      },
+      "ir_date_only_available_bound": "2019-02-01T05:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "cdc07ac24ede7ca3bfeba4ea00e00f5ed93ee79f866b1d064617a081ec778d31"
+    },
+    {
+      "ticker": "LHX",
+      "publication_date": "2022-04-28",
+      "source_url": "https://s205.q4cdn.com/565046976/files/doc_financials/2022/q1/1Q_2022_Investor_Letter.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2022-04-28T15:09:40+00:00",
+        "modification": "2022-04-28T19:40:04+00:00"
+      },
+      "ir_date_only_available_bound": "2022-04-29T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "27392e967a782e7c3bea898d824e9be6b69c99bef4005bbf7f4f0b01ce316dcf"
+    },
+    {
+      "ticker": "LHX",
+      "publication_date": "2022-07-28",
+      "source_url": "https://s205.q4cdn.com/565046976/files/doc_financials/2022/q2/L3Harris-Q22022-Investor-Letter_FINAL_7-28-22_with_links.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2022-07-28T16:44:43+00:00",
+        "modification": "2022-07-28T18:10:45+00:00"
+      },
+      "ir_date_only_available_bound": "2022-07-29T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "96bb69bf883fe475bc01395925def67cd0aabf577c61ee0d57d4a6a281942d9d"
+    },
+    {
+      "ticker": "LHX",
+      "publication_date": "2022-10-27",
+      "source_url": "https://s205.q4cdn.com/565046976/files/doc_financials/2022/q3/L3Harris-Q32022-Investor-Letter_Final_with-links.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2022-10-27T18:53:57+00:00",
+        "modification": "2022-10-27T19:08:46+00:00"
+      },
+      "ir_date_only_available_bound": "2022-10-28T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "5977dd7f1ef42073661b9ed74a123a103c72d86f462d4bb7077d35fb6e560524"
+    },
+    {
+      "ticker": "LHX",
+      "publication_date": "2023-04-27",
+      "source_url": "https://s205.q4cdn.com/565046976/files/doc_financials/2023/q1/L3Harris_Q12023_Investor_Letter_FINAL_WithLinks_1.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2023-04-27T17:04:23+00:00",
+        "modification": "2023-04-27T17:22:50+00:00"
+      },
+      "ir_date_only_available_bound": "2023-04-28T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "dd67c607bd07e956035ea5b8cd2833276ade00370a6b3ba9e60c99e5d0dbffe0"
+    },
+    {
+      "ticker": "GE",
+      "publication_date": "2017-04-21",
+      "source_url": "https://www.ge.com/sites/default/files/ge_webcast_pressrelease_04212017.pdf",
+      "pdf_metadata_utc": {
+        "creation": "2017-04-21T02:02:34+00:00",
+        "modification": "2017-04-21T02:02:39+00:00"
+      },
+      "ir_date_only_available_bound": "2017-04-22T04:00:00+00:00",
+      "version_metadata_not_after_bound": true,
+      "pdf_sha256": "26668a9a8d6da5cb1152e1a577968c26e66076f5d1fabdb4a6b73ee757a7db5a"
+    }
+  ]
+}

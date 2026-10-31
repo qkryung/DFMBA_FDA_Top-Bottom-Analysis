@@ -1,0 +1,498 @@
+{
+  "note": "Cached-source validation of explicit both-boundary extraction. Whole reports are not scored.",
+  "counts": {
+    "bounded_release_verified": 70
+  },
+  "documents": [
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-16-000044",
+      "status": "bounded_release_verified",
+      "characters": 13954,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490316000044/frt-12312015xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-16-000057",
+      "status": "bounded_release_verified",
+      "characters": 11788,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490316000057/frt-03312016xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-16-000065",
+      "status": "bounded_release_verified",
+      "characters": 12318,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490316000065/frt-06302016xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-16-000071",
+      "status": "bounded_release_verified",
+      "characters": 11570,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490316000071/frt-09302016xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-17-000007",
+      "status": "bounded_release_verified",
+      "characters": 12693,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490317000007/frt-12312016xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-17-000013",
+      "status": "bounded_release_verified",
+      "characters": 10779,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490317000013/frt-03312017xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-17-000024",
+      "status": "bounded_release_verified",
+      "characters": 12263,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490317000024/frt-06302017xex991primesto.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-17-000033",
+      "status": "bounded_release_verified",
+      "characters": 11154,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490317000033/frt-09302017xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-18-000008",
+      "status": "bounded_release_verified",
+      "characters": 12515,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490318000008/frt-12312017xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-18-000015",
+      "status": "bounded_release_verified",
+      "characters": 9250,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490318000015/frt-03312018xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-18-000023",
+      "status": "bounded_release_verified",
+      "characters": 11151,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490318000023/frt-06302018xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-18-000029",
+      "status": "bounded_release_verified",
+      "characters": 11144,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490318000029/frt-09302018xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-19-000012",
+      "status": "bounded_release_verified",
+      "characters": 12331,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490319000012/frt-12312018xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-19-000019",
+      "status": "bounded_release_verified",
+      "characters": 9557,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490319000019/frt-03312019xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-19-000033",
+      "status": "bounded_release_verified",
+      "characters": 10961,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490319000033/frt-06302019xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-19-000041",
+      "status": "bounded_release_verified",
+      "characters": 10696,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490319000041/frt-09302019xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-20-000007",
+      "status": "bounded_release_verified",
+      "characters": 13089,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490320000007/frt-12312019xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-20-000019",
+      "status": "bounded_release_verified",
+      "characters": 12043,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490320000019/frt-03312020xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-20-000030",
+      "status": "bounded_release_verified",
+      "characters": 11501,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490320000030/frt-06302020xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-20-000039",
+      "status": "bounded_release_verified",
+      "characters": 10527,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490320000039/frt-09302020xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-21-000019",
+      "status": "bounded_release_verified",
+      "characters": 13886,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490321000019/frt-12312020xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-21-000048",
+      "status": "bounded_release_verified",
+      "characters": 11812,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490321000048/frt-03312021xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-21-000059",
+      "status": "bounded_release_verified",
+      "characters": 12450,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490321000059/frt-06302021xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-21-000075",
+      "status": "bounded_release_verified",
+      "characters": 11382,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490321000075/frt-09302021xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-22-000022",
+      "status": "bounded_release_verified",
+      "characters": 12957,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490322000022/frt-12312021xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-22-000042",
+      "status": "bounded_release_verified",
+      "characters": 10986,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490322000042/frt-03312022xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-22-000054",
+      "status": "bounded_release_verified",
+      "characters": 12764,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490322000054/frt-06302022xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-22-000067",
+      "status": "bounded_release_verified",
+      "characters": 12700,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490322000067/frt-09302022xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-23-000019",
+      "status": "bounded_release_verified",
+      "characters": 12735,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490323000019/frt-12312022xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-23-000043",
+      "status": "bounded_release_verified",
+      "characters": 10358,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490323000043/frt-3312023xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-23-000052",
+      "status": "bounded_release_verified",
+      "characters": 11501,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490323000052/frt-6302023xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-23-000063",
+      "status": "bounded_release_verified",
+      "characters": 10830,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490323000063/frt-9302023xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-24-000031",
+      "status": "bounded_release_verified",
+      "characters": 14623,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490324000031/frt-12312023xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-24-000044",
+      "status": "bounded_release_verified",
+      "characters": 10508,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490324000044/frt-03312024xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-24-000055",
+      "status": "bounded_release_verified",
+      "characters": 12537,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490324000055/frt-06302024xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-24-000068",
+      "status": "bounded_release_verified",
+      "characters": 11196,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490324000068/frt-09302024xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-25-000015",
+      "status": "bounded_release_verified",
+      "characters": 14612,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490325000015/frt-12312024xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-25-000036",
+      "status": "bounded_release_verified",
+      "characters": 11567,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490325000036/frt-3312025xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-25-000051",
+      "status": "bounded_release_verified",
+      "characters": 13307,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490325000051/frt-6302025xex991.htm"
+    },
+    {
+      "ticker": "FRT",
+      "accession": "0000034903-25-000062",
+      "status": "bounded_release_verified",
+      "characters": 11225,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490325000062/frt-9302025xex991.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-16-000268",
+      "status": "bounded_release_verified",
+      "characters": 41888,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000268/hal_12312015-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-16-000288",
+      "status": "bounded_release_verified",
+      "characters": 29967,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000288/hal_3312016-pressrelease.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-16-000290",
+      "status": "bounded_release_verified",
+      "characters": 18988,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000290/hal_03312016-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-16-000328",
+      "status": "bounded_release_verified",
+      "characters": 30831,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000328/hal_06302016-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-16-000388",
+      "status": "bounded_release_verified",
+      "characters": 26365,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000388/hal_09302016-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-17-000039",
+      "status": "bounded_release_verified",
+      "characters": 30274,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501217000039/hal_12312016-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-17-000089",
+      "status": "bounded_release_verified",
+      "characters": 22597,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501217000089/hal_03312017-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-17-000154",
+      "status": "bounded_release_verified",
+      "characters": 26103,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501217000154/hal_06302017-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-17-000214",
+      "status": "bounded_release_verified",
+      "characters": 24606,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501217000214/hal_09302017-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-18-000045",
+      "status": "bounded_release_verified",
+      "characters": 31447,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501218000045/hal_12312017-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-18-000082",
+      "status": "bounded_release_verified",
+      "characters": 23144,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501218000082/hal_03312018-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-18-000115",
+      "status": "bounded_release_verified",
+      "characters": 23385,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501218000115/hal_06302018-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-18-000165",
+      "status": "bounded_release_verified",
+      "characters": 18432,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501218000165/hal_09302018-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-19-000037",
+      "status": "bounded_release_verified",
+      "characters": 26290,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501219000037/hal_12312018-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-19-000081",
+      "status": "bounded_release_verified",
+      "characters": 22162,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501219000081/hal_03312019-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-19-000109",
+      "status": "bounded_release_verified",
+      "characters": 22501,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501219000109/hal_06302019-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-19-000148",
+      "status": "bounded_release_verified",
+      "characters": 23126,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501219000148/hal09302019-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-20-000023",
+      "status": "bounded_release_verified",
+      "characters": 28019,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501220000023/hal12312019-er8k.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-20-000051",
+      "status": "bounded_release_verified",
+      "characters": 28233,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501220000051/hal-20200420.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-20-000084",
+      "status": "bounded_release_verified",
+      "characters": 27194,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501220000084/hal-20200720.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-20-000103",
+      "status": "bounded_release_verified",
+      "characters": 28679,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501220000103/hal-20201019.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-21-000002",
+      "status": "bounded_release_verified",
+      "characters": 32863,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501221000002/hal-20210119.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-21-000015",
+      "status": "bounded_release_verified",
+      "characters": 26215,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501221000015/hal-20210421.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-21-000039",
+      "status": "bounded_release_verified",
+      "characters": 23087,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501221000039/hal-20210720.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-21-000053",
+      "status": "bounded_release_verified",
+      "characters": 33703,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501221000053/hal-20211019.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-22-000008",
+      "status": "bounded_release_verified",
+      "characters": 36514,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501222000008/hal-20220124.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-22-000029",
+      "status": "bounded_release_verified",
+      "characters": 25019,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501222000029/hal-20220419.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-22-000056",
+      "status": "bounded_release_verified",
+      "characters": 28866,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501222000056/hal-20220719.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-22-000065",
+      "status": "bounded_release_verified",
+      "characters": 30490,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501222000065/hal-20221025.htm"
+    },
+    {
+      "ticker": "HAL",
+      "accession": "0000045012-23-000006",
+      "status": "bounded_release_verified",
+      "characters": 30305,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/45012/000004501223000006/hal-20230124.htm"
+    }
+  ]
+}
