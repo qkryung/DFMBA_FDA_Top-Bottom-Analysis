@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-10-31T14:24:42.100496+00:00",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "Final report matches current collected corpus",
+      "status": "pass",
+      "observations": 1414
+    },
+    {
+      "name": "Unique company-quarter panel",
+      "status": "pass",
+      "observations": 1320
+    },
+    {
+      "name": "Unique security-month market input",
+      "status": "pass",
+      "observations": 10093
+    },
+    {
+      "name": "All source timestamps precede entry-day cutoff and satisfy age",
+      "status": "pass",
+      "observations": 1320
+    },
+    {
+      "name": "Selected documents independently equal latest eligible releases",
+      "status": "pass",
+      "observations": 1320
+    },
+    {
+      "name": "Saved panel scores match current source-score files",
+      "status": "pass",
+      "observations": 21120
+    },
+    {
+      "name": "Independent exact-calendar BHAR recomputation and missing outcomes",
+      "status": "pass",
+      "observations": 1320
+    },
+    {
+      "name": "Independent lagged-momentum recomputation excludes entry month",
+      "status": "pass",
+      "observations": 1320
+    },
+    {
+      "name": "All reported training outcomes matured before forecast cutoff",
+      "status": "pass",
+      "observations": 27
+    },
+    {
+      "name": "All models and topic ablations use the same OOS rows",
+      "status": "pass",
+      "observations": 9
+    },
+    {
+      "name": "Independent saved-prediction RMSE matches public model metrics",
+      "status": "pass",
+      "observations": 4
+    },
+    {
+      "name": "Public market metadata excludes security identifier mapping",
+      "status": "pass",
+      "observations": 1
+    }
+  ],
+  "n_checks": 12,
+  "max_independent_return_error": 4.440892098500626e-16,
+  "scope": "Numerical/source-timing checks of saved analysis; does not validate topic semantics, eliminate survivorship bias, or verify rendered artifacts."
+}

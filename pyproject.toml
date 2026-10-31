@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dfmba-topbottom"
+version = "0.1.0"
+description = "FOMC and earnings-release textual signals for reproducible investment research"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "pandas>=2.2", "requests>=2.31", "beautifulsoup4>=4.12"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

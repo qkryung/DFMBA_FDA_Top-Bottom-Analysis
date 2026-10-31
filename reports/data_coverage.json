@@ -1,0 +1,106 @@
+{
+  "status": "executed_pilot",
+  "start_year": 2016,
+  "end_year": 2025,
+  "target_companies": 33,
+  "covered_companies": 33,
+  "missing_companies": [],
+  "firm_documents": 1334,
+  "fomc_documents": 80,
+  "failed_acquisitions": 27,
+  "universe_basis": "Current S&P 500 constituent snapshot, not historical membership; selected 33-company pilot",
+  "sectors": {
+    "Communication Services": {
+      "companies": 3,
+      "documents": 120
+    },
+    "Consumer Discretionary": {
+      "companies": 3,
+      "documents": 122
+    },
+    "Consumer Staples": {
+      "companies": 3,
+      "documents": 120
+    },
+    "Energy": {
+      "companies": 3,
+      "documents": 121
+    },
+    "Financials": {
+      "companies": 3,
+      "documents": 120
+    },
+    "Health Care": {
+      "companies": 3,
+      "documents": 122
+    },
+    "Industrials": {
+      "companies": 3,
+      "documents": 122
+    },
+    "Information Technology": {
+      "companies": 3,
+      "documents": 121
+    },
+    "Materials": {
+      "companies": 3,
+      "documents": 126
+    },
+    "Real Estate": {
+      "companies": 3,
+      "documents": 120
+    },
+    "Utilities": {
+      "companies": 3,
+      "documents": 120
+    }
+  },
+  "limitations": [
+    "Current constituent snapshot and current GICS labels create survivorship and classification bias.",
+    "Pilot companies selected deliberately; not a random or complete S&P500 sample.",
+    "SEC Item 2.02 exhibits are issuer earnings releases, not earnings-call transcripts.",
+    "Some Item2.02 filings are preliminary updates; more than four filings per year is possible.",
+    "Acceptance timestamp is conservative relative to the original issuer press-release time.",
+    "LM tone measures positive/negative language, not macroeconomic direction or causal impact.",
+    "Keyword topics overlap and require human-label validation before investment use.",
+    "Forward-looking text identification and boilerplate removal are rule-based heuristics."
+  ],
+  "firm_date_min": "2016-01-14",
+  "firm_date_max": "2025-11-20",
+  "duplicate_doc_ids": 0,
+  "fomc_date_min": "2016-02-17",
+  "fomc_date_max": "2025-12-30",
+  "fomc_by_meeting_year": {
+    "2016": 8,
+    "2017": 8,
+    "2018": 8,
+    "2019": 8,
+    "2020": 8,
+    "2021": 8,
+    "2022": 8,
+    "2023": 8,
+    "2024": 8,
+    "2025": 8
+  },
+  "excluded_nonrelease_exhibits": 72,
+  "missing_timestamps": 0,
+  "timestamp_timezone": "UTC",
+  "corpus_audit_passed": true,
+  "sec_timestamp_crosschecks": 1334,
+  "sec_timestamp_mismatches": 0,
+  "topic_absence_policy": "NaN tone when zero matching sentences; never imputed neutral",
+  "excluded_entire_filings": 23,
+  "filings_with_replacement_exhibit": 49,
+  "firm_topic_coverage": {
+    "inflation": 0.970015,
+    "employment": 0.338831,
+    "growth": 0.998501,
+    "investment": 0.930285,
+    "rates": 0.85907
+  },
+  "fomc_text_scope": "Staff Review of the Economic Situation through before Committee Policy Action",
+  "company_calendar_quarters_covered": 1320,
+  "company_calendar_quarters_expected": 1320,
+  "each_company_covers_40_publication_quarters": true,
+  "acquisition_log_note": "Unsupported or non-earnings candidate exhibits; not necessarily network errors. Some entries overlap entire-filing exclusions."
+}

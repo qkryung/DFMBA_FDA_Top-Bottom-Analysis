@@ -1,0 +1,50 @@
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.DS_Store
+Thumbs.db
+~$*
+
+# Re-downloadable source documents, licensed classroom data and model weights
+data/raw/
+data/cache/
+data/dictionaries/
+data/private/
+data/derived/
+data/models/
+models/
+.cache/
+*.parquet
+*.pkl
+*.pt
+*.bin
+*.safetensors
+CRSP*.csv
+FF_Research_Data_Factors.csv
+
+# Machine-local QA and app build files
+.build/
+tmp/
+logs/
+web/
+report-app/dist/
+artifacts/qa/
+presentations/qa/
+*.log
+**/.data-app-offline/
+**/.data-app-cache/
+**/.data-app-build*/
+**/node_modules/
+**/.codex/
+
+# Share aggregate results, not company-level licensed return records
+reports/panel.csv
+reports/predictions.csv
+reports/company_returns.csv

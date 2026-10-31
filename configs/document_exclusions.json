@@ -1,0 +1,11 @@
+{
+  "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000034/googex991q12023blogpost.htm": "Reporting/disclosure-method blog post, not an earnings or guidance release",
+  "https://www.sec.gov/Archives/edgar/data/886982/000119312520198162/d87255dex991.htm": "Government settlement announcement, not an earnings or guidance release",
+  "https://www.sec.gov/Archives/edgar/data/773840/000093041317003540/c89514_ex99-1.htm": "Corporate portfolio/spin-off announcement with secondary results preview, outside dedicated earnings/guidance releases",
+  "https://www.sec.gov/Archives/edgar/data/773840/000077384023000076/exhibit99-projectvictorxpr.htm": "Corporate segment-realignment announcement, outside earnings/guidance releases",
+  "https://www.sec.gov/Archives/edgar/data/773840/000077384024000066/exhibit99-carrieracquisiti.htm": "Acquisition-completion announcement with secondary outlook update, outside dedicated earnings/guidance releases",
+  "https://www.sec.gov/Archives/edgar/data/51143/000110465920113260/tm2032661d1_ex99-1.htm": "Corporate spin-off/strategy announcement with secondary preliminary results, outside dedicated earnings/guidance releases",
+  "https://www.sec.gov/Archives/edgar/data/51143/000155837021017039/ibm-20211227xex99d1.htm": "Historical reporting-method and segment-change article, not a new earnings release",
+  "https://www.sec.gov/Archives/edgar/data/78003/000007800316000072/pfe-12312015xex99.htm": "Legal settlement announcement, not an earnings or guidance release",
+  "https://www.sec.gov/Archives/edgar/data/78003/000119312523294930/d553734dex991.htm": "Acquisition-completion announcement, not a dedicated earnings or guidance release"
+}

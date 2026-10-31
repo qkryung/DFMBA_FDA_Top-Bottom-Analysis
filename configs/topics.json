@@ -1,0 +1,7 @@
+{
+  "inflation": ["inflation", "price", "prices", "pricing", "cost", "costs", "input cost", "commodity", "commodities", "margin", "margins"],
+  "employment": ["employment", "unemployment", "labor", "labour", "wage", "wages", "hiring", "workforce", "payroll", "workers", "staffing"],
+  "growth": ["growth", "demand", "consumer", "consumption", "spending", "recession", "economic activity", "sales", "revenue", "revenues"],
+  "investment": ["investment", "investments", "capital expenditure", "capital expenditures", "capex", "capacity", "productivity", "automation", "infrastructure"],
+  "rates": ["interest rate", "interest rates", "policy rate", "federal funds", "monetary policy", "financial conditions", "borrowing", "financing", "credit", "liquidity", "refinancing"]
+}

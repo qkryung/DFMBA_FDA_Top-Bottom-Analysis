@@ -1,0 +1,504 @@
+ticker,company,sector,cik,snapshot_retrieved_at,source_url
+MMM,3M,Industrials,66740,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AOS,A. O. Smith,Industrials,91142,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ABT,Abbott Laboratories,Health Care,1800,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ABBV,AbbVie,Health Care,1551152,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ACN,Accenture,Information Technology,1467373,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ADBE,Adobe Inc.,Information Technology,796343,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AMD,Advanced Micro Devices,Information Technology,2488,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AES,AES Corporation,Utilities,874761,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AFL,Aflac,Financials,4977,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+A,Agilent Technologies,Health Care,1090872,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+APD,Air Products,Materials,2969,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ABNB,Airbnb,Consumer Discretionary,1559720,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AKAM,Akamai Technologies,Information Technology,1086222,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ALB,Albemarle Corporation,Materials,915913,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ARE,Alexandria Real Estate Equities,Real Estate,1035443,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ALGN,Align Technology,Health Care,1097149,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ALLE,Allegion,Industrials,1579241,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LNT,Alliant Energy,Utilities,352541,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ALL,Allstate,Financials,899051,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GOOGL,Alphabet Inc. (Class A),Communication Services,1652044,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GOOG,Alphabet Inc. (Class C),Communication Services,1652044,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MO,Altria,Consumer Staples,764180,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AMZN,Amazon,Consumer Discretionary,1018724,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AMCR,Amcor,Materials,1748790,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AEE,Ameren,Utilities,1002910,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AEP,American Electric Power,Utilities,4904,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AXP,American Express,Financials,4962,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AIG,American International Group,Financials,5272,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AMT,American Tower,Real Estate,1053507,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AWK,American Water Works,Utilities,1410636,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AMP,Ameriprise Financial,Financials,820027,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AME,Ametek,Industrials,1037868,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AMGN,Amgen,Health Care,318154,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+APH,Amphenol,Information Technology,820313,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ADI,Analog Devices,Information Technology,6281,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AON,Aon plc,Financials,315293,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+APA,APA Corporation,Energy,1841666,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+APO,Apollo Global Management,Financials,1858681,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AAPL,Apple Inc.,Information Technology,320193,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AMAT,Applied Materials,Information Technology,6951,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+APP,AppLovin,Communication Services,1751008,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+APTV,Aptiv,Consumer Discretionary,1521332,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ACGL,Arch Capital Group,Financials,947484,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ADM,Archer Daniels Midland,Consumer Staples,7084,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ARES,Ares Management,Financials,1176948,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ANET,Arista Networks,Information Technology,1596532,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AJG,Arthur J. Gallagher & Co.,Financials,354190,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AIZ,Assurant,Financials,1267238,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+T,AT&T,Communication Services,732717,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ATO,Atmos Energy,Utilities,731802,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ADSK,Autodesk,Information Technology,769397,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ADP,Automatic Data Processing,Industrials,8670,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AZO,AutoZone,Consumer Discretionary,866787,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AVY,Avery Dennison,Materials,8818,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AXON,Axon Enterprise,Industrials,1069183,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BKR,Baker Hughes,Energy,1701605,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BALL,Ball Corporation,Materials,9389,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BAC,Bank of America,Financials,70858,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BAX,Baxter International,Health Care,10456,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BDX,Becton Dickinson,Health Care,10795,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BRK.B,Berkshire Hathaway,Financials,1067983,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BBY,Best Buy,Consumer Discretionary,764478,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TECH,Bio-Techne,Health Care,842023,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BIIB,Biogen,Health Care,875045,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BLK,BlackRock,Financials,2012383,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BX,Blackstone Inc.,Financials,1393818,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+XYZ,"Block, Inc.",Financials,1512673,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BE,Bloom Energy,Industrials,1664703,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BNY,BNY Mellon,Financials,1390777,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BA,Boeing,Industrials,12927,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BKNG,Booking Holdings,Consumer Discretionary,1075531,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BSX,Boston Scientific,Health Care,885725,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BMY,Bristol Myers Squibb,Health Care,14272,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+AVGO,Broadcom,Information Technology,1730168,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BR,Broadridge Financial Solutions,Industrials,1383312,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BRO,Brown & Brown,Financials,79282,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BF.B,Brown–Forman,Consumer Staples,14693,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BG,Bunge Global,Consumer Staples,1996862,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BXP,"BXP, Inc.",Real Estate,1037540,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CHRW,C.H. Robinson,Industrials,1043277,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CDNS,Cadence Design Systems,Information Technology,813672,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CPT,Camden Property Trust,Real Estate,906345,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+COF,Capital One,Financials,927628,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CAH,Cardinal Health,Health Care,721371,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CCL,Carnival Corporation,Consumer Discretionary,815097,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CARR,Carrier Global,Industrials,1783180,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CVNA,Carvana,Consumer Discretionary,1690820,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CASY,Casey's,Consumer Staples,726958,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CAT,Caterpillar Inc.,Industrials,18230,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CBOE,Cboe Global Markets,Financials,1374310,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CBRE,CBRE Group,Real Estate,1138118,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CDW,CDW Corporation,Information Technology,1402057,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+COR,Cencora,Health Care,1140859,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CNC,Centene Corporation,Health Care,1071739,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CNP,CenterPoint Energy,Utilities,1130310,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CF,CF Industries,Materials,1324404,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CRL,Charles River Laboratories,Health Care,1100682,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SCHW,Charles Schwab Corporation,Financials,316709,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CHTR,Charter Communications,Communication Services,1091667,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CVX,Chevron Corporation,Energy,93410,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CMG,Chipotle Mexican Grill,Consumer Discretionary,1058090,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CB,Chubb Limited,Financials,896159,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CHD,Church & Dwight,Consumer Staples,313927,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CIEN,Ciena,Information Technology,936395,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CI,Cigna,Health Care,1739940,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CINF,Cincinnati Financial,Financials,20286,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CTAS,Cintas,Industrials,723254,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CSCO,Cisco,Information Technology,858877,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+C,Citigroup,Financials,831001,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CFG,Citizens Financial Group,Financials,759944,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CLX,Clorox,Consumer Staples,21076,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CME,CME Group,Financials,1156375,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CMS,CMS Energy,Utilities,811156,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KO,Coca-Cola Company (The),Consumer Staples,21344,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CTSH,Cognizant,Information Technology,1058290,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+COHR,Coherent Corp.,Information Technology,820318,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+COIN,Coinbase,Financials,1679788,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CL,Colgate-Palmolive,Consumer Staples,21665,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CMCSA,Comcast,Communication Services,1166691,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FIX,Comfort Systems USA,Industrials,1035983,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+COP,ConocoPhillips,Energy,1163165,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ED,Consolidated Edison,Utilities,1047862,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+STZ,Constellation Brands,Consumer Staples,16918,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CEG,Constellation Energy,Utilities,1868275,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+COO,Cooper Companies (The),Health Care,711404,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CPRT,Copart,Industrials,900075,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GLW,Corning Inc.,Information Technology,24741,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CPAY,Corpay,Financials,1175454,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CSGP,CoStar Group,Real Estate,1057352,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+COST,Costco,Consumer Staples,909832,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CRH,CRH plc,Materials,849395,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CRWD,CrowdStrike,Information Technology,1535527,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CCI,Crown Castle,Real Estate,1051470,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CSX,CSX Corporation,Industrials,277948,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CMI,Cummins,Industrials,26172,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CVS,CVS Health,Health Care,64803,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DHR,Danaher Corporation,Health Care,313616,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DRI,Darden Restaurants,Consumer Discretionary,940944,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DDOG,Datadog,Information Technology,1561550,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DVA,DaVita,Health Care,927066,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DECK,Deckers Brands,Consumer Discretionary,910521,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DE,Deere & Company,Industrials,315189,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DELL,Dell Technologies,Information Technology,1571996,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DAL,Delta Air Lines,Industrials,27904,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DVN,Devon Energy,Energy,1090012,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DXCM,Dexcom,Health Care,1093557,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FANG,Diamondback Energy,Energy,1539838,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DLR,Digital Realty,Real Estate,1297996,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DG,Dollar General,Consumer Staples,29534,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DLTR,Dollar Tree,Consumer Staples,935703,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+D,Dominion Energy,Utilities,715957,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DPZ,Domino's,Consumer Discretionary,1286681,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DASH,DoorDash,Consumer Discretionary,1792789,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DOV,Dover Corporation,Industrials,29905,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DOW,Dow Inc.,Materials,1751788,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DHI,D. R. Horton,Consumer Discretionary,882184,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DTE,DTE Energy,Utilities,936340,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DUK,Duke Energy,Utilities,1326160,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DD,DuPont,Industrials,1666700,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ETN,Eaton Corporation,Industrials,1551182,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EBAY,eBay Inc.,Consumer Discretionary,1065088,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ECHO,EchoStar,Communication Services,1415404,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ECL,Ecolab,Materials,31462,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EIX,Edison International,Utilities,827052,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EW,Edwards Lifesciences,Health Care,1099800,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ELV,Elevance Health,Health Care,1156039,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EME,Emcor,Industrials,105634,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EMR,Emerson Electric,Industrials,32604,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ETR,Entergy,Utilities,65984,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EOG,EOG Resources,Energy,821189,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EQT,EQT Corporation,Energy,33213,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EFX,Equifax,Industrials,33185,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EQIX,Equinix,Real Estate,1101239,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ERIE,Erie Indemnity,Financials,922621,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ESS,Essex Property Trust,Real Estate,920522,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EL,Estée Lauder Companies (The),Consumer Staples,1001250,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EG,Everest Group,Financials,1095073,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EVRG,Evergy,Utilities,1711269,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+P,Everpure,Information Technology,1474432,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ES,Eversource Energy,Utilities,72741,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EXC,Exelon,Utilities,1109357,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EXE,Expand Energy,Energy,895126,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EXPE,Expedia Group,Consumer Discretionary,1324424,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EXPD,Expeditors International,Industrials,746515,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+EXR,Extra Space Storage,Real Estate,1289490,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+XOM,ExxonMobil,Energy,2115436,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FFIV,"F5, Inc.",Information Technology,1048695,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FDS,FactSet,Financials,1013237,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FICO,Fair Isaac,Information Technology,814547,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FAST,Fastenal,Industrials,815556,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FRT,Federal Realty Investment Trust,Real Estate,34903,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FDX,FedEx,Industrials,1048911,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FDXF,FedEx Freight,Industrials,2082247,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FERG,Ferguson Enterprises,Industrials,2011641,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FIS,Fidelity National Information Services,Financials,1136893,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FITB,Fifth Third Bancorp,Financials,35527,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FSLR,First Solar,Information Technology,1274494,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FE,FirstEnergy,Utilities,1031296,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FISV,Fiserv,Financials,798354,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FLEX,Flex Ltd.,Information Technology,866374,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+F,Ford Motor Company,Consumer Discretionary,37996,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FTNT,Fortinet,Information Technology,1262039,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FTV,Fortive,Industrials,1659166,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FOXA,Fox Corporation (Class A),Communication Services,1754301,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FOX,Fox Corporation (Class B),Communication Services,1754301,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+BEN,Franklin Resources,Financials,38777,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+FCX,Freeport-McMoRan,Materials,831259,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GRMN,Garmin,Consumer Discretionary,1121788,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IT,Gartner,Information Technology,749251,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GE,GE Aerospace,Industrials,40545,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GEHC,GE HealthCare,Health Care,1932393,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GEV,GE Vernova,Industrials,1996810,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GEN,Gen Digital,Information Technology,849399,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GNRC,Generac,Industrials,1474735,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GD,General Dynamics,Industrials,40533,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GIS,General Mills,Consumer Staples,40704,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GM,General Motors,Consumer Discretionary,1467858,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GPC,Genuine Parts Company,Consumer Discretionary,40987,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GILD,Gilead Sciences,Health Care,882095,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GPN,Global Payments,Financials,1123360,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GL,Globe Life,Financials,320335,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GDDY,GoDaddy,Information Technology,1609711,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GS,Goldman Sachs,Financials,886982,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HAL,Halliburton,Energy,45012,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HIG,Hartford (The),Financials,874766,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HAS,Hasbro,Consumer Discretionary,46080,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HCA,HCA Healthcare,Health Care,860730,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DOC,Healthpeak Properties,Real Estate,765880,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HSIC,Henry Schein,Health Care,1000228,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HSY,Hershey Company (The),Consumer Staples,47111,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HPE,Hewlett Packard Enterprise,Information Technology,1645590,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HLT,Hilton Worldwide,Consumer Discretionary,1585689,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HD,Home Depot (The),Consumer Discretionary,354950,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HONA,Honeywell Aerospace,Industrials,2089271,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HON,Honeywell Technologies,Industrials,773840,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HRL,Hormel Foods,Consumer Staples,48465,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HST,Host Hotels & Resorts,Real Estate,1070750,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HWM,Howmet Aerospace,Industrials,4281,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HPQ,HP Inc.,Information Technology,47217,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HUBB,Hubbell Incorporated,Industrials,48898,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HUM,Humana,Health Care,49071,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HBAN,Huntington Bancshares,Financials,49196,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HII,Huntington Ingalls Industries,Industrials,1501585,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IBM,IBM,Information Technology,51143,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IEX,IDEX Corporation,Industrials,832101,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IDXX,Idexx Laboratories,Health Care,874716,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ITW,Illinois Tool Works,Industrials,49826,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ILMN,"Illumina, Inc.",Health Care,1110803,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+INCY,Incyte,Health Care,879169,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IR,Ingersoll Rand,Industrials,1699150,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PODD,Insulet Corporation,Health Care,1145197,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+INTC,Intel,Information Technology,50863,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IBKR,Interactive Brokers,Financials,1381197,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ICE,Intercontinental Exchange,Financials,1571949,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IFF,International Flavors & Fragrances,Materials,51253,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IP,International Paper,Materials,51434,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+INTU,Intuit,Information Technology,896878,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ISRG,Intuitive Surgical,Health Care,1035267,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IVZ,Invesco,Financials,914208,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+INVH,Invitation Homes,Real Estate,1687229,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IQV,IQVIA,Health Care,1478242,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+IRM,Iron Mountain,Real Estate,1020569,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+JBHT,J.B. Hunt,Industrials,728535,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+JBL,Jabil,Information Technology,898293,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+JKHY,Jack Henry & Associates,Financials,779152,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+J,Jacobs Solutions,Industrials,52988,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+JNJ,Johnson & Johnson,Health Care,200406,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+JCI,Johnson Controls,Industrials,833444,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+JPM,JPMorgan Chase,Financials,19617,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KVUE,Kenvue,Consumer Staples,1944048,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KDP,Keurig Dr Pepper,Consumer Staples,1418135,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KEY,KeyCorp,Financials,91576,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KEYS,Keysight Technologies,Information Technology,1601046,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KMB,Kimberly-Clark,Consumer Staples,55785,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KIM,Kimco Realty,Real Estate,879101,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KMI,Kinder Morgan,Energy,1506307,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KKR,KKR & Co.,Financials,1404912,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KLAC,KLA Corporation,Information Technology,319201,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KHC,Kraft Heinz,Consumer Staples,1637459,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+KR,Kroger,Consumer Staples,56873,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LHX,L3Harris,Industrials,202058,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LH,Labcorp,Health Care,920148,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LRCX,Lam Research,Information Technology,707549,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LVS,Las Vegas Sands,Consumer Discretionary,1300514,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LDOS,Leidos,Industrials,1336920,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LEN,Lennar,Consumer Discretionary,920760,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LII,Lennox International,Industrials,1069202,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LLY,Lilly (Eli),Health Care,59478,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LIN,Linde plc,Materials,1707925,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LYV,Live Nation Entertainment,Communication Services,1335258,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LMT,Lockheed Martin,Industrials,936468,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+L,Loews Corporation,Financials,60086,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LOW,Lowe's,Consumer Discretionary,60667,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LULU,Lululemon Athletica,Consumer Discretionary,1397187,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LITE,Lumentum,Information Technology,1633978,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LYB,LyondellBasell,Materials,1489393,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MTB,M&T Bank,Financials,36270,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MPC,Marathon Petroleum,Energy,1510295,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MAR,Marriott International,Consumer Discretionary,1048286,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MRSH,Marsh McLennan,Financials,62709,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MLM,Martin Marietta Materials,Materials,916076,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MRVL,Marvell Technology,Information Technology,1835632,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MAS,Masco,Industrials,62996,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MA,Mastercard,Financials,1141391,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MKC,McCormick & Company,Consumer Staples,63754,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MCD,McDonald's,Consumer Discretionary,63908,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MCK,McKesson,Health Care,927653,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MDT,Medtronic,Health Care,1613103,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MRK,Merck & Co.,Health Care,310158,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+META,Meta Platforms,Communication Services,1326801,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MET,MetLife,Financials,1099219,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MTD,Mettler Toledo,Health Care,1037646,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MGM,MGM Resorts,Consumer Discretionary,789570,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MCHP,Microchip Technology,Information Technology,827054,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MU,Micron Technology,Information Technology,723125,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MSFT,Microsoft,Information Technology,789019,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MAA,Mid-America Apartment Communities,Real Estate,912595,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MRNA,Moderna,Health Care,1682852,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MDLZ,Mondelez International,Consumer Staples,1103982,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MPWR,Monolithic Power Systems,Information Technology,1280452,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MNST,Monster Beverage,Consumer Staples,865752,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MCO,Moody's Corporation,Financials,1059556,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MS,Morgan Stanley,Financials,895421,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MOS,Mosaic Company (The),Materials,1285785,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MSI,Motorola Solutions,Information Technology,68505,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+MSCI,MSCI,Financials,1408198,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NDAQ,"Nasdaq, Inc.",Financials,1120193,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NTAP,NetApp,Information Technology,1002047,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NFLX,Netflix,Communication Services,1065280,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NEM,Newmont,Materials,1164727,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NWSA,News Corp (Class A),Communication Services,1564708,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NWS,News Corp (Class B),Communication Services,1564708,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NEE,NextEra Energy,Utilities,753308,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NKE,"Nike, Inc.",Consumer Discretionary,320187,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NI,NiSource,Utilities,1111711,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NDSN,Nordson Corporation,Industrials,72331,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NSC,Norfolk Southern,Industrials,702165,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NTRS,Northern Trust,Financials,73124,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NOC,Northrop Grumman,Industrials,1133421,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,1513761,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NRG,NRG Energy,Utilities,1013871,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NUE,Nucor,Materials,73309,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NVDA,Nvidia,Information Technology,1045810,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NVR,"NVR, Inc.",Consumer Discretionary,906163,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NXPI,NXP Semiconductors,Information Technology,1413447,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ORLY,O'Reilly Automotive,Consumer Discretionary,898173,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+OXY,Occidental Petroleum,Energy,797468,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ODFL,Old Dominion,Industrials,878927,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+OMC,Omnicom Group,Communication Services,29989,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ON,ON Semiconductor,Information Technology,1097864,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+OKE,Oneok,Energy,1039684,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ORCL,Oracle Corporation,Information Technology,1341439,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+OTIS,Otis Worldwide,Industrials,1781335,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PCAR,Paccar,Industrials,75362,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PKG,Packaging Corporation of America,Materials,75677,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PLTR,Palantir Technologies,Information Technology,1321655,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PANW,Palo Alto Networks,Information Technology,1327567,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PH,Parker Hannifin,Industrials,76334,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PAYX,Paychex,Industrials,723531,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PYPL,PayPal,Financials,1633917,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PNR,Pentair,Industrials,77360,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PEP,PepsiCo,Consumer Staples,77476,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PFE,Pfizer,Health Care,78003,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PCG,PG&E Corporation,Utilities,1004980,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PM,Philip Morris International,Consumer Staples,1413329,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PSX,Phillips 66,Energy,1534701,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PNW,Pinnacle West Capital,Utilities,764622,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PNC,PNC Financial Services,Financials,713676,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PPG,PPG Industries,Materials,79879,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PPL,PPL Corporation,Utilities,922224,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PFG,Principal Financial Group,Financials,1126328,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PG,Procter & Gamble,Consumer Staples,80424,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PGR,Progressive Corporation,Financials,80661,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PLD,Prologis,Real Estate,1045609,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PRU,Prudential Financial,Financials,1137774,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PTC,PTC Inc.,Information Technology,857005,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PEG,Public Service Enterprise Group,Utilities,788784,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PSA,Public Storage,Real Estate,1393311,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PHM,PulteGroup,Consumer Discretionary,822416,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+Q,Qnity Electronics,Information Technology,2058873,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+QCOM,Qualcomm,Information Technology,804328,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+PWR,Quanta Services,Industrials,1050915,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DGX,Quest Diagnostics,Health Care,1022079,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RL,Ralph Lauren Corporation,Consumer Discretionary,1037038,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RJF,Raymond James Financial,Financials,720005,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RDDT,Reddit,Communication Services,1713445,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+O,Realty Income,Real Estate,726728,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+REG,Regency Centers,Real Estate,910606,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+REGN,Regeneron Pharmaceuticals,Health Care,872589,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RF,Regions Financial Corporation,Financials,1281761,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RSG,Republic Services,Industrials,1060391,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RMD,ResMed,Health Care,943819,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RVTY,Revvity,Health Care,31791,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+HOOD,Robinhood Markets,Financials,1783879,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ROK,Rockwell Automation,Industrials,1024478,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ROL,"Rollins, Inc.",Industrials,84839,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ROP,Roper Technologies,Information Technology,882835,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ROST,Ross Stores,Consumer Discretionary,745732,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RCL,Royal Caribbean Group,Consumer Discretionary,884887,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+RTX,RTX Corporation,Industrials,101829,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SPGI,S&P Global,Financials,64040,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+CRM,Salesforce,Information Technology,1108524,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SNDK,Sandisk,Information Technology,2023554,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SBAC,SBA Communications,Real Estate,1034054,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SLB,Schlumberger,Energy,87347,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+STX,Seagate Technology,Information Technology,1137789,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SRE,Sempra,Utilities,1032208,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+NOW,ServiceNow,Information Technology,1373715,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SHW,Sherwin-Williams,Materials,89800,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SPG,Simon Property Group,Real Estate,1063761,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SKYD,Skydance,Communication Services,2041610,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SWKS,Skyworks Solutions,Information Technology,4127,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SJM,J.M. Smucker Company (The),Consumer Staples,91419,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SW,Smurfit Westrock,Materials,2005951,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SNA,Snap-on,Industrials,91440,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SOLV,Solventum,Health Care,1964738,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SO,Southern Company,Utilities,92122,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+LUV,Southwest Airlines,Industrials,92380,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SWK,Stanley Black & Decker,Industrials,93556,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SBUX,Starbucks,Consumer Discretionary,829224,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+STT,State Street Corporation,Financials,93751,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+STLD,Steel Dynamics,Materials,1022671,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+STE,Steris,Health Care,1757898,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SYK,Stryker Corporation,Health Care,310764,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SMCI,Supermicro,Information Technology,1375365,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SYF,Synchrony Financial,Financials,1601712,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SNPS,Synopsys,Information Technology,883241,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+SYY,Sysco,Consumer Staples,96021,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TMUS,T-Mobile US,Communication Services,1283699,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TROW,T. Rowe Price,Financials,1113169,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TTWO,Take-Two Interactive,Communication Services,946581,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TPR,"Tapestry, Inc.",Consumer Discretionary,1116132,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TRGP,Targa Resources,Energy,1389170,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TGT,Target Corporation,Consumer Staples,27419,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TEL,TE Connectivity,Information Technology,1385157,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TDY,Teledyne Technologies,Information Technology,1094285,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TER,Teradyne,Information Technology,97210,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TSLA,"Tesla, Inc.",Consumer Discretionary,1318605,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TXN,Texas Instruments,Information Technology,97476,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TPL,Texas Pacific Land Corporation,Energy,1811074,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TXT,Textron,Industrials,217346,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TMO,Thermo Fisher Scientific,Health Care,97745,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TJX,TJX Companies,Consumer Discretionary,109198,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TKO,TKO Group Holdings,Communication Services,1973266,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TSCO,Tractor Supply,Consumer Discretionary,916365,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TT,Trane Technologies,Industrials,1466258,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TDG,TransDigm Group,Industrials,1260221,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TRV,Travelers Companies (The),Financials,86312,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TRMB,Trimble Inc.,Information Technology,864749,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TFC,Truist Financial,Financials,92230,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TWLO,Twilio,Information Technology,1447669,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TYL,Tyler Technologies,Information Technology,860731,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+TSN,Tyson Foods,Consumer Staples,100493,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+USB,U.S. Bancorp,Financials,36104,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+UBER,Uber,Industrials,1543151,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+UDR,"UDR, Inc.",Real Estate,74208,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ULTA,Ulta Beauty,Consumer Discretionary,1403568,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+UNP,Union Pacific Corporation,Industrials,100885,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+UAL,United Airlines Holdings,Industrials,100517,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+UPS,United Parcel Service,Industrials,1090727,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+URI,United Rentals,Industrials,1067701,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+UNH,UnitedHealth Group,Health Care,731766,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+UHS,Universal Health Services,Health Care,352915,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VLO,Valero Energy,Energy,1035002,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VEEV,Veeva Systems,Health Care,1393052,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VTR,Ventas,Real Estate,740260,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VLTO,Veralto,Industrials,1967680,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VRSN,Verisign,Information Technology,1014473,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VRSK,Verisk Analytics,Industrials,1442145,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VZ,Verizon,Communication Services,732712,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VRTX,Vertex Pharmaceuticals,Health Care,875320,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VRT,Vertiv,Industrials,1674101,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VTRS,Viatris,Health Care,1792044,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VICI,Vici Properties,Real Estate,1705696,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+V,Visa Inc.,Financials,1403161,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VST,Vistra Corp.,Utilities,1692819,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VMRK,Vivmark Residential,Real Estate,906107,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VMC,Vulcan Materials Company,Materials,1396009,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+VYLR,Vylor,Consumer Staples,2128626,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WRB,W. R. Berkley Corporation,Financials,11544,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+GWW,W. W. Grainger,Industrials,277135,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WAB,Wabtec,Industrials,943452,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WMT,Walmart,Consumer Staples,104169,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+DIS,Walt Disney Company (The),Communication Services,1744489,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WM,Waste Management,Industrials,823768,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WAT,Waters Corporation,Health Care,1000697,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WEC,WEC Energy Group,Utilities,783325,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WFC,Wells Fargo,Financials,72971,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WELL,Welltower,Real Estate,766704,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WST,West Pharmaceutical Services,Health Care,105770,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WDC,Western Digital,Information Technology,106040,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WY,Weyerhaeuser,Real Estate,106535,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,719955,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WMB,Williams Companies,Energy,107263,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WTW,Willis Towers Watson,Financials,1140536,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WDAY,"Workday, Inc.",Information Technology,1327811,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+WYNN,Wynn Resorts,Consumer Discretionary,1174922,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+XEL,Xcel Energy,Utilities,72903,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+XYL,Xylem Inc.,Industrials,1524472,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+YUM,Yum! Brands,Consumer Discretionary,1041061,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ZBRA,Zebra Technologies,Information Technology,877212,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ZBH,Zimmer Biomet,Health Care,1136869,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv
+ZTS,Zoetis,Health Care,1555280,2026-10-31T13:45:39.844840+00:00,https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv

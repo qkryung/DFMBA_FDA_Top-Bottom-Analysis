@@ -1,0 +1,23 @@
+{
+  "method": "Loughran-McDonald",
+  "version": "course archive 20200204",
+  "redistributed": false,
+  "official_reference": "https://sraf.nd.edu/loughranmcdonald-master-dictionary/",
+  "files": [
+    {
+      "filename": "LoughranMcDonald_Positive.csv",
+      "sha256": "19f133e286f4d81732d338a81f950316f5a79663a5cb6017e39efc92c7ceba70",
+      "word_count": 354
+    },
+    {
+      "filename": "LoughranMcDonald_Negative.csv",
+      "sha256": "09625004f1868ce11751d64a4aaef7b92b01e7ccd007c891e8754bf78dc0652c",
+      "word_count": 2329
+    },
+    {
+      "filename": "LoughranMcDonald_Uncertainty.csv",
+      "sha256": "49581f9472088c1a8688381870b17c93fc0af225f86e6f443518ed37c35a23f2",
+      "word_count": 297
+    }
+  ]
+}

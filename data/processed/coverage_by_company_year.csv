@@ -1,0 +1,331 @@
+ticker,sector,year,documents
+AAPL,Information Technology,2016,4
+AAPL,Information Technology,2017,4
+AAPL,Information Technology,2018,4
+AAPL,Information Technology,2019,5
+AAPL,Information Technology,2020,4
+AAPL,Information Technology,2021,4
+AAPL,Information Technology,2022,4
+AAPL,Information Technology,2023,4
+AAPL,Information Technology,2024,4
+AAPL,Information Technology,2025,4
+AMT,Real Estate,2016,4
+AMT,Real Estate,2017,4
+AMT,Real Estate,2018,4
+AMT,Real Estate,2019,4
+AMT,Real Estate,2020,4
+AMT,Real Estate,2021,4
+AMT,Real Estate,2022,4
+AMT,Real Estate,2023,4
+AMT,Real Estate,2024,4
+AMT,Real Estate,2025,4
+AMZN,Consumer Discretionary,2016,4
+AMZN,Consumer Discretionary,2017,4
+AMZN,Consumer Discretionary,2018,4
+AMZN,Consumer Discretionary,2019,4
+AMZN,Consumer Discretionary,2020,4
+AMZN,Consumer Discretionary,2021,4
+AMZN,Consumer Discretionary,2022,4
+AMZN,Consumer Discretionary,2023,4
+AMZN,Consumer Discretionary,2024,4
+AMZN,Consumer Discretionary,2025,4
+APD,Materials,2016,4
+APD,Materials,2017,4
+APD,Materials,2018,4
+APD,Materials,2019,4
+APD,Materials,2020,4
+APD,Materials,2021,4
+APD,Materials,2022,4
+APD,Materials,2023,4
+APD,Materials,2024,4
+APD,Materials,2025,5
+BAC,Financials,2016,4
+BAC,Financials,2017,4
+BAC,Financials,2018,4
+BAC,Financials,2019,4
+BAC,Financials,2020,4
+BAC,Financials,2021,4
+BAC,Financials,2022,4
+BAC,Financials,2023,4
+BAC,Financials,2024,4
+BAC,Financials,2025,4
+CAT,Industrials,2016,4
+CAT,Industrials,2017,4
+CAT,Industrials,2018,5
+CAT,Industrials,2019,4
+CAT,Industrials,2020,4
+CAT,Industrials,2021,4
+CAT,Industrials,2022,4
+CAT,Industrials,2023,4
+CAT,Industrials,2024,4
+CAT,Industrials,2025,4
+COP,Energy,2016,4
+COP,Energy,2017,4
+COP,Energy,2018,4
+COP,Energy,2019,4
+COP,Energy,2020,4
+COP,Energy,2021,4
+COP,Energy,2022,4
+COP,Energy,2023,4
+COP,Energy,2024,4
+COP,Energy,2025,4
+CVX,Energy,2016,4
+CVX,Energy,2017,4
+CVX,Energy,2018,4
+CVX,Energy,2019,4
+CVX,Energy,2020,4
+CVX,Energy,2021,4
+CVX,Energy,2022,4
+CVX,Energy,2023,5
+CVX,Energy,2024,4
+CVX,Energy,2025,4
+DIS,Communication Services,2016,4
+DIS,Communication Services,2017,4
+DIS,Communication Services,2018,4
+DIS,Communication Services,2019,4
+DIS,Communication Services,2020,4
+DIS,Communication Services,2021,4
+DIS,Communication Services,2022,4
+DIS,Communication Services,2023,4
+DIS,Communication Services,2024,4
+DIS,Communication Services,2025,4
+DUK,Utilities,2016,4
+DUK,Utilities,2017,4
+DUK,Utilities,2018,4
+DUK,Utilities,2019,4
+DUK,Utilities,2020,4
+DUK,Utilities,2021,4
+DUK,Utilities,2022,4
+DUK,Utilities,2023,4
+DUK,Utilities,2024,4
+DUK,Utilities,2025,4
+FCX,Materials,2016,4
+FCX,Materials,2017,4
+FCX,Materials,2018,4
+FCX,Materials,2019,5
+FCX,Materials,2020,5
+FCX,Materials,2021,4
+FCX,Materials,2022,4
+FCX,Materials,2023,4
+FCX,Materials,2024,4
+FCX,Materials,2025,5
+GOOGL,Communication Services,2016,4
+GOOGL,Communication Services,2017,4
+GOOGL,Communication Services,2018,4
+GOOGL,Communication Services,2019,4
+GOOGL,Communication Services,2020,4
+GOOGL,Communication Services,2021,4
+GOOGL,Communication Services,2022,4
+GOOGL,Communication Services,2023,4
+GOOGL,Communication Services,2024,4
+GOOGL,Communication Services,2025,4
+GS,Financials,2016,4
+GS,Financials,2017,4
+GS,Financials,2018,4
+GS,Financials,2019,4
+GS,Financials,2020,4
+GS,Financials,2021,4
+GS,Financials,2022,4
+GS,Financials,2023,4
+GS,Financials,2024,4
+GS,Financials,2025,4
+HD,Consumer Discretionary,2016,4
+HD,Consumer Discretionary,2017,4
+HD,Consumer Discretionary,2018,4
+HD,Consumer Discretionary,2019,4
+HD,Consumer Discretionary,2020,4
+HD,Consumer Discretionary,2021,4
+HD,Consumer Discretionary,2022,4
+HD,Consumer Discretionary,2023,4
+HD,Consumer Discretionary,2024,4
+HD,Consumer Discretionary,2025,4
+HON,Industrials,2016,5
+HON,Industrials,2017,4
+HON,Industrials,2018,4
+HON,Industrials,2019,4
+HON,Industrials,2020,4
+HON,Industrials,2021,4
+HON,Industrials,2022,4
+HON,Industrials,2023,4
+HON,Industrials,2024,4
+HON,Industrials,2025,4
+IBM,Information Technology,2016,4
+IBM,Information Technology,2017,4
+IBM,Information Technology,2018,4
+IBM,Information Technology,2019,4
+IBM,Information Technology,2020,4
+IBM,Information Technology,2021,4
+IBM,Information Technology,2022,4
+IBM,Information Technology,2023,4
+IBM,Information Technology,2024,4
+IBM,Information Technology,2025,4
+JNJ,Health Care,2016,4
+JNJ,Health Care,2017,4
+JNJ,Health Care,2018,4
+JNJ,Health Care,2019,4
+JNJ,Health Care,2020,4
+JNJ,Health Care,2021,4
+JNJ,Health Care,2022,4
+JNJ,Health Care,2023,5
+JNJ,Health Care,2024,4
+JNJ,Health Care,2025,4
+JPM,Financials,2016,4
+JPM,Financials,2017,4
+JPM,Financials,2018,4
+JPM,Financials,2019,4
+JPM,Financials,2020,4
+JPM,Financials,2021,4
+JPM,Financials,2022,4
+JPM,Financials,2023,4
+JPM,Financials,2024,4
+JPM,Financials,2025,4
+KO,Consumer Staples,2016,4
+KO,Consumer Staples,2017,4
+KO,Consumer Staples,2018,4
+KO,Consumer Staples,2019,4
+KO,Consumer Staples,2020,4
+KO,Consumer Staples,2021,4
+KO,Consumer Staples,2022,4
+KO,Consumer Staples,2023,4
+KO,Consumer Staples,2024,4
+KO,Consumer Staples,2025,4
+MCD,Consumer Discretionary,2016,4
+MCD,Consumer Discretionary,2017,4
+MCD,Consumer Discretionary,2018,4
+MCD,Consumer Discretionary,2019,4
+MCD,Consumer Discretionary,2020,6
+MCD,Consumer Discretionary,2021,4
+MCD,Consumer Discretionary,2022,4
+MCD,Consumer Discretionary,2023,4
+MCD,Consumer Discretionary,2024,4
+MCD,Consumer Discretionary,2025,4
+META,Communication Services,2016,4
+META,Communication Services,2017,4
+META,Communication Services,2018,4
+META,Communication Services,2019,4
+META,Communication Services,2020,4
+META,Communication Services,2021,4
+META,Communication Services,2022,4
+META,Communication Services,2023,4
+META,Communication Services,2024,4
+META,Communication Services,2025,4
+MSFT,Information Technology,2016,4
+MSFT,Information Technology,2017,4
+MSFT,Information Technology,2018,4
+MSFT,Information Technology,2019,4
+MSFT,Information Technology,2020,4
+MSFT,Information Technology,2021,4
+MSFT,Information Technology,2022,4
+MSFT,Information Technology,2023,4
+MSFT,Information Technology,2024,4
+MSFT,Information Technology,2025,4
+NEE,Utilities,2016,4
+NEE,Utilities,2017,4
+NEE,Utilities,2018,4
+NEE,Utilities,2019,4
+NEE,Utilities,2020,4
+NEE,Utilities,2021,4
+NEE,Utilities,2022,4
+NEE,Utilities,2023,4
+NEE,Utilities,2024,4
+NEE,Utilities,2025,4
+PFE,Health Care,2016,4
+PFE,Health Care,2017,4
+PFE,Health Care,2018,4
+PFE,Health Care,2019,4
+PFE,Health Care,2020,4
+PFE,Health Care,2021,4
+PFE,Health Care,2022,4
+PFE,Health Care,2023,5
+PFE,Health Care,2024,4
+PFE,Health Care,2025,4
+PG,Consumer Staples,2016,4
+PG,Consumer Staples,2017,4
+PG,Consumer Staples,2018,4
+PG,Consumer Staples,2019,4
+PG,Consumer Staples,2020,4
+PG,Consumer Staples,2021,4
+PG,Consumer Staples,2022,4
+PG,Consumer Staples,2023,4
+PG,Consumer Staples,2024,4
+PG,Consumer Staples,2025,4
+PLD,Real Estate,2016,4
+PLD,Real Estate,2017,4
+PLD,Real Estate,2018,4
+PLD,Real Estate,2019,4
+PLD,Real Estate,2020,4
+PLD,Real Estate,2021,4
+PLD,Real Estate,2022,4
+PLD,Real Estate,2023,4
+PLD,Real Estate,2024,4
+PLD,Real Estate,2025,4
+SHW,Materials,2016,4
+SHW,Materials,2017,4
+SHW,Materials,2018,4
+SHW,Materials,2019,5
+SHW,Materials,2020,4
+SHW,Materials,2021,4
+SHW,Materials,2022,5
+SHW,Materials,2023,4
+SHW,Materials,2024,4
+SHW,Materials,2025,4
+SO,Utilities,2016,4
+SO,Utilities,2017,4
+SO,Utilities,2018,4
+SO,Utilities,2019,4
+SO,Utilities,2020,4
+SO,Utilities,2021,4
+SO,Utilities,2022,4
+SO,Utilities,2023,4
+SO,Utilities,2024,4
+SO,Utilities,2025,4
+SPG,Real Estate,2016,4
+SPG,Real Estate,2017,4
+SPG,Real Estate,2018,4
+SPG,Real Estate,2019,4
+SPG,Real Estate,2020,4
+SPG,Real Estate,2021,4
+SPG,Real Estate,2022,4
+SPG,Real Estate,2023,4
+SPG,Real Estate,2024,4
+SPG,Real Estate,2025,4
+UNH,Health Care,2016,4
+UNH,Health Care,2017,4
+UNH,Health Care,2018,4
+UNH,Health Care,2019,4
+UNH,Health Care,2020,4
+UNH,Health Care,2021,4
+UNH,Health Care,2022,4
+UNH,Health Care,2023,4
+UNH,Health Care,2024,4
+UNH,Health Care,2025,4
+UPS,Industrials,2016,4
+UPS,Industrials,2017,4
+UPS,Industrials,2018,4
+UPS,Industrials,2019,4
+UPS,Industrials,2020,4
+UPS,Industrials,2021,4
+UPS,Industrials,2022,4
+UPS,Industrials,2023,4
+UPS,Industrials,2024,4
+UPS,Industrials,2025,4
+WMT,Consumer Staples,2016,4
+WMT,Consumer Staples,2017,4
+WMT,Consumer Staples,2018,4
+WMT,Consumer Staples,2019,4
+WMT,Consumer Staples,2020,4
+WMT,Consumer Staples,2021,4
+WMT,Consumer Staples,2022,4
+WMT,Consumer Staples,2023,4
+WMT,Consumer Staples,2024,4
+WMT,Consumer Staples,2025,4
+XOM,Energy,2016,4
+XOM,Energy,2017,4
+XOM,Energy,2018,4
+XOM,Energy,2019,4
+XOM,Energy,2020,4
+XOM,Energy,2021,4
+XOM,Energy,2022,4
+XOM,Energy,2023,4
+XOM,Energy,2024,4
+XOM,Energy,2025,4
