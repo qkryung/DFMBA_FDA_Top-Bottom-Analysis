@@ -8,8 +8,10 @@ KAIST DFMBA 금융데이터 애널리틱스의 **Case 3 공시 수집·텍스트
 
 | 자료 | 용도 |
 |---|---|
-| [7분 제안 발표 PPT](presentations/proposal_7min.pptx) | 연구 배경 → 질문 → 데이터 → 분석 방법 → 기대 결과. 9장, 발표자 노트 포함 |
+| [7분 제안 발표 PPT 수정본](presentations/proposal_7min_v2.pptx) | 참고자료 디자인 반영. 데이터 출처 → 네 가설 → 점수화 → 4단계 도형 → 검증·투자 활용. 6장, 발표자 노트 포함 |
+| [보존한 최초 제안 발표](presentations/proposal_7min.pptx) | 수정 전 9장 판본 |
 | [제안 발표 대본](docs/presentation_script.md) | 슬라이드별 시간과 발표 내용 |
+| [수정본 발표 대본](docs/presentation_script_v2.md) | 6장·420초 시간 배분과 출처 |
 | [HTML 결과 보고서](artifacts/result_report.html) | 파일을 내려받아 브라우저로 열기. 기업 검색, 주제·섹터 선택, 차트와 근거 데이터 확인 |
 | [전수 분석 결과 PPT](presentations/results_full.pptx) | 현재 구성기업 전수 수집, 실제 분석 범위와 검증 결과 |
 | [보존한 33개 기업 파일럿](presentations/results_pilot.pptx) | 전수 확대 전의 결과. HTML에서 지표 비교 가능 |

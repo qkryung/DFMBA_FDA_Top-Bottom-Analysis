@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "id": "fomc_minutes",
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcminutes20251210.pdf",
+      "site": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "page": 0,
+      "rect": null,
+      "asset": "presentations/assets/proposal/fomc_minutes.png",
+      "asset_sha256": "4941c53d28c1d61d6a5a07bcd3c1f121a274c536132d767069e8168b419f8b6f",
+      "source_pdf_sha256": "80bf91467e6e9a582f953419667a54e89bbdd9e7b2ac3212d41cb834f0c6420c",
+      "capture_method": "Actual official PDF page rasterization; not a website UI screenshot"
+    },
+    {
+      "id": "jpm_earnings",
+      "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2025/3rd-quarter/f24f154c-2653-4da3-b1b0-185586086d50.pdf",
+      "site": "https://www.jpmorganchase.com/ir/quarterly-earnings",
+      "page": 0,
+      "rect": [
+        0,
+        0,
+        612,
+        240
+      ],
+      "asset": "presentations/assets/proposal/jpm_earnings.png",
+      "asset_sha256": "e5956639007dadf6d626d269955778671a4c15200a33d03d1c1858aa7c0bd244",
+      "source_pdf_sha256": "d2a35730caad8fbe9d5256a5dc39b088b5735a24a327d35c3c7f4f10edb225a8",
+      "capture_method": "Actual official PDF page rasterization; not a website UI screenshot"
+    }
+  ],
+  "limitation": "Windows browser capture stopped because its current URL could not be verified. These are genuine official PDF document captures, not website UI screenshots."
+}
