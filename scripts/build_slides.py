@@ -7,6 +7,8 @@ Usage: python scripts/build_slides.py --proposal
 PowerPoint and pywin32 are optional presentation-build dependencies, not analysis
 dependencies. The checked-in PPTX files can be read on other operating systems.
 All diagrams/tables/text are editable; preview PNGs remain in .build/slides.
+--proposal creates the historical nine-slide candidate under
+.build/slides/proposal_legacy; it never replaces the current edited proposal.
 """
 from __future__ import annotations
 
@@ -193,10 +195,10 @@ class Deck:
         return shape
 
     def finish(self, script_path=None):
-        path = OUT / f"{self.stem}.pptx"
-        self.p.SaveAs(str(path), 24)
-        preview = BUILD / self.stem
+        preview = BUILD / ("proposal_legacy" if self.stem == "proposal_7min" else self.stem)
         preview.mkdir(exist_ok=True)
+        path = preview / "candidate.pptx" if self.stem == "proposal_7min" else OUT / f"{self.stem}.pptx"
+        self.p.SaveAs(str(path), 24)
         qa = {"file": str(path.relative_to(ROOT)), "slide_count": self.p.Slides.Count,
               "total_seconds": sum(v[2] for v in self.scripts), "font": FONT,
               "render_engine": "Microsoft PowerPoint", "text_overflow": []}
@@ -347,7 +349,7 @@ def proposal():
     ], 57, 140, 847, 235, [375, 472], 21)
     d.text(s, "산출물: 재현 가능한 코드 · 결과 HTML · 발표 PPT", 58, 405, 842, 40, 23, "teal", True)
     d.text(s, "유의하지 않은 결과와 데이터 한계도 함께 공개", 58, 462, 840, 30, 20, "muted")
-    return d.finish(ROOT / "docs" / "presentation_script.md")
+    return d.finish(BUILD / "proposal_legacy" / "presentation_script.md")
 
 
 def fmt(value, digits=3, pct=False):

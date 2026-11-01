@@ -1,7 +1,7 @@
 """Build the six-slide, seven-minute proposal revision with native PowerPoint.
 
 Uses genuine official PDF captures when website UI capture is unavailable.
-The open original proposal is preserved; this revision is a separate file.
+Writes a review candidate only; checked-in PPT/PDF, notes and manifest are preserved.
 """
 from pathlib import Path
 import json,hashlib,sys
@@ -10,7 +10,7 @@ from PIL import Image,ImageDraw
 
 ROOT=Path(__file__).resolve().parents[1]
 BUILD=ROOT/'.build/slides/proposal_7min_v2'
-OUT=ROOT/'presentations/proposal_7min_v2.pptx'
+OUT=BUILD/'candidate.pptx'
 FONT='맑은 고딕'
 C={'rust':'B05030','brown':'2C1810','text':'1E1E1E','charcoal':'3D3D3D','muted':'888888','pale':'F5F5F5','cream':'F0EDE8','line':'DEDEDE','blue':'154360','green':'1E6B44','purple':'512460','white':'FFFFFF'}
 W,H=720,405
@@ -87,8 +87,7 @@ class Proposal:
     def finish(self):
         for key,val in [('Title','연준의 말, 기업의 말 — 연구 제안'),('Subject','FOMC와 S&P 500 실적발표 텍스트의 결합 분석'),('Author','DFMBA Research')]:
             self.p.BuiltInDocumentProperties(key).Value=val
-        candidate=BUILD/'candidate.pptx'
-        self.p.SaveAs(str(candidate),24)
+        self.p.SaveAs(str(OUT),24)
         qa={'slides':len(self.rows),'seconds':sum(v['seconds'] for v in self.rows),'native_renderer':'Microsoft PowerPoint','text_overflow':[],'off_slide':[],'website_capture_limitation':'Browser UI capture stopped because current URL could not be verified; genuine official PDF captures used instead.'}
         for s in self.p.Slides:
             s.Export(str(BUILD/f'slide-{s.SlideIndex:02}.png'),'PNG',1600,900)
@@ -102,7 +101,6 @@ class Proposal:
         if qa['text_overflow'] or qa['off_slide']:
             (BUILD/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
             raise RuntimeError('Fix the recorded layout issues before delivery')
-        OUT.write_bytes(candidate.read_bytes())
         qa['sha256']=hashlib.sha256(OUT.read_bytes()).hexdigest()
         (BUILD/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
         canvas=Image.new('RGB',(1600,3*463),'#e9edf1')
@@ -114,9 +112,9 @@ class Proposal:
             end=elapsed+r['seconds'];parts.append(f"## {r['slide']}. {r['title']} ({elapsed//60}:{elapsed%60:02}–{end//60}:{end%60:02})\n\n{r['script']}\n")
             if r['sources']:parts.append('출처: '+'\n'.join(r['sources'])+'\n')
             elapsed=end
-        (ROOT/'docs/presentation_script_v2.md').write_text('\n'.join(parts),encoding='utf-8',newline='\n')
-        manifest={'file':OUT.relative_to(ROOT).as_posix(),'slides':6,'seconds':420,'sha256':qa['sha256'],'slide_order':self.rows,'reference_design':'최종발표_1조_v3.pptx — 720×405, Malgun Gothic, B05030/3D3D3D/F0EDE8','diagram':'Four editable native chevrons, all research steps on slide 5','data_capture':'Actual official PDF captures with source-site hyperlinks; not website UI screenshots','original_open_file_preserved':True}
-        (ROOT/'presentations/proposal_revision.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+        (BUILD/'presentation_script_v2.md').write_text('\n'.join(parts),encoding='utf-8',newline='\n')
+        manifest={'file':OUT.relative_to(ROOT).as_posix(),'slides':6,'seconds':420,'sha256':qa['sha256'],'slide_order':self.rows,'reference_design':'최종발표_1조_v3.pptx — 720×405, Malgun Gothic, B05030/3D3D3D/F0EDE8','diagram':'Four editable native chevrons, all research steps on slide 5','data_capture':'Actual official PDF captures with source-site hyperlinks; not website UI screenshots','candidate_only':True,'promotion_note':'Review against the current edited proposal before manual promotion; re-export PDF and update the public manifest together.'}
+        (BUILD/'proposal_revision.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
         print(json.dumps(qa,ensure_ascii=False,indent=2))
 
 def main():
