@@ -117,19 +117,19 @@ def main():
         if len(vals) and model.get('annualized_return') is not None:
             annual=float(np.prod(1+vals)**(4/len(vals))-1)
             check(f"Independent annualized return recomputation: {model['model']}",np.isclose(annual,model['annualized_return'],rtol=1e-10,atol=1e-9))
-    for name in ['proposal_7min','results_pilot']+(['results_full'] if full else []):
+    for name in ['proposal','results_pilot']+(['results_full'] if full else []):
         path=ROOT/'presentations'/f'{name}.pptx'
-        expected_slides=6 if name=='proposal_7min' else 9
+        expected_slides=6 if name=='proposal' else 9
         with zipfile.ZipFile(path) as archive:
             slides=[n for n in archive.namelist() if n.startswith('ppt/slides/slide') and n.endswith('.xml')]
             notes=[n for n in archive.namelist() if n.startswith('ppt/notesSlides/notesSlide') and n.endswith('.xml')]
             check(f'{name}: {expected_slides} readable slide XML files',len(slides)==expected_slides and all(ET.fromstring(archive.read(n)) is not None for n in slides))
             check(f'{name}: speaker notes on every slide',len(notes)==expected_slides)
     proposal=load('presentations/proposal_revision.json')
-    check('Proposal manifest points to the current canonical PPT',proposal['file']=='presentations/proposal_7min.pptx')
+    check('Proposal manifest points to the current canonical PPT',proposal['file']=='presentations/proposal.pptx')
     check('Proposal manifest has six slides and 420-second timing',proposal['slides']==6 and len(proposal['slide_order'])==6 and proposal['seconds']==sum(s['seconds'] for s in proposal['slide_order'])==420)
     check('Proposal PPT fingerprint matches the reviewed artifact',hashlib.sha256((ROOT/proposal['file']).read_bytes()).hexdigest()==proposal['sha256'])
-    check('Proposal PDF manifest describes the audited six-page export',proposal['pdf']['file']=='presentations/proposal_7min.pdf' and proposal['pdf']['pages']==6)
+    check('Proposal PDF manifest describes the audited six-page export',proposal['pdf']['file']=='presentations/proposal.pdf' and proposal['pdf']['pages']==6)
     proposal_pdf=(ROOT/proposal['pdf']['file']).read_bytes()
     check('Proposal PDF fingerprint matches the audited export',proposal_pdf.startswith(b'%PDF-') and hashlib.sha256(proposal_pdf).hexdigest()==proposal['pdf']['sha256'])
     html=ROOT/'artifacts/result_report.html'

@@ -101,7 +101,7 @@ IC와 평균 수익률의 t값은 분기 시계열에 대한 Newey–West(HAC, 1
 
 ## 제안 발표와 결과 발표
 
-현재 제안 발표는 6장, 약 7분으로 연구 동기·자료·네 가지 가설·텍스트 방법·4단계 검증과 투자 활용을 설명한다. 최신 PPT와 PDF는 `presentations/proposal_7min.pptx`와 `presentations/proposal_7min.pdf`이며, 현재 대본은 `docs/presentation_script_v2.md`이다. 최초 9장 대본은 이전 설계의 기록으로 남긴다. 결과 보고서는 실제 수집 범위, 실행한 분석, 수치와 한계를 제시한다. 제안의 기대 방향과 실제 관찰 결과를 혼동하지 않는다.
+현재 제안 발표는 6장, 약 7분으로 연구 동기·자료·네 가지 가설·텍스트 방법·4단계 검증과 투자 활용을 설명한다. 최신 PPT와 PDF는 `presentations/proposal.pptx`와 `presentations/proposal.pdf`이며, 현재 대본은 `docs/presentation_script_v2.md`이다. 최초 9장 대본은 이전 설계의 기록으로 남긴다. 결과 보고서는 실제 수집 범위, 실행한 분석, 수치와 한계를 제시한다. 제안의 기대 방향과 실제 관찰 결과를 혼동하지 않는다.
 
 ## 공식 참고
 

@@ -1,7 +1,7 @@
 # 발표 자료
 
-- [proposal_7min.pptx](proposal_7min.pptx): 현재 제안 발표, **6장·7분**. 사용자가 제시한 참고자료의 갈색·차콜·회색 디자인을 반영했습니다. 출처 자료, 네 가지 가설, 텍스트 점수화, 한 장의 4단계 도형, 검증과 투자 활용 순서로 구성합니다.
-- [proposal_7min.pdf](proposal_7min.pdf): 현재 제안 발표의 PDF 내보내기, **6페이지**. PPT와 페이지별 텍스트가 일치함을 확인했습니다.
+- [proposal.pptx](proposal.pptx): 현재 제안 발표, **6장·7분**. 사용자가 제시한 참고자료의 갈색·차콜·회색 디자인을 반영했습니다. 출처 자료, 네 가지 가설, 텍스트 점수화, 한 장의 4단계 도형, 검증과 투자 활용 순서로 구성합니다.
+- [proposal.pdf](proposal.pdf): 현재 제안 발표의 PDF 내보내기, **6페이지**. PPT와 페이지별 텍스트가 일치함을 확인했습니다.
 - [results_pilot.pptx](results_pilot.pptx): 33개 기업의 탐색적 파일럿 결과, 9장. 초기 분석의 기록으로 보존합니다.
 - [results_full.pptx](results_full.pptx): 최종 전수 대상 결과, 9장·약 7분 10초. 현재 구성종목 500개 발행사 전체를 수집 대상으로 삼아 497개 기업의 실적발표자료 19,613건과 FOMC 의사록 81건을 분석했습니다. 분기 패널 497개 기업과 완결 수익률의 표본 밖 평가 495개 기업을 구분합니다.
 - 현재 제안 발표 대본: [../docs/presentation_script_v2.md](../docs/presentation_script_v2.md). 6장에 420초를 배분했습니다. PPT의 발표자 노트에도 대본과 출처가 있습니다.
@@ -28,11 +28,11 @@ python scripts/build_proposal_v2.py
 python scripts/build_slides.py --full-results reports/results.json
 ```
 
-두 제안 생성기는 PPT 후보·대본·검사 기록을 `.build`에만 저장합니다. 현재 PPT·PDF와 공개 대본·manifest는 덮어쓰지 않습니다. 후보를 현재 발표와 비교해 직접 편집한 내용을 유지한 뒤, 검토를 마친 파일만 수동으로 `presentations/proposal_7min.pptx`에 반영합니다. 변경 후에는 같은 PPT에서 PDF를 다시 내보내고, [proposal_revision.json](proposal_revision.json)의 파일 경로·장수·시간·PPT/PDF SHA-256을 함께 갱신합니다.
+두 제안 생성기는 PPT 후보·대본·검사 기록을 `.build`에만 저장합니다. 현재 PPT·PDF와 공개 대본·manifest는 덮어쓰지 않습니다. 후보를 현재 발표와 비교해 직접 편집한 내용을 유지한 뒤, 검토를 마친 파일만 수동으로 `presentations/proposal.pptx`에 반영합니다. 변경 후에는 같은 PPT에서 PDF를 다시 내보내고, [proposal_revision.json](proposal_revision.json)의 파일 경로·장수·시간·PPT/PDF SHA-256을 함께 갱신합니다.
 
 최종 전수 발표는 동결된 [reports/results.json](../reports/results.json)과 [reports/finbert_method_comparison.json](../reports/finbert_method_comparison.json)의 실제 수치에서 생성했습니다. 분석을 다시 실행하면 HTML과 PPT를 함께 갱신해야 같은 결과를 보여줍니다. `--full-results`는 최종 전수 범위와 기업·주식 클래스별 분모가 명시된 결과만 허용하며 중간 수집 결과로는 생성하지 않습니다.
 
-`--results` 옵션은 입력 JSON의 `meta.scope`에 따라 파일럿·전수 출력 이름을 선택합니다. 현재의 최종 `reports/results.json`으로 과거 파일럿을 재생성하지 않습니다. 전수 결과 생성은 기존 `proposal_7min.pptx`와 `results_pilot.pptx`를 덮어쓰지 않습니다.
+`--results` 옵션은 입력 JSON의 `meta.scope`에 따라 파일럿·전수 출력 이름을 선택합니다. 현재의 최종 `reports/results.json`으로 과거 파일럿을 재생성하지 않습니다. 전수 결과 생성은 기존 `proposal.pptx`와 `results_pilot.pptx`를 덮어쓰지 않습니다.
 
 ## 검증
 

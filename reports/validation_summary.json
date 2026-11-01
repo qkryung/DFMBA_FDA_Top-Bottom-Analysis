@@ -1,6 +1,6 @@
 {
   "status": "passed_with_visual_check_limitation",
-  "checked_at": "2026-11-01T07:07:03.738330+00:00",
+  "checked_at": "2026-11-01T07:12:36.217328+00:00",
   "checks": [
     "Corporate document count matches analysis",
     "FOMC document count matches analysis",
@@ -67,8 +67,8 @@
     "Independent annualized return recomputation: bottom_up",
     "Independent annualized return recomputation: combined",
     "Independent annualized return recomputation: top_down",
-    "proposal_7min: 6 readable slide XML files",
-    "proposal_7min: speaker notes on every slide",
+    "proposal: 6 readable slide XML files",
+    "proposal: speaker notes on every slide",
     "results_pilot: 9 readable slide XML files",
     "results_pilot: speaker notes on every slide",
     "results_full: 9 readable slide XML files",
